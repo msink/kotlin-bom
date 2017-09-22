@@ -195,7 +195,7 @@ fun makeZakaz(bom: List<Component>, fileName: String) {
             out.appendln(" ".repeat(2) + header)
             lastHeader = header
         }
-        list.groupBy { it.name }.forEach { name, it ->
+        list.groupBy { it.name }.forEach { (name, it) ->
             out.append(name.padEnd(55))
             out.appendln(it.size)
         }

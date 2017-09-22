@@ -1,2 +1,6 @@
 .idea/workspace.xml
 out
+stdio-build
+*.exe
+*.kt.bc
+*.klib
