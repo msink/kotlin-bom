@@ -20,13 +20,14 @@ private val cp1251 = arrayOf<Char> (
       '\u0448', '\u0449', '\u044A', '\u044B', '\u044C', '\u044D', '\u044E', '\u044F'
 )
 
-private fun CPointer<ByteVar>.fromCp1251(): String {
-    var length = 0
-    while (this[length] != 0.toByte()) ++length
+private fun CPointer<ByteVar>.fromCp1251(bufferLength: Int): String {
+    val buffer = this
     return buildString {
-        readBytes(length).forEach {
-            if (it >= 0) append(it.toChar())
-            else append(cp1251[it.toInt() + 128])
+        for (i in 0 until bufferLength) {
+            val byte = buffer[i]
+            if (byte == 0.toByte()) break
+            if (byte > 0) append(byte.toChar())
+            else append(cp1251[byte.toInt() + 128])
         }
     }
 }
@@ -40,7 +41,7 @@ fun readFile(fileName: String) : List<String> {
             val bufferLength = 64 * 1024
             val buffer = allocArray<ByteVar>(bufferLength)
             while (true) {
-                val line = fgets(buffer, bufferLength, file)?.fromCp1251()
+                val line = fgets(buffer, bufferLength, file)?.fromCp1251(bufferLength)
                 if (line == null || line.isEmpty()) break
                 list += line.dropLast(1)
             }
