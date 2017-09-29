@@ -20,18 +20,11 @@ private val cp1251 = arrayOf<Char> (
       '\u0448', '\u0449', '\u044A', '\u044B', '\u044C', '\u044D', '\u044E', '\u044F'
 )
 
-fun COpaquePointer.readBytes(count: Int): ByteArray {
-    val result = ByteArray(count)
-    nativeMemUtils.getByteArray(this.reinterpret<ByteVar>().pointed, result, count)
-    return result
-}
-
-fun CPointer<ByteVar>.fromCp1251(): String {
-    val bytes = this
+private fun CPointer<ByteVar>.fromCp1251(): String {
     var length = 0
-    while (bytes[length] != 0.toByte()) ++length
+    while (this[length] != 0.toByte()) ++length
     return buildString {
-        bytes.readBytes(length).forEach {
+        readBytes(length).forEach {
             if (it >= 0) append(it.toChar())
             else append(cp1251[it.toInt() + 128])
         }
