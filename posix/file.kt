@@ -34,7 +34,7 @@ private fun CPointer<ByteVar>.fromCp1251(bufferLength: Int): String {
 
 fun readFile(fileName: String) : List<String> {
     val file = fopen(fileName, "rt")
-    if (file == null) return listOf<String>()
+    if (file == null) throw Error("Cannot read file '$fileName'")
     val list = mutableListOf<String>()
     try {
         memScoped {
@@ -54,7 +54,7 @@ fun readFile(fileName: String) : List<String> {
 
 fun writeFile(fileName: String, out: String) {
     val file = fopen(fileName, "wt")
-    if (file == null) return
+    if (file == null) throw Error("Cannot write file '$fileName'")
     try {
         fputs(out, file)
     } finally {

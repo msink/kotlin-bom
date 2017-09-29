@@ -10,19 +10,25 @@
 fun readBom(fileName: String) : List<Component> {
     fun String.parseCSV() : List<String> = this.split('@').map { it.trim('"') }
     val lines = readFile(fileName)
+    if (lines.size < 3 || !lines[1].isEmpty())
+        throw Error("Bad input file '$fileName'")
+
     val header = lines[0].parseCSV()
-    val colRefDes = header.indexOf("RefDes")
-    val colComponent = header.indexOf("ComponentName")
-    val colPattern = header.indexOf("PatternName")
-    val colValue = header.indexOf("Value")
-    val colDescription = header.indexOf("Description")
+    fun List<String>.field(key: String) : Int = this.indexOf(key).also { if (it < 0)
+        throw Error("Bad input file '$fileName': field '$key' not found") }
+    val refdesIndex = header.field("RefDes")
+    val componentIndex = header.field("ComponentName")
+    val patternIndex = header.field("PatternName")
+    val valueIndex = header.field("Value")
+    val descriptionIndex = header.field("Description")
+
     return lines.drop(2).map {
         val fields = it.parseCSV()
-        val refdes = fields[colRefDes]
-        val component = fields[colComponent]
-        val pattern = fields[colPattern]
-        val value = fields[colValue]
-        val description = fields[colDescription]
+        val refdes = fields[refdesIndex]
+        val component = fields[componentIndex]
+        val pattern = fields[patternIndex]
+        val value = fields[valueIndex]
+        val description = fields[descriptionIndex]
         val part = when {
             description.contains('\\') -> description.takeWhile { it != '\\' }
             description.startsWith("+-") -> ""
@@ -208,7 +214,14 @@ fun main(args: Array<String>) {
         println("usage: bom.exe file.bom")
         return
     }
-    val bom= readBom(args[0])
-    makeList(bom, args[0].replaceAfterLast('.', "p.txt"))
-    makeZakaz(bom, args[0].replaceAfterLast('.', "z.txt"))
+    var fileName = args[0]
+    if (!fileName.endsWith(".bom", ignoreCase = true))
+        fileName += ".bom"
+    try {
+        val bom = readBom(fileName)
+        makeList(bom, fileName.replaceAfterLast('.', "p.txt"))
+        makeZakaz(bom, fileName.replaceAfterLast('.', "z.txt"))
+    } catch (e: Throwable) {
+        print("Fatal error: ${e.message}")
+    }
 }
