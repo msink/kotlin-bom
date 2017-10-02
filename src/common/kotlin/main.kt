@@ -137,6 +137,7 @@ fun readBom(fileName: String) : List<Component> {
 
 fun makeList(bom: List<Component>, fileName: String) {
     val out = StringBuilder()
+    out.pDocumentHeader()
     for (category in listOf(
                 "Конденсаторы",
                 "Микросхемы",
@@ -153,32 +154,33 @@ fun makeList(bom: List<Component>, fileName: String) {
                 "Прочие")) {
         val list = bom.filter { it.category == category }
         if (list.isEmpty()) continue;
-        out.appendln(" ".repeat(14) + category)
+        out.pTableHeaderRow(category)
         var first = list[0]
         var count = 1
         list.forEachIndexed { index, current ->
             if (index < list.lastIndex && list[index + 1].name == first.name) {
                 count++
             } else {
-                out.append(when (count) {
+                val refdes = when (count) {
                     1 -> current.refdes
                     2 -> first.refdes + "," + current.refdes
                     else -> first.refdes + "-" + current.refdes
-                }.padEnd(12))
-                out.append(first.name.padEnd(40))
-                out.appendln(count)
+                }
                 if (index < list.lastIndex) {
                     first = list[index + 1]
                     count = 1
                 }
+                out.pTableRow(refdes, first.name, count)
             }
         }
     }
+    out.pDocumentFooter()
     writeFile(fileName, out.toString())
 }
 
 fun makeZakaz(bom: List<Component>, fileName: String) {
     val out = StringBuilder()
+    out.zDocumentHeader()
     var lastHeader = ""
     for ((category, header) in listOf(
                 "Резисторы" to "Резисторы",
@@ -198,14 +200,14 @@ fun makeZakaz(bom: List<Component>, fileName: String) {
                 .sortedWith(compareBy({ it.prefix }, { it.value }, { it.name }))
         if (list.isEmpty()) continue;
         if (header != lastHeader) {
-            out.appendln(" ".repeat(2) + header)
+            out.zTableHeaderRow(header)
             lastHeader = header
         }
         list.groupBy { it.name }.forEach { (name, it) ->
-            out.append(name.padEnd(55))
-            out.appendln(it.size)
+            out.zTableRow(name, it.size)
         }
     }
+    out.zDocumentFooter()
     writeFile(fileName, out.toString())
 }
 
@@ -219,8 +221,8 @@ fun main(args: Array<String>) {
         fileName += ".bom"
     try {
         val bom = readBom(fileName)
-        makeList(bom, fileName.replaceAfterLast('.', "p.txt"))
-        makeZakaz(bom, fileName.replaceAfterLast('.', "z.txt"))
+        makeList(bom, fileName.replaceAfterLast('.', "p.fodt"))
+        makeZakaz(bom, fileName.replaceAfterLast('.', "z.fodt"))
     } catch (e: Throwable) {
         print("Fatal error: ${e.message}")
     }
