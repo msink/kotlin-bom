@@ -211,7 +211,7 @@ fun makeZakaz(bom: List<Component>, fileName: String) {
 
 fun main(args: Array<String>) {
     if (args.size != 1) {
-        println("usage: bom.exe file.bom")
+        println("Usage: bom.exe file.bom")
         return
     }
     var fileName = args[0]
