@@ -1,7 +1,7 @@
 fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><meta:creation-date>2001-02-18T22:55:00</meta:creation-date><dc:date>2017-10-03T14:45:38.056000000</dc:date><meta:print-date>2017-10-02T17:18:26.799000000</meta:print-date><meta:editing-cycles>22</meta:editing-cycles><meta:editing-duration>PT1H16M1S</meta:editing-duration><meta:generator>LibreOffice/5.3.6.1${'$'}Windows_X86_64 LibreOffice_project/686f202eff87ef707079aeb7f485847613344eb7</meta:generator><meta:document-statistic meta:table-count="5" meta:image-count="0" meta:object-count="0" meta:page-count="2" meta:paragraph-count="110" meta:word-count="136" meta:character-count="929" meta:non-whitespace-character-count="903"/><meta:template xlink:type="simple" xlink:actuate="onRequest" xlink:title="Normal.dot" xlink:href=""/></office:meta>
+ <office:meta><meta:creation-date>2001-02-18T22:55:00</meta:creation-date><dc:date>2017-10-03T15:27:42.405000000</dc:date><meta:print-date>2017-10-02T17:18:26.799000000</meta:print-date><meta:editing-cycles>23</meta:editing-cycles><meta:editing-duration>PT1H18M43S</meta:editing-duration><meta:generator>LibreOffice/5.3.6.1${'$'}Windows_X86_64 LibreOffice_project/686f202eff87ef707079aeb7f485847613344eb7</meta:generator><meta:document-statistic meta:table-count="5" meta:image-count="0" meta:object-count="0" meta:page-count="2" meta:paragraph-count="110" meta:word-count="136" meta:character-count="929" meta:non-whitespace-character-count="903"/><meta:template xlink:type="simple" xlink:actuate="onRequest" xlink:title="Normal.dot" xlink:href=""/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
    <config:config-item config:name="ViewAreaTop" config:type="long">0</config:config-item>
@@ -13,8 +13,8 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">10044</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">3433</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">24007</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">15415</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
      <config:config-item config:name="VisibleTop" config:type="long">0</config:config-item>
      <config:config-item config:name="VisibleRight" config:type="long">74478</config:config-item>
@@ -93,7 +93,7 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
    <config:config-item config:name="UnxForceZeroExtLeading" config:type="boolean">false</config:config-item>
    <config:config-item config:name="UseOldPrinterMetrics" config:type="boolean">false</config:config-item>
    <config:config-item config:name="TabAtLeftIndentForParagraphsInList" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="Rsid" config:type="int">2451769</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">2490680</config:config-item>
    <config:config-item config:name="MathBaselineAlignment" config:type="boolean">false</config:config-item>
    <config:config-item config:name="InvertBorderSpacing" config:type="boolean">true</config:config-item>
    <config:config-item config:name="CollapseEmptyCellPara" config:type="boolean">true</config:config-item>
@@ -333,7 +333,7 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
    <style:table-column-properties style:column-width="2.983cm"/>
   </style:style>
   <style:style style:name="Заголовок_5f_Страница2.1" style:display-name="Заголовок_Страница2.1" style:family="table-row">
-   <style:table-row-properties style:min-row-height="1.33cm" fo:keep-together="auto"/>
+   <style:table-row-properties style:min-row-height="1.3cm" fo:keep-together="auto"/>
   </style:style>
   <style:style style:name="Заголовок_5f_Страница2.A1" style:display-name="Заголовок_Страница2.A1" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="none" fo:border-bottom="1pt solid #000000" style:writing-mode="lr-tb"/>
@@ -342,7 +342,7 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
    <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="1pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Таблица2" style:family="table">
-   <style:table-properties style:width="18.33cm" fo:margin-left="0cm" table:align="left" style:writing-mode="lr-tb"/>
+   <style:table-properties style:width="18.33cm" fo:margin-left="0cm" table:align="left" style:shadow="none" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Таблица2.A" style:family="table-column">
    <style:table-column-properties style:column-width="0.824cm"/>
@@ -381,10 +381,25 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
    <style:table-row-properties style:min-row-height="0.499cm" fo:keep-together="auto"/>
   </style:style>
   <style:style style:name="Таблица2.A2" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border="none" style:writing-mode="lr-tb"/>
+   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Таблица2.B2" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Таблица2.F2" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="1pt solid #000000" fo:border-top="1pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Таблица2.G2" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Таблица2.A3" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border="none" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Таблица2.B3" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Таблица2.F3" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="1pt solid #000000" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Заголовок_5f_Страница1" style:display-name="Заголовок_Страница1" style:family="table" style:master-page-name="First_20_Page">
    <style:table-properties style:width="18.33cm" fo:margin-left="0cm" style:page-number="auto" table:align="left" style:writing-mode="lr-tb"/>
@@ -396,7 +411,7 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
    <style:table-column-properties style:column-width="2.983cm"/>
   </style:style>
   <style:style style:name="Заголовок_5f_Страница1.1" style:display-name="Заголовок_Страница1.1" style:family="table-row">
-   <style:table-row-properties style:min-row-height="1.33cm" fo:keep-together="auto"/>
+   <style:table-row-properties style:min-row-height="1.3cm" fo:keep-together="auto"/>
   </style:style>
   <style:style style:name="Заголовок_5f_Страница1.A1" style:display-name="Заголовок_Страница1.A1" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="none" fo:border-bottom="1pt solid #000000" style:writing-mode="lr-tb"/>
@@ -501,7 +516,7 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
    <style:table-column-properties style:column-width="2.983cm"/>
   </style:style>
   <style:style style:name="Заголовок_5f_Страница2.1" style:display-name="Заголовок_Страница2.1" style:family="table-row">
-   <style:table-row-properties style:min-row-height="1.33cm" fo:keep-together="auto"/>
+   <style:table-row-properties style:min-row-height="1.3cm" fo:keep-together="auto"/>
   </style:style>
   <style:style style:name="Заголовок_5f_Страница2.A1" style:display-name="Заголовок_Страница2.A1" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="none" fo:border-bottom="1pt solid #000000" style:writing-mode="lr-tb"/>
@@ -510,7 +525,7 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
    <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="1pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Таблица2" style:family="table">
-   <style:table-properties style:width="18.33cm" fo:margin-left="0cm" table:align="left" style:writing-mode="lr-tb"/>
+   <style:table-properties style:width="18.33cm" fo:margin-left="0cm" table:align="left" style:shadow="none" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Таблица2.A" style:family="table-column">
    <style:table-column-properties style:column-width="0.824cm"/>
@@ -549,10 +564,25 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
    <style:table-row-properties style:min-row-height="0.499cm" fo:keep-together="auto"/>
   </style:style>
   <style:style style:name="Таблица2.A2" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border="none" style:writing-mode="lr-tb"/>
+   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Таблица2.B2" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Таблица2.F2" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="1pt solid #000000" fo:border-top="1pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Таблица2.G2" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Таблица2.A3" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border="none" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Таблица2.B3" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Таблица2.F3" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="1pt solid #000000" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Заголовок_5f_Страница1" style:display-name="Заголовок_Страница1" style:family="table" style:master-page-name="First_20_Page">
    <style:table-properties style:width="18.33cm" fo:margin-left="0cm" style:page-number="auto" table:align="left" style:writing-mode="lr-tb"/>
@@ -564,7 +594,7 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
    <style:table-column-properties style:column-width="2.983cm"/>
   </style:style>
   <style:style style:name="Заголовок_5f_Страница1.1" style:display-name="Заголовок_Страница1.1" style:family="table-row">
-   <style:table-row-properties style:min-row-height="1.33cm" fo:keep-together="auto"/>
+   <style:table-row-properties style:min-row-height="1.3cm" fo:keep-together="auto"/>
   </style:style>
   <style:style style:name="Заголовок_5f_Страница1.A1" style:display-name="Заголовок_Страница1.A1" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="none" fo:border-bottom="1pt solid #000000" style:writing-mode="lr-tb"/>
@@ -995,11 +1025,27 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
    <style:paragraph-properties fo:margin-left="0.199cm" fo:margin-right="0cm" fo:text-align="start" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
    <style:text-properties fo:font-size="12pt" fo:language="en" fo:country="US" officeooo:rsid="001c817d" officeooo:paragraph-rsid="001c817d" style:font-size-asian="12pt"/>
   </style:style>
-  <style:style style:name="P84" style:family="paragraph" style:parent-style-name="Heading_20_3">
+  <style:style style:name="P84" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" style:snap-to-layout-grid="false"/>
+   <style:text-properties fo:font-size="12pt" officeooo:paragraph-rsid="00260138" style:font-size-asian="12pt" style:font-size-complex="12pt"/>
+  </style:style>
+  <style:style style:name="P85" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:margin-left="-0.101cm" fo:margin-right="-0.199cm" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
+   <style:text-properties officeooo:rsid="0013000c" officeooo:paragraph-rsid="001369b7"/>
+  </style:style>
+  <style:style style:name="P86" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
+   <style:text-properties officeooo:rsid="0013000c" officeooo:paragraph-rsid="001369b7"/>
+  </style:style>
+  <style:style style:name="P87" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:margin-left="-0.199cm" fo:margin-right="0cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
+   <style:text-properties officeooo:rsid="0013000c" officeooo:paragraph-rsid="001369b7"/>
+  </style:style>
+  <style:style style:name="P88" style:family="paragraph" style:parent-style-name="Heading_20_3">
    <style:paragraph-properties fo:margin-left="-0.199cm" fo:margin-right="-0.199cm" fo:text-indent="0cm" style:auto-text-indent="false" style:writing-mode="lr-tb"/>
    <style:text-properties officeooo:rsid="001b864f" officeooo:paragraph-rsid="001b864f"/>
   </style:style>
-  <style:style style:name="P85" style:family="paragraph" style:parent-style-name="Heading_20_6">
+  <style:style style:name="P89" style:family="paragraph" style:parent-style-name="Heading_20_6">
    <style:paragraph-properties style:snap-to-layout-grid="false"/>
    <style:text-properties fo:font-size="12pt" fo:language="en" fo:country="US" officeooo:rsid="001b864f" officeooo:paragraph-rsid="001b864f" style:font-size-asian="12pt"/>
   </style:style>
@@ -1014,10 +1060,10 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
     <style:footnote-sep style:width="0.018cm" style:distance-before-sep="0.101cm" style:distance-after-sep="0.101cm" style:line-style="solid" style:adjustment="left" style:rel-width="25%" style:color="#000000"/>
    </style:page-layout-properties>
    <style:header-style>
-    <style:header-footer-properties svg:height="1.33cm" fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-bottom="0cm" fo:background-color="transparent" style:dynamic-spacing="false" draw:fill="none" draw:fill-color="#729fcf"/>
+    <style:header-footer-properties svg:height="1.3cm" fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-bottom="0cm" fo:background-color="transparent" style:dynamic-spacing="false" draw:fill="none" draw:fill-color="#729fcf"/>
    </style:header-style>
    <style:footer-style>
-    <style:header-footer-properties svg:height="1cm" fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:background-color="transparent" style:dynamic-spacing="false" draw:fill="none" draw:fill-color="#729fcf"/>
+    <style:header-footer-properties svg:height="1.499cm" fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:background-color="transparent" style:dynamic-spacing="false" draw:fill="none" draw:fill-color="#729fcf"/>
    </style:footer-style>
   </style:page-layout>
   <style:page-layout style:name="pm2">
@@ -1026,7 +1072,7 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
     <style:footnote-sep style:width="0.018cm" style:distance-before-sep="0.101cm" style:distance-after-sep="0.101cm" style:line-style="solid" style:adjustment="left" style:rel-width="25%" style:color="#000000"/>
    </style:page-layout-properties>
    <style:header-style>
-    <style:header-footer-properties svg:height="1.33cm" fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-bottom="0cm" style:shadow="none" fo:background-color="transparent" style:dynamic-spacing="false" draw:fill="none" draw:fill-color="#729fcf"/>
+    <style:header-footer-properties svg:height="1.3cm" fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-bottom="0cm" style:shadow="none" fo:background-color="transparent" style:dynamic-spacing="false" draw:fill="none" draw:fill-color="#729fcf"/>
    </style:header-style>
    <style:footer-style>
     <style:header-footer-properties svg:height="4.001cm" fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:background-color="transparent" style:dynamic-spacing="true" draw:fill="none" draw:fill-color="#729fcf"/>
@@ -1041,7 +1087,7 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
      <table:table-column table:style-name="Заголовок_5f_Страница2.B"/>
      <table:table-row table:style-name="Заголовок_5f_Страница2.1">
       <table:table-cell table:style-name="Заголовок_5f_Страница2.A1" office:value-type="string">
-       <text:h text:style-name="P84" text:outline-level="3">Hаименование</text:h>
+       <text:h text:style-name="P88" text:outline-level="3">Hаименование</text:h>
       </table:table-cell>
       <table:table-cell table:style-name="Заголовок_5f_Страница2.B1" office:value-type="string">
        <text:p text:style-name="P76">Количество</text:p>
@@ -1075,7 +1121,7 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
       <table:table-cell table:style-name="Таблица2.B1" office:value-type="string">
        <text:p text:style-name="P16"/>
       </table:table-cell>
-      <table:table-cell table:style-name="Таблица2.F1" table:number-rows-spanned="2" office:value-type="string">
+      <table:table-cell table:style-name="Таблица2.F1" table:number-rows-spanned="3" office:value-type="string">
        <text:p text:style-name="P25"/>
       </table:table-cell>
       <table:table-cell table:style-name="Таблица2.B1" office:value-type="string">
@@ -1084,24 +1130,43 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
      </table:table-row>
      <table:table-row table:style-name="Таблица2.2">
       <table:table-cell table:style-name="Таблица2.A2" office:value-type="string">
+       <text:p text:style-name="P53"/>
+      </table:table-cell>
+      <table:table-cell table:style-name="Таблица2.B2" office:value-type="string">
+       <text:p text:style-name="P53"/>
+      </table:table-cell>
+      <table:table-cell table:style-name="Таблица2.B2" office:value-type="string">
+       <text:p text:style-name="P56"/>
+      </table:table-cell>
+      <table:table-cell table:style-name="Таблица2.B2" office:value-type="string">
+       <text:p text:style-name="P53"/>
+      </table:table-cell>
+      <table:table-cell table:style-name="Таблица2.B2" office:value-type="string">
+       <text:p text:style-name="P80"/>
+      </table:table-cell>
+      <table:covered-table-cell/>
+      <table:table-cell table:style-name="Таблица2.G2" table:number-rows-spanned="2" office:value-type="string">
+       <text:p text:style-name="P84"><text:page-number text:select-page="current">2</text:page-number></text:p>
+      </table:table-cell>
+     </table:table-row>
+     <table:table-row table:style-name="Таблица2.2">
+      <table:table-cell table:style-name="Таблица2.A3" office:value-type="string">
        <text:p text:style-name="P53">Изм.</text:p>
       </table:table-cell>
-      <table:table-cell table:style-name="Таблица2.B2" office:value-type="string">
+      <table:table-cell table:style-name="Таблица2.B3" office:value-type="string">
        <text:p text:style-name="P53">Лист</text:p>
       </table:table-cell>
-      <table:table-cell table:style-name="Таблица2.B2" office:value-type="string">
+      <table:table-cell table:style-name="Таблица2.B3" office:value-type="string">
        <text:p text:style-name="P56">№ докум</text:p>
       </table:table-cell>
-      <table:table-cell table:style-name="Таблица2.B2" office:value-type="string">
+      <table:table-cell table:style-name="Таблица2.B3" office:value-type="string">
        <text:p text:style-name="P53">Подпись</text:p>
       </table:table-cell>
-      <table:table-cell table:style-name="Таблица2.B2" office:value-type="string">
+      <table:table-cell table:style-name="Таблица2.B3" office:value-type="string">
        <text:p text:style-name="P80">Дата</text:p>
       </table:table-cell>
       <table:covered-table-cell/>
-      <table:table-cell table:style-name="Таблица2.B2" office:value-type="string">
-       <text:p text:style-name="P11"><text:page-number text:select-page="current">2</text:page-number></text:p>
-      </table:table-cell>
+      <table:covered-table-cell/>
      </table:table-row>
     </table:table>
    </style:footer>
@@ -1113,7 +1178,7 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
      <table:table-column table:style-name="Заголовок_5f_Страница1.B"/>
      <table:table-row table:style-name="Заголовок_5f_Страница1.1">
       <table:table-cell table:style-name="Заголовок_5f_Страница1.A1" office:value-type="string">
-       <text:h text:style-name="P84" text:outline-level="3">Hаименование</text:h>
+       <text:h text:style-name="P88" text:outline-level="3">Hаименование</text:h>
       </table:table-cell>
       <table:table-cell table:style-name="Заголовок_5f_Страница1.B1" office:value-type="string">
        <text:p text:style-name="P76">Количество</text:p>
