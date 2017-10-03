@@ -135,9 +135,18 @@ fun readBom(fileName: String) : List<Component> {
     }
 }
 
+fun Int.isLastOnPage() : Boolean {
+    return when {
+        this == 28 -> true
+        (this - 29).rem(32) == 31 -> true
+        else -> false
+    }
+}
+
 fun makeList(bom: List<Component>, fileName: String) {
     val out = StringBuilder()
     out.pDocumentHeader()
+    var line = 0
     for (category in listOf(
                 "Конденсаторы",
                 "Микросхемы",
@@ -154,7 +163,10 @@ fun makeList(bom: List<Component>, fileName: String) {
                 "Прочие")) {
         val list = bom.filter { it.category == category }
         if (list.isEmpty()) continue;
-        out.pTableHeaderRow(category)
+        if (line.isLastOnPage()) {
+            out.pTableEmptyRow(); ++line
+        }
+        out.pTableHeaderRow(category); ++line
         var first = list[0]
         var count = 1
         list.forEachIndexed { index, current ->
@@ -170,9 +182,12 @@ fun makeList(bom: List<Component>, fileName: String) {
                     first = list[index + 1]
                     count = 1
                 }
-                out.pTableRow(refdes, first.name, count)
+                out.pTableRow(refdes, first.name, count); ++line
             }
         }
+    }
+    while (!line.isLastOnPage()) {
+        out.pTableEmptyRow(); ++line
     }
     out.pDocumentFooter()
     writeFile(fileName, out.toString())
@@ -181,6 +196,7 @@ fun makeList(bom: List<Component>, fileName: String) {
 fun makeZakaz(bom: List<Component>, fileName: String) {
     val out = StringBuilder()
     out.zDocumentHeader()
+    var line = 0
     var lastHeader = ""
     for ((category, header) in listOf(
                 "Резисторы" to "Резисторы",
@@ -200,12 +216,18 @@ fun makeZakaz(bom: List<Component>, fileName: String) {
                 .sortedWith(compareBy({ it.prefix }, { it.value }, { it.name }))
         if (list.isEmpty()) continue;
         if (header != lastHeader) {
-            out.zTableHeaderRow(header)
+            if (line.isLastOnPage()) {
+                out.zTableEmptyRow(); ++line
+            }
+            out.zTableHeaderRow(header); ++line
             lastHeader = header
         }
         list.groupBy { it.name }.forEach { (name, it) ->
-            out.zTableRow(name, it.size)
+            out.zTableRow(name, it.size); ++line
         }
+    }
+    while (!line.isLastOnPage()) {
+        out.zTableEmptyRow(); ++line
     }
     out.zDocumentFooter()
     writeFile(fileName, out.toString())
