@@ -4,7 +4,10 @@
     val prefix: String,
     val value: Int = 0,
     val suffix: String = "") {
-    val name = prefix + suffix
+    val name = (prefix + suffix)
+        .replace("+-", "±")
+        .replace("\"C", "°C")
+        .replace("\"С", "°C")
 }
 
 fun readBom(fileName: String) : List<Component> {
@@ -175,8 +178,8 @@ fun makeList(bom: List<Component>, fileName: String) {
             } else {
                 val refdes = when (count) {
                     1 -> current.refdes
-                    2 -> first.refdes + "," + current.refdes
-                    else -> first.refdes + "-" + current.refdes
+                    2 -> first.refdes + ", " + current.refdes
+                    else -> first.refdes + ".." + current.refdes
                 }
                 if (index < list.lastIndex) {
                     first = list[index + 1]
