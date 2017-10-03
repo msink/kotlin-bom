@@ -6,7 +6,5 @@ fun readFile(fileName: String) : List<String> {
 }
 
 fun writeFile(fileName: String, out: String) {
-    File(fileName).printWriter(Charset.forName("windows-1251")).use {
-        it.print(out)
-    }
+    File(fileName).printWriter().use { it.print(out) }
 }
