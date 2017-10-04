@@ -138,12 +138,10 @@ fun readBom(fileName: String) : List<Component> {
     }
 }
 
-fun Int.isLastOnPage() : Boolean {
-    return when {
-        this == 28 -> true
-        (this - 29).rem(32) == 31 -> true
-        else -> false
-    }
+fun Int.isLastOnPage() = when {
+    this == 28 -> true
+    (this - 29).rem(32) == 31 -> true
+    else -> false
 }
 
 fun makeList(bom: List<Component>, fileName: String) {

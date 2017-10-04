@@ -1,24 +1,24 @@
 fun StringBuilder.pDocumentHeader() = append("""<?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><meta:creation-date>2001-02-18T22:55:00</meta:creation-date><dc:date>2017-10-04T12:23:36.542000000</dc:date><meta:print-date>2017-10-03T13:59:38.864000000</meta:print-date><meta:editing-cycles>27</meta:editing-cycles><meta:editing-duration>PT1H37M36S</meta:editing-duration><meta:generator>LibreOffice/5.3.6.1${'$'}Windows_X86_64 LibreOffice_project/686f202eff87ef707079aeb7f485847613344eb7</meta:generator><meta:document-statistic meta:table-count="3" meta:image-count="0" meta:object-count="0" meta:page-count="4" meta:paragraph-count="293" meta:word-count="365" meta:character-count="2203" meta:non-whitespace-character-count="2131"/><meta:template xlink:type="simple" xlink:actuate="onRequest" xlink:title="Normal.dot" xlink:href=""/></office:meta>
+ <office:meta><meta:creation-date>2001-02-18T22:55:00</meta:creation-date><dc:date>2017-10-04T16:41:00.161000000</dc:date><meta:print-date>2017-10-03T13:59:38.864000000</meta:print-date><meta:editing-cycles>33</meta:editing-cycles><meta:editing-duration>PT1H54M15S</meta:editing-duration><meta:generator>LibreOffice/5.3.6.1${'$'}Windows_X86_64 LibreOffice_project/686f202eff87ef707079aeb7f485847613344eb7</meta:generator><meta:document-statistic meta:character-count="2296" meta:image-count="0" meta:non-whitespace-character-count="2221" meta:object-count="0" meta:page-count="4" meta:paragraph-count="300" meta:table-count="3" meta:word-count="375"/><meta:template xlink:type="simple" xlink:actuate="onRequest" xlink:title="Normal.dot" xlink:href=""/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="long">4</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="long">0</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
-   <config:config-item config:name="ViewAreaWidth" config:type="long">73808</config:config-item>
+   <config:config-item config:name="ViewAreaWidth" config:type="long">72268</config:config-item>
    <config:config-item config:name="ViewAreaHeight" config:type="long">30805</config:config-item>
    <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
    <config:config-item config:name="InBrowseMode" config:type="boolean">false</config:config-item>
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">10954</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">36036</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">6946</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">1558</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="long">4</config:config-item>
-     <config:config-item config:name="VisibleRight" config:type="long">73806</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="long">30806</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">0</config:config-item>
+     <config:config-item config:name="VisibleRight" config:type="long">72267</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">30803</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">2</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
@@ -93,7 +93,7 @@ fun StringBuilder.pDocumentHeader() = append("""<?xml version="1.0" encoding="UT
    <config:config-item config:name="UnxForceZeroExtLeading" config:type="boolean">false</config:config-item>
    <config:config-item config:name="UseOldPrinterMetrics" config:type="boolean">false</config:config-item>
    <config:config-item config:name="TabAtLeftIndentForParagraphsInList" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="Rsid" config:type="int">2784971</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">4134074</config:config-item>
    <config:config-item config:name="MathBaselineAlignment" config:type="boolean">false</config:config-item>
    <config:config-item config:name="InvertBorderSpacing" config:type="boolean">true</config:config-item>
    <config:config-item config:name="CollapseEmptyCellPara" config:type="boolean">true</config:config-item>
@@ -137,8 +137,6 @@ fun StringBuilder.pDocumentHeader() = append("""<?xml version="1.0" encoding="UT
   <style:font-face style:name="Times New Roman" svg:font-family="&apos;Times New Roman&apos;" style:font-family-generic="roman" style:font-pitch="variable"/>
   <style:font-face style:name="Arial" svg:font-family="Arial" style:font-family-generic="swiss" style:font-pitch="variable"/>
   <style:font-face style:name="Liberation Sans" svg:font-family="&apos;Liberation Sans&apos;" style:font-family-generic="swiss" style:font-pitch="variable"/>
-  <style:font-face style:name="ГОСТ тип А" svg:font-family="&apos;ГОСТ тип А&apos;" style:font-adornments="Жирный курсив" style:font-family-generic="swiss" style:font-pitch="variable"/>
-  <style:font-face style:name="ГОСТ тип А1" svg:font-family="&apos;ГОСТ тип А&apos;" style:font-adornments="Обычный" style:font-family-generic="swiss" style:font-pitch="variable"/>
   <style:font-face style:name="Mangal" svg:font-family="Mangal" style:font-family-generic="system" style:font-pitch="variable"/>
   <style:font-face style:name="Microsoft YaHei" svg:font-family="&apos;Microsoft YaHei&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
   <style:font-face style:name="SimSun" svg:font-family="SimSun" style:font-family-generic="system" style:font-pitch="variable"/>
@@ -149,11 +147,11 @@ fun StringBuilder.pDocumentHeader() = append("""<?xml version="1.0" encoding="UT
    <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" style:writing-mode="lr-tb" style:font-independent-line-spacing="false">
     <style:tab-stops/>
    </style:paragraph-properties>
-   <style:text-properties style:use-window-font-color="true" style:font-name="Liberation Serif" fo:font-size="12pt" fo:language="ru" fo:country="RU" style:letter-kerning="true" style:font-name-asian="SimSun" style:font-size-asian="10.5pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="Mangal" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN"/>
+   <style:text-properties style:use-window-font-color="true" style:font-name="Liberation Serif" fo:font-size="12pt" fo:language="zxx" fo:country="none" style:letter-kerning="true" style:font-name-asian="SimSun" style:font-size-asian="10.5pt" style:language-asian="zxx" style:country-asian="none" style:font-name-complex="Mangal" style:font-size-complex="12pt" style:language-complex="zxx" style:country-complex="none"/>
   </style:default-style>
   <style:default-style style:family="paragraph">
    <style:paragraph-properties fo:hyphenation-ladder-count="no-limit" style:text-autospace="ideograph-alpha" style:punctuation-wrap="hanging" style:line-break="strict" style:tab-stop-distance="1.27cm" style:writing-mode="lr-tb"/>
-   <style:text-properties style:use-window-font-color="true" style:font-name="Liberation Serif" fo:font-size="12pt" fo:language="ru" fo:country="RU" style:letter-kerning="true" style:font-name-asian="SimSun" style:font-size-asian="10.5pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="Mangal" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN" fo:hyphenate="false" fo:hyphenation-remain-char-count="2" fo:hyphenation-push-char-count="2"/>
+   <style:text-properties style:use-window-font-color="true" style:font-name="Liberation Serif" fo:font-size="12pt" fo:language="zxx" fo:country="none" style:letter-kerning="true" style:font-name-asian="SimSun" style:font-size-asian="10.5pt" style:language-asian="zxx" style:country-asian="none" style:font-name-complex="Mangal" style:font-size-complex="12pt" style:language-complex="zxx" style:country-complex="none" fo:hyphenate="false" fo:hyphenation-remain-char-count="2" fo:hyphenation-push-char-count="2"/>
   </style:default-style>
   <style:default-style style:family="table">
    <style:table-properties table:border-model="collapsing"/>
@@ -230,33 +228,6 @@ fun StringBuilder.pDocumentHeader() = append("""<?xml version="1.0" encoding="UT
     </style:tab-stops>
    </style:paragraph-properties>
   </style:style>
-  <style:style style:name="Заголовок_20_допграф" style:display-name="Заголовок допграф" style:family="paragraph" style:parent-style-name="Table_20_Heading">
-   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:text-indent="0cm" style:auto-text-indent="false" style:shadow="none"/>
-   <style:text-properties style:font-name="ГОСТ тип А" fo:font-family="&apos;ГОСТ тип А&apos;" style:font-style-name="Жирный курсив" style:font-family-generic="swiss" style:font-pitch="variable" fo:font-size="9pt" style:text-rotation-angle="90" style:text-rotation-scale="line-height"/>
-  </style:style>
-  <style:style style:name="Заголовок_20_основной_20_надписи" style:display-name="Заголовок основной надписи" style:family="paragraph" style:parent-style-name="Заголовок_20_допграф">
-   <style:paragraph-properties style:shadow="none" style:vertical-align="baseline">
-    <style:tab-stops/>
-   </style:paragraph-properties>
-   <style:text-properties fo:font-size="10pt" fo:letter-spacing="-0.035cm" style:text-rotation-angle="0" style:text-rotation-scale="line-height"/>
-  </style:style>
-  <style:style style:name="Дополнителные_20_графы" style:display-name="Дополнителные графы" style:family="paragraph" style:parent-style-name="Table_20_Contents" style:master-page-name="">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" style:page-number="auto" style:shadow="none" style:vertical-align="middle"/>
-   <style:text-properties style:font-name="ГОСТ тип А1" fo:font-family="&apos;ГОСТ тип А&apos;" style:font-style-name="Обычный" style:font-family-generic="swiss" style:font-pitch="variable" style:text-rotation-angle="90" style:text-rotation-scale="line-height"/>
-  </style:style>
-  <style:style style:name="Основная_20_надпись" style:display-name="Основная надпись" style:family="paragraph" style:parent-style-name="Дополнителные_20_графы">
-   <style:text-properties fo:font-size="16pt" style:text-rotation-angle="0" style:text-rotation-scale="line-height"/>
-  </style:style>
-  <style:style style:name="Основной_20_шрифт_20_абзаца" style:display-name="Основной шрифт абзаца" style:family="text"/>
-  <style:style style:name="Надпись" style:family="text">
-   <style:text-properties style:font-name="ГОСТ тип А1" fo:font-family="&apos;ГОСТ тип А&apos;" style:font-style-name="Обычный" style:font-family-generic="swiss" style:font-pitch="variable" fo:font-size="10pt" fo:background-color="transparent"/>
-  </style:style>
-  <style:style style:name="Уплотненный" style:family="text">
-   <style:text-properties style:font-name="ГОСТ тип А" fo:font-family="&apos;ГОСТ тип А&apos;" style:font-style-name="Жирный курсив" style:font-family-generic="swiss" style:font-pitch="variable" fo:font-size="12pt" fo:letter-spacing="-0.049cm" fo:font-style="italic" fo:font-weight="bold" style:font-style-asian="italic" style:font-weight-asian="bold" style:font-style-complex="italic" style:font-weight-complex="bold" style:text-rotation-angle="0" style:text-rotation-scale="line-height"/>
-  </style:style>
-  <style:style style:name="Frame" style:family="graphic">
-   <style:graphic-properties text:anchor-type="paragraph" svg:x="0cm" svg:y="0cm" style:wrap="parallel" style:number-wrapped-paragraphs="no-limit" style:wrap-contour="false" style:vertical-pos="top" style:vertical-rel="paragraph-content" style:horizontal-pos="center" style:horizontal-rel="paragraph-content"/>
-  </style:style>
   <style:style style:name="Graphics" style:family="graphic">
    <style:graphic-properties text:anchor-type="paragraph" svg:x="0cm" svg:y="0cm" style:wrap="dynamic" style:number-wrapped-paragraphs="no-limit" style:wrap-contour="false" style:vertical-pos="top" style:vertical-rel="paragraph" style:horizontal-pos="center" style:horizontal-rel="paragraph"/>
   </style:style>
@@ -323,149 +294,290 @@ fun StringBuilder.pDocumentHeader() = append("""<?xml version="1.0" encoding="UT
   </style:default-page-layout>
  </office:styles>
  <office:automatic-styles>
-  <style:style style:name="Таблица2" style:family="table">
+  <style:style style:name="Штамп2" style:family="table">
    <style:table-properties style:width="18.33cm" fo:margin-left="0cm" table:align="left" style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="Таблица2.A" style:family="table-column">
+  <style:style style:name="Штамп2.A" style:family="table-column">
    <style:table-column-properties style:column-width="0.824cm"/>
   </style:style>
-  <style:style style:name="Таблица2.B" style:family="table-column">
+  <style:style style:name="Штамп2.B" style:family="table-column">
    <style:table-column-properties style:column-width="0.981cm"/>
   </style:style>
-  <style:style style:name="Таблица2.C" style:family="table-column">
+  <style:style style:name="Штамп2.C" style:family="table-column">
    <style:table-column-properties style:column-width="2.175cm"/>
   </style:style>
-  <style:style style:name="Таблица2.D" style:family="table-column">
+  <style:style style:name="Штамп2.D" style:family="table-column">
    <style:table-column-properties style:column-width="1.443cm"/>
   </style:style>
-  <style:style style:name="Таблица2.E" style:family="table-column">
+  <style:style style:name="Штамп2.E" style:family="table-column">
    <style:table-column-properties style:column-width="1.067cm"/>
   </style:style>
-  <style:style style:name="Таблица2.F" style:family="table-column">
+  <style:style style:name="Штамп2.F" style:family="table-column">
    <style:table-column-properties style:column-width="10.622cm"/>
   </style:style>
-  <style:style style:name="Таблица2.G" style:family="table-column">
+  <style:style style:name="Штамп2.G" style:family="table-column">
    <style:table-column-properties style:column-width="1.219cm"/>
   </style:style>
-  <style:style style:name="Таблица2.1" style:family="table-row">
+  <style:style style:name="Штамп2.1" style:family="table-row">
    <style:table-row-properties style:min-row-height="0.501cm" fo:keep-together="auto"/>
   </style:style>
-  <style:style style:name="Таблица2.A1" style:family="table-cell">
+  <style:style style:name="Штамп2.A1" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="Таблица2.B1" style:family="table-cell">
+  <style:style style:name="Штамп2.B1" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="Таблица2.F1" style:family="table-cell">
+  <style:style style:name="Штамп2.F1" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="1pt solid #000000" fo:border-top="1pt solid #000000" fo:border-bottom="none" style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="Таблица2.G1" style:family="table-cell">
+  <style:style style:name="Штамп2.G1" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="Таблица2.A2" style:family="table-cell">
+  <style:style style:name="Штамп2.A2" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="Таблица2.B2" style:family="table-cell">
+  <style:style style:name="Штамп2.B2" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="Таблица2.G2" style:family="table-cell">
+  <style:style style:name="Штамп2.G2" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="Таблица2.3" style:family="table-row">
+  <style:style style:name="Штамп2.3" style:family="table-row">
    <style:table-row-properties style:min-row-height="0.499cm" fo:keep-together="auto"/>
   </style:style>
-  <style:style style:name="Таблица2.A3" style:family="table-cell">
+  <style:style style:name="Штамп2.A3" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border="none" style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="Таблица2.B3" style:family="table-cell">
+  <style:style style:name="Штамп2.B3" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="Таблица1" style:family="table">
+  <style:style style:name="Штамп" style:family="table">
    <style:table-properties style:width="18.33cm" fo:margin-left="0cm" table:align="left" style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="Таблица1.A" style:family="table-column">
+  <style:style style:name="Штамп.A" style:family="table-column">
    <style:table-column-properties style:column-width="0.824cm"/>
   </style:style>
-  <style:style style:name="Таблица1.B" style:family="table-column">
+  <style:style style:name="Штамп.B" style:family="table-column">
    <style:table-column-properties style:column-width="0.981cm"/>
   </style:style>
-  <style:style style:name="Таблица1.C" style:family="table-column">
+  <style:style style:name="Штамп.C" style:family="table-column">
    <style:table-column-properties style:column-width="2.175cm"/>
   </style:style>
-  <style:style style:name="Таблица1.D" style:family="table-column">
+  <style:style style:name="Штамп.D" style:family="table-column">
    <style:table-column-properties style:column-width="1.443cm"/>
   </style:style>
-  <style:style style:name="Таблица1.E" style:family="table-column">
+  <style:style style:name="Штамп.E" style:family="table-column">
    <style:table-column-properties style:column-width="1.067cm"/>
   </style:style>
-  <style:style style:name="Таблица1.F" style:family="table-column">
+  <style:style style:name="Штамп.F" style:family="table-column">
    <style:table-column-properties style:column-width="7.428cm"/>
   </style:style>
-  <style:style style:name="Таблица1.G" style:family="table-column">
+  <style:style style:name="Штамп.G" style:family="table-column">
    <style:table-column-properties style:column-width="0.506cm"/>
   </style:style>
-  <style:style style:name="Таблица1.H" style:family="table-column">
+  <style:style style:name="Штамп.H" style:family="table-column">
    <style:table-column-properties style:column-width="0.51cm"/>
   </style:style>
-  <style:style style:name="Таблица1.I" style:family="table-column">
+  <style:style style:name="Штамп.I" style:family="table-column">
    <style:table-column-properties style:column-width="0.508cm"/>
   </style:style>
-  <style:style style:name="Таблица1.J" style:family="table-column">
+  <style:style style:name="Штамп.J" style:family="table-column">
    <style:table-column-properties style:column-width="1.371cm"/>
   </style:style>
-  <style:style style:name="Таблица1.K" style:family="table-column">
+  <style:style style:name="Штамп.K" style:family="table-column">
    <style:table-column-properties style:column-width="1.519cm"/>
   </style:style>
-  <style:style style:name="Таблица1.1" style:family="table-row">
+  <style:style style:name="Штамп.1" style:family="table-row">
    <style:table-row-properties style:min-row-height="0.501cm" fo:keep-together="auto"/>
   </style:style>
-  <style:style style:name="Таблица1.A1" style:family="table-cell">
+  <style:style style:name="Штамп.A1" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="Таблица1.B1" style:family="table-cell">
+  <style:style style:name="Штамп.B1" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="Таблица1.F1" style:family="table-cell">
+  <style:style style:name="Штамп.F1" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="1pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="Таблица1.A2" style:family="table-cell">
+  <style:style style:name="Штамп.A2" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="Таблица1.B2" style:family="table-cell">
+  <style:style style:name="Штамп.B2" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="Таблица1.A3" style:family="table-cell">
+  <style:style style:name="Штамп.A3" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="none" fo:border-bottom="1pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="Таблица1.B3" style:family="table-cell">
+  <style:style style:name="Штамп.B3" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="1pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="Таблица1.E4" style:family="table-cell">
+  <style:style style:name="Штамп.E4" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="1pt solid #000000" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="Таблица1.F4" style:family="table-cell">
+  <style:style style:name="Штамп.F4" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="1pt solid #000000" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="Таблица1.G4" style:family="table-cell">
+  <style:style style:name="Штамп.G4" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="Таблица1.J4" style:family="table-cell">
+  <style:style style:name="Штамп.J4" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="Таблица1.G6" style:family="table-cell">
+  <style:style style:name="Штамп.G6" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="Таблица1.A8" style:family="table-cell">
+  <style:style style:name="Штамп.A8" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border="none" style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="Таблица1.C8" style:family="table-cell">
+  <style:style style:name="Штамп.C8" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="Таблица1.E8" style:family="table-cell">
+  <style:style style:name="Штамп.E8" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="1pt solid #000000" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Штамп2" style:family="table">
+   <style:table-properties style:width="18.33cm" fo:margin-left="0cm" table:align="left" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Штамп2.A" style:family="table-column">
+   <style:table-column-properties style:column-width="0.824cm"/>
+  </style:style>
+  <style:style style:name="Штамп2.B" style:family="table-column">
+   <style:table-column-properties style:column-width="0.981cm"/>
+  </style:style>
+  <style:style style:name="Штамп2.C" style:family="table-column">
+   <style:table-column-properties style:column-width="2.175cm"/>
+  </style:style>
+  <style:style style:name="Штамп2.D" style:family="table-column">
+   <style:table-column-properties style:column-width="1.443cm"/>
+  </style:style>
+  <style:style style:name="Штамп2.E" style:family="table-column">
+   <style:table-column-properties style:column-width="1.067cm"/>
+  </style:style>
+  <style:style style:name="Штамп2.F" style:family="table-column">
+   <style:table-column-properties style:column-width="10.622cm"/>
+  </style:style>
+  <style:style style:name="Штамп2.G" style:family="table-column">
+   <style:table-column-properties style:column-width="1.219cm"/>
+  </style:style>
+  <style:style style:name="Штамп2.1" style:family="table-row">
+   <style:table-row-properties style:min-row-height="0.501cm" fo:keep-together="auto"/>
+  </style:style>
+  <style:style style:name="Штамп2.A1" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Штамп2.B1" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Штамп2.F1" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="1pt solid #000000" fo:border-top="1pt solid #000000" fo:border-bottom="none" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Штамп2.G1" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Штамп2.A2" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Штамп2.B2" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Штамп2.G2" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Штамп2.3" style:family="table-row">
+   <style:table-row-properties style:min-row-height="0.499cm" fo:keep-together="auto"/>
+  </style:style>
+  <style:style style:name="Штамп2.A3" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border="none" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Штамп2.B3" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Штамп" style:family="table">
+   <style:table-properties style:width="18.33cm" fo:margin-left="0cm" table:align="left" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Штамп.A" style:family="table-column">
+   <style:table-column-properties style:column-width="0.824cm"/>
+  </style:style>
+  <style:style style:name="Штамп.B" style:family="table-column">
+   <style:table-column-properties style:column-width="0.981cm"/>
+  </style:style>
+  <style:style style:name="Штамп.C" style:family="table-column">
+   <style:table-column-properties style:column-width="2.175cm"/>
+  </style:style>
+  <style:style style:name="Штамп.D" style:family="table-column">
+   <style:table-column-properties style:column-width="1.443cm"/>
+  </style:style>
+  <style:style style:name="Штамп.E" style:family="table-column">
+   <style:table-column-properties style:column-width="1.067cm"/>
+  </style:style>
+  <style:style style:name="Штамп.F" style:family="table-column">
+   <style:table-column-properties style:column-width="7.428cm"/>
+  </style:style>
+  <style:style style:name="Штамп.G" style:family="table-column">
+   <style:table-column-properties style:column-width="0.506cm"/>
+  </style:style>
+  <style:style style:name="Штамп.H" style:family="table-column">
+   <style:table-column-properties style:column-width="0.51cm"/>
+  </style:style>
+  <style:style style:name="Штамп.I" style:family="table-column">
+   <style:table-column-properties style:column-width="0.508cm"/>
+  </style:style>
+  <style:style style:name="Штамп.J" style:family="table-column">
+   <style:table-column-properties style:column-width="1.371cm"/>
+  </style:style>
+  <style:style style:name="Штамп.K" style:family="table-column">
+   <style:table-column-properties style:column-width="1.519cm"/>
+  </style:style>
+  <style:style style:name="Штамп.1" style:family="table-row">
+   <style:table-row-properties style:min-row-height="0.501cm" fo:keep-together="auto"/>
+  </style:style>
+  <style:style style:name="Штамп.A1" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Штамп.B1" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Штамп.F1" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="1pt solid #000000" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Штамп.A2" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Штамп.B2" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Штамп.A3" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="none" fo:border-bottom="1pt solid #000000" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Штамп.B3" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="1pt solid #000000" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Штамп.E4" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="1pt solid #000000" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Штамп.F4" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="1pt solid #000000" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Штамп.G4" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Штамп.J4" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Штамп.G6" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Штамп.A8" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border="none" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Штамп.C8" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Штамп.E8" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="1pt solid #000000" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Перечень" style:family="table" style:master-page-name="First_20_Page">
-   <style:table-properties style:width="18.33cm" fo:margin-left="0cm" style:page-number="auto" table:align="left" style:shadow="none" style:writing-mode="lr-tb"/>
+   <style:table-properties style:width="18.33cm" fo:margin-left="0cm" style:page-number="auto" table:align="left" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Перечень.A" style:family="table-column">
    <style:table-column-properties style:column-width="2.685cm"/>
@@ -497,505 +609,155 @@ fun StringBuilder.pDocumentHeader() = append("""<?xml version="1.0" encoding="UT
   <style:style style:name="Перечень.B2" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="Таблица1" style:family="table">
-   <style:table-properties style:width="18.33cm" fo:margin-left="0cm" table:align="left" style:writing-mode="lr-tb"/>
-  </style:style>
-  <style:style style:name="Таблица1.A" style:family="table-column">
-   <style:table-column-properties style:column-width="0.824cm"/>
-  </style:style>
-  <style:style style:name="Таблица1.B" style:family="table-column">
-   <style:table-column-properties style:column-width="0.981cm"/>
-  </style:style>
-  <style:style style:name="Таблица1.C" style:family="table-column">
-   <style:table-column-properties style:column-width="2.175cm"/>
-  </style:style>
-  <style:style style:name="Таблица1.D" style:family="table-column">
-   <style:table-column-properties style:column-width="1.443cm"/>
-  </style:style>
-  <style:style style:name="Таблица1.E" style:family="table-column">
-   <style:table-column-properties style:column-width="1.067cm"/>
-  </style:style>
-  <style:style style:name="Таблица1.F" style:family="table-column">
-   <style:table-column-properties style:column-width="7.428cm"/>
-  </style:style>
-  <style:style style:name="Таблица1.G" style:family="table-column">
-   <style:table-column-properties style:column-width="0.506cm"/>
-  </style:style>
-  <style:style style:name="Таблица1.H" style:family="table-column">
-   <style:table-column-properties style:column-width="0.51cm"/>
-  </style:style>
-  <style:style style:name="Таблица1.I" style:family="table-column">
-   <style:table-column-properties style:column-width="0.508cm"/>
-  </style:style>
-  <style:style style:name="Таблица1.J" style:family="table-column">
-   <style:table-column-properties style:column-width="1.371cm"/>
-  </style:style>
-  <style:style style:name="Таблица1.K" style:family="table-column">
-   <style:table-column-properties style:column-width="1.519cm"/>
-  </style:style>
-  <style:style style:name="Таблица1.1" style:family="table-row">
-   <style:table-row-properties style:min-row-height="0.501cm" fo:keep-together="auto"/>
-  </style:style>
-  <style:style style:name="Таблица1.A1" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
-  </style:style>
-  <style:style style:name="Таблица1.B1" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
-  </style:style>
-  <style:style style:name="Таблица1.F1" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="1pt solid #000000" style:writing-mode="lr-tb"/>
-  </style:style>
-  <style:style style:name="Таблица1.A2" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
-  </style:style>
-  <style:style style:name="Таблица1.B2" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
-  </style:style>
-  <style:style style:name="Таблица1.A3" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="none" fo:border-bottom="1pt solid #000000" style:writing-mode="lr-tb"/>
-  </style:style>
-  <style:style style:name="Таблица1.B3" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="1pt solid #000000" style:writing-mode="lr-tb"/>
-  </style:style>
-  <style:style style:name="Таблица1.E4" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="1pt solid #000000" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
-  </style:style>
-  <style:style style:name="Таблица1.F4" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="1pt solid #000000" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
-  </style:style>
-  <style:style style:name="Таблица1.G4" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
-  </style:style>
-  <style:style style:name="Таблица1.J4" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
-  </style:style>
-  <style:style style:name="Таблица1.G6" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
-  </style:style>
-  <style:style style:name="Таблица1.A8" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border="none" style:writing-mode="lr-tb"/>
-  </style:style>
-  <style:style style:name="Таблица1.C8" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
-  </style:style>
-  <style:style style:name="Таблица1.E8" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="1pt solid #000000" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
-  </style:style>
-  <style:style style:name="Таблица2" style:family="table">
-   <style:table-properties style:width="18.33cm" fo:margin-left="0cm" table:align="left" style:writing-mode="lr-tb"/>
-  </style:style>
-  <style:style style:name="Таблица2.A" style:family="table-column">
-   <style:table-column-properties style:column-width="0.824cm"/>
-  </style:style>
-  <style:style style:name="Таблица2.B" style:family="table-column">
-   <style:table-column-properties style:column-width="0.981cm"/>
-  </style:style>
-  <style:style style:name="Таблица2.C" style:family="table-column">
-   <style:table-column-properties style:column-width="2.175cm"/>
-  </style:style>
-  <style:style style:name="Таблица2.D" style:family="table-column">
-   <style:table-column-properties style:column-width="1.443cm"/>
-  </style:style>
-  <style:style style:name="Таблица2.E" style:family="table-column">
-   <style:table-column-properties style:column-width="1.067cm"/>
-  </style:style>
-  <style:style style:name="Таблица2.F" style:family="table-column">
-   <style:table-column-properties style:column-width="10.622cm"/>
-  </style:style>
-  <style:style style:name="Таблица2.G" style:family="table-column">
-   <style:table-column-properties style:column-width="1.219cm"/>
-  </style:style>
-  <style:style style:name="Таблица2.1" style:family="table-row">
-   <style:table-row-properties style:min-row-height="0.501cm" fo:keep-together="auto"/>
-  </style:style>
-  <style:style style:name="Таблица2.A1" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
-  </style:style>
-  <style:style style:name="Таблица2.B1" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
-  </style:style>
-  <style:style style:name="Таблица2.F1" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="1pt solid #000000" fo:border-top="1pt solid #000000" fo:border-bottom="none" style:writing-mode="lr-tb"/>
-  </style:style>
-  <style:style style:name="Таблица2.G1" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
-  </style:style>
-  <style:style style:name="Таблица2.A2" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
-  </style:style>
-  <style:style style:name="Таблица2.B2" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
-  </style:style>
-  <style:style style:name="Таблица2.G2" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
-  </style:style>
-  <style:style style:name="Таблица2.3" style:family="table-row">
-   <style:table-row-properties style:min-row-height="0.499cm" fo:keep-together="auto"/>
-  </style:style>
-  <style:style style:name="Таблица2.A3" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border="none" style:writing-mode="lr-tb"/>
-  </style:style>
-  <style:style style:name="Таблица2.B3" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
-  </style:style>
   <style:style style:name="P1" style:family="paragraph" style:parent-style-name="Standard">
    <style:text-properties officeooo:paragraph-rsid="001163f7"/>
   </style:style>
   <style:style style:name="P2" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties officeooo:paragraph-rsid="001369b7"/>
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" style:snap-to-layout-grid="false"/>
+   <style:text-properties fo:font-size="12pt" fo:language="zxx" fo:country="none" officeooo:rsid="001fb975" officeooo:paragraph-rsid="001fb975" style:font-size-asian="12pt" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
   </style:style>
   <style:style style:name="P3" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties officeooo:paragraph-rsid="000b5ea9"/>
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" style:snap-to-layout-grid="false"/>
+   <style:text-properties fo:font-size="12pt" fo:language="zxx" fo:country="none" officeooo:rsid="001be318" officeooo:paragraph-rsid="001be318" style:font-size-asian="12pt" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
   </style:style>
   <style:style style:name="P4" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties style:snap-to-layout-grid="false"/>
    <style:text-properties officeooo:paragraph-rsid="001163f7"/>
   </style:style>
   <style:style style:name="P5" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" style:snap-to-layout-grid="false"/>
-   <style:text-properties fo:font-size="12pt" style:font-size-asian="12pt"/>
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties style:font-name="Arial" fo:font-size="9pt" fo:language="zxx" fo:country="none" officeooo:rsid="001163f7" officeooo:paragraph-rsid="001163f7" style:font-size-asian="9pt" style:language-asian="zxx" style:country-asian="none" style:font-name-complex="Arial" style:language-complex="zxx" style:country-complex="none"/>
   </style:style>
   <style:style style:name="P6" style:family="paragraph" style:parent-style-name="Standard">
    <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="12pt" officeooo:paragraph-rsid="000b5ea9" style:font-size-asian="12pt"/>
+   <style:text-properties style:font-name="Arial" fo:font-size="9pt" fo:language="zxx" fo:country="none" officeooo:paragraph-rsid="001163f7" style:font-size-asian="9pt" style:language-asian="zxx" style:country-asian="none" style:font-name-complex="Arial" style:language-complex="zxx" style:country-complex="none"/>
   </style:style>
   <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
-   <style:text-properties fo:font-size="12pt" officeooo:paragraph-rsid="001369b7" style:font-size-asian="12pt"/>
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" style:snap-to-layout-grid="false"/>
+   <style:text-properties fo:font-size="14pt" fo:language="zxx" fo:country="none" officeooo:paragraph-rsid="001163f7" style:font-size-asian="14pt" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
   </style:style>
   <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Standard">
    <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" style:snap-to-layout-grid="false"/>
-   <style:text-properties fo:font-size="12pt" officeooo:paragraph-rsid="001369b7" style:font-size-asian="12pt" style:font-size-complex="12pt"/>
+   <style:text-properties fo:font-size="14pt" fo:language="zxx" fo:country="none" officeooo:paragraph-rsid="001369b7" style:font-size-asian="14pt" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
   </style:style>
   <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" style:snap-to-layout-grid="false"/>
-   <style:text-properties fo:font-size="12pt" fo:language="en" fo:country="US" officeooo:rsid="001be318" officeooo:paragraph-rsid="001be318" style:font-size-asian="12pt"/>
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
+   <style:text-properties style:use-window-font-color="true" style:font-name="Times New Roman" fo:font-size="10pt" fo:language="zxx" fo:country="none" officeooo:rsid="0013000c" officeooo:paragraph-rsid="001163f7" style:font-name-asian="Times New Roman" style:font-size-asian="10pt" style:language-asian="zxx" style:country-asian="none" style:font-name-complex="Times New Roman" style:font-size-complex="10pt" style:language-complex="zxx" style:country-complex="none"/>
   </style:style>
   <style:style style:name="P10" style:family="paragraph" style:parent-style-name="Standard">
    <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" style:snap-to-layout-grid="false"/>
-   <style:text-properties fo:font-size="12pt" fo:language="en" fo:country="US" officeooo:rsid="001fb975" officeooo:paragraph-rsid="001fb975" style:font-size-asian="12pt"/>
+   <style:text-properties style:use-window-font-color="true" style:font-name="Times New Roman" fo:font-size="10pt" fo:language="zxx" fo:country="none" officeooo:rsid="0013000c" officeooo:paragraph-rsid="001369b7" style:font-name-asian="Times New Roman" style:font-size-asian="10pt" style:language-asian="zxx" style:country-asian="none" style:font-name-complex="Times New Roman" style:font-size-complex="10pt" style:language-complex="zxx" style:country-complex="none"/>
   </style:style>
   <style:style style:name="P11" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties style:snap-to-layout-grid="false"/>
-   <style:text-properties officeooo:paragraph-rsid="001163f7"/>
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" style:snap-to-layout-grid="false"/>
+   <style:text-properties style:use-window-font-color="true" style:font-name="Times New Roman" fo:font-size="12pt" fo:language="zxx" fo:country="none" officeooo:rsid="0013000c" officeooo:paragraph-rsid="002a72a9" style:font-name-asian="Times New Roman" style:font-size-asian="12pt" style:language-asian="zxx" style:country-asian="none" style:font-name-complex="Times New Roman" style:font-size-complex="12pt" style:language-complex="zxx" style:country-complex="none"/>
   </style:style>
   <style:style style:name="P12" style:family="paragraph" style:parent-style-name="Standard">
    <style:paragraph-properties style:snap-to-layout-grid="false"/>
-   <style:text-properties officeooo:paragraph-rsid="001369b7"/>
+   <style:text-properties fo:language="zxx" fo:country="none" officeooo:paragraph-rsid="001163f7" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
   </style:style>
   <style:style style:name="P13" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
-   <style:text-properties style:font-name="Arial" fo:font-size="9pt" officeooo:paragraph-rsid="001163f7" style:font-size-asian="9pt" style:font-name-complex="Arial"/>
+   <style:paragraph-properties style:snap-to-layout-grid="false"/>
+   <style:text-properties fo:language="zxx" fo:country="none" officeooo:paragraph-rsid="001369b7" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
   </style:style>
   <style:style style:name="P14" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
-   <style:text-properties style:font-name="Arial" fo:font-size="9pt" officeooo:paragraph-rsid="001369b7" style:font-size-asian="9pt" style:font-name-complex="Arial"/>
+   <style:paragraph-properties style:snap-to-layout-grid="false"/>
+   <style:text-properties fo:language="zxx" fo:country="none" fo:font-style="italic" fo:font-weight="normal" officeooo:rsid="003438d8" officeooo:paragraph-rsid="003438d8" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="italic" style:font-weight-asian="normal" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="italic" style:font-weight-complex="normal"/>
   </style:style>
   <style:style style:name="P15" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
-   <style:text-properties style:font-name="Arial" fo:font-size="9pt" officeooo:rsid="001163f7" officeooo:paragraph-rsid="001163f7" style:font-size-asian="9pt" style:font-name-complex="Arial"/>
+   <style:paragraph-properties style:snap-to-layout-grid="false"/>
+   <style:text-properties fo:language="zxx" fo:country="none" fo:font-style="italic" officeooo:rsid="003438d8" officeooo:paragraph-rsid="003438d8" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="italic" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="italic"/>
   </style:style>
   <style:style style:name="P16" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
-   <style:text-properties style:font-name="Arial" fo:font-size="9pt" officeooo:rsid="001163f7" officeooo:paragraph-rsid="001369b7" style:font-size-asian="9pt" style:font-name-complex="Arial"/>
+   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0.811cm" style:auto-text-indent="false" style:snap-to-layout-grid="false"/>
+   <style:text-properties fo:font-size="12pt" fo:language="zxx" fo:country="none" officeooo:rsid="001fb975" officeooo:paragraph-rsid="001fb975" style:font-size-asian="12pt" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
   </style:style>
   <style:style style:name="P17" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" style:snap-to-layout-grid="false"/>
-   <style:text-properties fo:font-size="14pt" officeooo:paragraph-rsid="001163f7" style:font-size-asian="14pt"/>
+   <style:paragraph-properties fo:margin-left="-0.191cm" fo:margin-right="-0.231cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false"/>
+   <style:text-properties style:font-name="Times New Roman" fo:font-size="10pt" fo:language="zxx" fo:country="none" officeooo:paragraph-rsid="001163f7" style:font-size-asian="10pt" style:language-asian="zxx" style:country-asian="none" style:font-name-complex="Arial" style:font-size-complex="10pt" style:language-complex="zxx" style:country-complex="none"/>
   </style:style>
   <style:style style:name="P18" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" style:snap-to-layout-grid="false"/>
-   <style:text-properties fo:font-size="14pt" officeooo:paragraph-rsid="001369b7" style:font-size-asian="14pt"/>
+   <style:paragraph-properties fo:margin-left="-0.101cm" fo:margin-right="-0.199cm" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
+   <style:text-properties style:use-window-font-color="true" style:font-name="Times New Roman" fo:font-size="10pt" officeooo:rsid="001163f7" officeooo:paragraph-rsid="001163f7" style:font-name-asian="Times New Roman" style:font-size-asian="10pt" style:font-name-complex="Times New Roman" style:font-size-complex="10pt"/>
   </style:style>
   <style:style style:name="P19" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties fo:font-size="1pt" style:font-size-asian="1pt"/>
+   <style:paragraph-properties fo:margin-left="-0.101cm" fo:margin-right="-0.199cm" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
+   <style:text-properties fo:language="zxx" fo:country="none" officeooo:rsid="0013000c" officeooo:paragraph-rsid="0013000c" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
   </style:style>
   <style:style style:name="P20" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
-   <style:text-properties style:use-window-font-color="true" style:font-name="Times New Roman" fo:font-size="10pt" fo:language="ru" fo:country="RU" officeooo:rsid="0013000c" officeooo:paragraph-rsid="001163f7" style:font-name-asian="Times New Roman" style:font-size-asian="10pt" style:font-name-complex="Times New Roman" style:font-size-complex="10pt" style:language-complex="ar" style:country-complex="SA"/>
+   <style:paragraph-properties fo:margin-left="-0.101cm" fo:margin-right="-0.199cm" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
+   <style:text-properties fo:language="zxx" fo:country="none" officeooo:rsid="001163f7" officeooo:paragraph-rsid="001163f7" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
   </style:style>
-  <style:style style:name="P21" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
-   <style:text-properties style:use-window-font-color="true" style:font-name="Times New Roman" fo:font-size="10pt" fo:language="ru" fo:country="RU" officeooo:rsid="0013000c" officeooo:paragraph-rsid="001369b7" style:font-name-asian="Times New Roman" style:font-size-asian="10pt" style:font-name-complex="Times New Roman" style:font-size-complex="10pt" style:language-complex="ar" style:country-complex="SA"/>
+  <style:style style:name="P21" style:family="paragraph" style:parent-style-name="Heading_20_6">
+   <style:paragraph-properties style:snap-to-layout-grid="false"/>
+   <style:text-properties fo:font-size="12pt" fo:language="zxx" fo:country="none" officeooo:rsid="001be318" officeooo:paragraph-rsid="001be318" style:font-size-asian="12pt" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
   </style:style>
-  <style:style style:name="P22" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" style:snap-to-layout-grid="false"/>
-   <style:text-properties style:use-window-font-color="true" style:font-name="Times New Roman" fo:font-size="10pt" fo:language="ru" fo:country="RU" officeooo:rsid="0013000c" officeooo:paragraph-rsid="001369b7" style:font-name-asian="Times New Roman" style:font-size-asian="10pt" style:font-name-complex="Times New Roman" style:font-size-complex="10pt" style:language-complex="ar" style:country-complex="SA"/>
+  <style:style style:name="P22" style:family="paragraph" style:parent-style-name="Heading_20_4">
+   <style:paragraph-properties fo:margin-left="-0.199cm" fo:margin-right="-0.199cm" fo:text-indent="0cm" style:auto-text-indent="false" style:writing-mode="lr-tb"/>
+   <style:text-properties fo:language="zxx" fo:country="none" officeooo:paragraph-rsid="000b5ea9" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
   </style:style>
   <style:style style:name="P23" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" style:snap-to-layout-grid="false"/>
-   <style:text-properties style:use-window-font-color="true" style:font-name="Times New Roman" fo:font-size="12pt" fo:language="ru" fo:country="RU" style:font-name-asian="Times New Roman" style:font-size-asian="12pt" style:font-name-complex="Times New Roman" style:font-size-complex="10pt" style:language-complex="ar" style:country-complex="SA"/>
+   <style:paragraph-properties fo:margin-left="-0.199cm" fo:margin-right="-0.199cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
+   <style:text-properties fo:font-size="12pt" fo:language="zxx" fo:country="none" officeooo:rsid="001fb975" officeooo:paragraph-rsid="001fb975" style:font-size-asian="12pt" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
   </style:style>
   <style:style style:name="P24" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" style:snap-to-layout-grid="false"/>
-   <style:text-properties style:use-window-font-color="true" style:font-name="Times New Roman" fo:font-size="12pt" fo:language="ru" fo:country="RU" officeooo:rsid="0013000c" officeooo:paragraph-rsid="002a72a9" style:font-name-asian="Times New Roman" style:font-size-asian="12pt" style:font-name-complex="Times New Roman" style:font-size-complex="12pt" style:language-complex="ar" style:country-complex="SA"/>
+   <style:paragraph-properties fo:margin-left="-0.199cm" fo:margin-right="-0.199cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:writing-mode="lr-tb"/>
+   <style:text-properties fo:font-size="12pt" fo:language="zxx" fo:country="none" officeooo:paragraph-rsid="000b5ea9" style:font-size-asian="12pt" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
   </style:style>
-  <style:style style:name="P25" style:family="paragraph" style:parent-style-name="Standard" style:master-page-name="">
-   <style:paragraph-properties style:page-number="auto"/>
-   <style:text-properties officeooo:paragraph-rsid="001369b7"/>
+  <style:style style:name="P25" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:margin-left="-0.101cm" fo:margin-right="-0.101cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
+   <style:text-properties fo:font-size="12pt" fo:language="zxx" fo:country="none" officeooo:rsid="001fb975" officeooo:paragraph-rsid="001fb975" style:font-size-asian="12pt" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
   </style:style>
   <style:style style:name="P26" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:text-indent="0.811cm" style:auto-text-indent="false" style:snap-to-layout-grid="false"/>
-   <style:text-properties fo:font-size="12pt" style:font-size-asian="12pt"/>
+   <style:paragraph-properties fo:margin-left="-0.101cm" fo:margin-right="-0.101cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
+   <style:text-properties style:use-window-font-color="true" style:font-name="Times New Roman" fo:font-size="10pt" fo:language="zxx" fo:country="none" officeooo:rsid="0013000c" officeooo:paragraph-rsid="0013000c" style:font-name-asian="Times New Roman" style:font-size-asian="10pt" style:language-asian="zxx" style:country-asian="none" style:font-name-complex="Times New Roman" style:font-size-complex="10pt" style:language-complex="zxx" style:country-complex="none"/>
   </style:style>
   <style:style style:name="P27" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:text-indent="0.811cm" style:auto-text-indent="false" style:snap-to-layout-grid="false"/>
-   <style:text-properties fo:font-size="12pt" fo:language="ru" fo:country="RU" style:font-size-asian="12pt"/>
+   <style:paragraph-properties fo:margin-left="0.199cm" fo:margin-right="0cm" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
+   <style:text-properties fo:font-size="12pt" fo:language="zxx" fo:country="none" officeooo:rsid="001fb975" officeooo:paragraph-rsid="001fb975" style:font-size-asian="12pt" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
   </style:style>
   <style:style style:name="P28" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:text-indent="0.811cm" style:auto-text-indent="false" style:snap-to-layout-grid="false"/>
-   <style:text-properties fo:font-size="12pt" fo:language="en" fo:country="US" officeooo:rsid="001be318" officeooo:paragraph-rsid="001be318" style:font-size-asian="12pt"/>
+   <style:paragraph-properties fo:margin-left="-0.3cm" fo:margin-right="-0.3cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:writing-mode="lr-tb"/>
+   <style:text-properties style:font-name="Times New Roman" fo:font-size="10pt" fo:language="zxx" fo:country="none" officeooo:paragraph-rsid="001163f7" style:font-size-asian="10pt" style:language-asian="zxx" style:country-asian="none" style:font-name-complex="Arial" style:font-size-complex="10pt" style:language-complex="zxx" style:country-complex="none"/>
   </style:style>
   <style:style style:name="P29" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:text-indent="0.811cm" style:auto-text-indent="false" style:snap-to-layout-grid="false"/>
-   <style:text-properties fo:font-size="12pt" fo:language="en" fo:country="US" officeooo:rsid="001fb975" officeooo:paragraph-rsid="001fb975" style:font-size-asian="12pt"/>
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" style:vertical-align="middle" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
+   <style:text-properties fo:font-size="16pt" fo:language="zxx" fo:country="none" officeooo:rsid="003438d8" officeooo:paragraph-rsid="003438d8" style:font-size-asian="16pt" style:language-asian="zxx" style:country-asian="none" style:font-size-complex="16pt" style:language-complex="zxx" style:country-complex="none"/>
   </style:style>
   <style:style style:name="P30" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0.811cm" style:auto-text-indent="false" style:snap-to-layout-grid="false"/>
-   <style:text-properties fo:font-size="12pt" fo:language="en" fo:country="US" officeooo:rsid="001fb975" officeooo:paragraph-rsid="001fb975" style:font-size-asian="12pt"/>
+   <style:paragraph-properties fo:margin-top="0.4cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:text-align="center" style:justify-single-word="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
+   <style:text-properties fo:font-size="14pt" fo:language="zxx" fo:country="none" officeooo:rsid="003438d8" officeooo:paragraph-rsid="003438d8" style:font-size-asian="14pt" style:language-asian="zxx" style:country-asian="none" style:font-size-complex="14pt" style:language-complex="zxx" style:country-complex="none"/>
   </style:style>
   <style:style style:name="P31" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.191cm" fo:margin-right="-0.231cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false"/>
-   <style:text-properties style:font-name="Arial" fo:font-size="9pt" officeooo:paragraph-rsid="001163f7" style:font-size-asian="9pt" style:font-name-complex="Arial"/>
+   <style:paragraph-properties fo:margin-top="0.4cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:text-align="center" style:justify-single-word="false" style:vertical-align="middle" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
+   <style:text-properties fo:font-size="16pt" fo:language="zxx" fo:country="none" officeooo:rsid="003438d8" officeooo:paragraph-rsid="003438d8" style:font-size-asian="16pt" style:language-asian="zxx" style:country-asian="none" style:font-size-complex="16pt" style:language-complex="zxx" style:country-complex="none"/>
   </style:style>
-  <style:style style:name="P32" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.191cm" fo:margin-right="-0.231cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false"/>
-   <style:text-properties style:font-name="Arial" fo:font-size="9pt" officeooo:paragraph-rsid="001369b7" style:font-size-asian="9pt" style:font-name-complex="Arial"/>
+  <style:style style:name="P32" style:family="paragraph" style:parent-style-name="Heading_20_4">
+   <style:paragraph-properties fo:margin-left="-0.199cm" fo:margin-right="-0.199cm" fo:text-indent="0cm" style:auto-text-indent="false" style:writing-mode="lr-tb"/>
+   <style:text-properties fo:language="zxx" fo:country="none" officeooo:paragraph-rsid="000b5ea9" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
   </style:style>
-  <style:style style:name="P33" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.191cm" fo:margin-right="-0.231cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false"/>
-   <style:text-properties style:use-window-font-color="true" style:font-name="Times New Roman" fo:font-size="10pt" fo:language="ru" fo:country="RU" officeooo:rsid="0013000c" officeooo:paragraph-rsid="001163f7" style:font-name-asian="Times New Roman" style:font-size-asian="10pt" style:font-name-complex="Times New Roman" style:font-size-complex="10pt" style:language-complex="ar" style:country-complex="SA"/>
+  <style:style style:name="P33" style:family="paragraph" style:parent-style-name="Heading_20_4">
+   <style:paragraph-properties fo:margin-left="-0.199cm" fo:margin-right="-0.199cm" fo:text-indent="0cm" style:auto-text-indent="false" style:writing-mode="lr-tb"/>
+   <style:text-properties fo:language="zxx" fo:country="none" officeooo:paragraph-rsid="000b5ea9" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
   </style:style>
-  <style:style style:name="P34" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.191cm" fo:margin-right="-0.231cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false"/>
-   <style:text-properties style:use-window-font-color="true" style:font-name="Times New Roman" fo:font-size="10pt" fo:language="ru" fo:country="RU" officeooo:rsid="0013000c" officeooo:paragraph-rsid="001369b7" style:font-name-asian="Times New Roman" style:font-size-asian="10pt" style:font-name-complex="Times New Roman" style:font-size-complex="10pt" style:language-complex="ar" style:country-complex="SA"/>
-  </style:style>
-  <style:style style:name="P35" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.191cm" fo:margin-right="-0.231cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false"/>
-   <style:text-properties style:font-name="Times New Roman" fo:font-size="10pt" officeooo:paragraph-rsid="001163f7" style:font-size-asian="10pt" style:font-name-complex="Arial" style:font-size-complex="10pt"/>
-  </style:style>
-  <style:style style:name="P36" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.101cm" fo:margin-right="-0.199cm" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties officeooo:rsid="001163f7" officeooo:paragraph-rsid="001163f7"/>
-  </style:style>
-  <style:style style:name="P37" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.101cm" fo:margin-right="-0.199cm" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties officeooo:rsid="001163f7" officeooo:paragraph-rsid="001369b7"/>
-  </style:style>
-  <style:style style:name="P38" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.101cm" fo:margin-right="-0.199cm" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties style:use-window-font-color="true" style:font-name="Times New Roman" fo:font-size="10pt" fo:language="ru" fo:country="RU" officeooo:rsid="001163f7" officeooo:paragraph-rsid="001163f7" style:font-name-asian="Times New Roman" style:font-size-asian="10pt" style:font-name-complex="Times New Roman" style:font-size-complex="10pt" style:language-complex="ar" style:country-complex="SA"/>
-  </style:style>
-  <style:style style:name="P39" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.101cm" fo:margin-right="-0.199cm" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties style:use-window-font-color="true" style:font-name="Times New Roman" fo:font-size="10pt" fo:language="ru" fo:country="RU" officeooo:rsid="001163f7" officeooo:paragraph-rsid="001369b7" style:font-name-asian="Times New Roman" style:font-size-asian="10pt" style:font-name-complex="Times New Roman" style:font-size-complex="10pt" style:language-complex="ar" style:country-complex="SA"/>
-  </style:style>
-  <style:style style:name="P40" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.101cm" fo:margin-right="-0.199cm" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties officeooo:rsid="0013000c" officeooo:paragraph-rsid="0013000c"/>
-  </style:style>
-  <style:style style:name="P41" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.101cm" fo:margin-right="-0.199cm" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties officeooo:rsid="0013000c" officeooo:paragraph-rsid="001369b7"/>
-  </style:style>
-  <style:style style:name="P42" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties officeooo:rsid="0013000c" officeooo:paragraph-rsid="0013000c"/>
-  </style:style>
-  <style:style style:name="P43" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties officeooo:rsid="0013000c" officeooo:paragraph-rsid="001369b7"/>
-  </style:style>
-  <style:style style:name="P44" style:family="paragraph" style:parent-style-name="Heading_20_3">
-   <style:text-properties officeooo:paragraph-rsid="000b5ea9"/>
-  </style:style>
-  <style:style style:name="P45" style:family="paragraph" style:parent-style-name="Heading_20_3">
-   <style:text-properties officeooo:paragraph-rsid="001369b7"/>
-  </style:style>
-  <style:style style:name="P46" style:family="paragraph" style:parent-style-name="Heading_20_4">
-   <style:text-properties officeooo:paragraph-rsid="000b5ea9"/>
-  </style:style>
-  <style:style style:name="P47" style:family="paragraph" style:parent-style-name="Heading_20_4">
-   <style:text-properties officeooo:paragraph-rsid="001369b7"/>
-  </style:style>
-  <style:style style:name="P48" style:family="paragraph" style:parent-style-name="Heading_20_6">
+  <style:style style:name="P34" style:family="paragraph" style:parent-style-name="Heading_20_6">
    <style:paragraph-properties style:snap-to-layout-grid="false"/>
-   <style:text-properties fo:font-size="12pt" fo:language="ru" fo:country="RU" style:font-size-asian="12pt"/>
-  </style:style>
-  <style:style style:name="P49" style:family="paragraph" style:parent-style-name="Heading_20_6">
-   <style:paragraph-properties style:snap-to-layout-grid="false"/>
-   <style:text-properties fo:font-size="12pt" fo:language="en" fo:country="US" officeooo:rsid="001be318" officeooo:paragraph-rsid="001be318" style:font-size-asian="12pt"/>
-  </style:style>
-  <style:style style:name="P50" style:family="paragraph" style:parent-style-name="Footer">
-   <style:text-properties officeooo:paragraph-rsid="001369b7"/>
-  </style:style>
-  <style:style style:name="P51" style:family="paragraph" style:parent-style-name="Heading_20_4">
-   <style:paragraph-properties fo:margin-left="-0.199cm" fo:margin-right="-0.199cm" fo:text-indent="0cm" style:auto-text-indent="false" style:writing-mode="lr-tb"/>
-   <style:text-properties officeooo:paragraph-rsid="000b5ea9"/>
-  </style:style>
-  <style:style style:name="P52" style:family="paragraph" style:parent-style-name="Heading_20_4">
-   <style:paragraph-properties fo:margin-left="-0.199cm" fo:margin-right="-0.199cm" fo:text-indent="0cm" style:auto-text-indent="false" style:writing-mode="lr-tb"/>
-   <style:text-properties officeooo:paragraph-rsid="001369b7"/>
-  </style:style>
-  <style:style style:name="P53" style:family="paragraph" style:parent-style-name="Heading_20_3">
-   <style:paragraph-properties fo:margin-left="-0.199cm" fo:margin-right="-0.199cm" fo:text-indent="0cm" style:auto-text-indent="false" style:writing-mode="lr-tb"/>
-   <style:text-properties officeooo:paragraph-rsid="000b5ea9"/>
-  </style:style>
-  <style:style style:name="P54" style:family="paragraph" style:parent-style-name="Heading_20_3">
-   <style:paragraph-properties fo:margin-left="-0.199cm" fo:margin-right="-0.199cm" fo:text-indent="0cm" style:auto-text-indent="false" style:writing-mode="lr-tb"/>
-   <style:text-properties officeooo:paragraph-rsid="001369b7"/>
-  </style:style>
-  <style:style style:name="P55" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.199cm" fo:margin-right="-0.199cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:writing-mode="lr-tb"/>
-   <style:text-properties fo:font-size="12pt" officeooo:paragraph-rsid="000b5ea9" style:font-size-asian="12pt"/>
-  </style:style>
-  <style:style style:name="P56" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.199cm" fo:margin-right="-0.199cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:writing-mode="lr-tb"/>
-   <style:text-properties fo:font-size="12pt" officeooo:paragraph-rsid="001369b7" style:font-size-asian="12pt"/>
-  </style:style>
-  <style:style style:name="P57" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.199cm" fo:margin-right="-0.199cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties fo:font-size="12pt" fo:language="en" fo:country="US" officeooo:rsid="001fb975" officeooo:paragraph-rsid="001fb975" style:font-size-asian="12pt"/>
-  </style:style>
-  <style:style style:name="P58" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.199cm" fo:margin-right="0cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties officeooo:rsid="0013000c" officeooo:paragraph-rsid="0013000c"/>
-  </style:style>
-  <style:style style:name="P59" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.199cm" fo:margin-right="0cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties officeooo:rsid="0013000c" officeooo:paragraph-rsid="001369b7"/>
-  </style:style>
-  <style:style style:name="P60" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.101cm" fo:margin-right="-0.101cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties fo:font-size="12pt" fo:language="en" fo:country="US" officeooo:rsid="001fb975" officeooo:paragraph-rsid="001fb975" style:font-size-asian="12pt"/>
-  </style:style>
-  <style:style style:name="P61" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="0.199cm" fo:margin-right="0cm" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties fo:font-size="12pt" fo:language="en" fo:country="US" officeooo:rsid="001fb975" officeooo:paragraph-rsid="001fb975" style:font-size-asian="12pt"/>
-  </style:style>
-  <style:style style:name="P62" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.3cm" fo:margin-right="-0.3cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:writing-mode="lr-tb"/>
-   <style:text-properties style:font-name="Times New Roman" fo:font-size="10pt" officeooo:paragraph-rsid="001163f7" style:font-size-asian="10pt" style:font-name-complex="Arial" style:font-size-complex="10pt"/>
-  </style:style>
-  <style:style style:name="P63" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" style:vertical-align="middle" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties fo:font-size="14pt" officeooo:paragraph-rsid="001163f7" style:font-size-asian="14pt"/>
-  </style:style>
-  <style:style style:name="P64" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties style:snap-to-layout-grid="false"/>
-   <style:text-properties officeooo:paragraph-rsid="001369b7"/>
-  </style:style>
-  <style:style style:name="P65" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties style:snap-to-layout-grid="false"/>
-   <style:text-properties officeooo:paragraph-rsid="001163f7"/>
-  </style:style>
-  <style:style style:name="P66" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" style:snap-to-layout-grid="false"/>
-   <style:text-properties fo:font-size="14pt" officeooo:paragraph-rsid="001369b7" style:font-size-asian="14pt"/>
-  </style:style>
-  <style:style style:name="P67" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" style:snap-to-layout-grid="false"/>
-   <style:text-properties fo:font-size="14pt" officeooo:paragraph-rsid="001163f7" style:font-size-asian="14pt"/>
-  </style:style>
-  <style:style style:name="P68" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" style:snap-to-layout-grid="false"/>
-   <style:text-properties style:use-window-font-color="true" style:font-name="Times New Roman" fo:font-size="10pt" fo:language="ru" fo:country="RU" officeooo:rsid="0013000c" officeooo:paragraph-rsid="001369b7" style:font-name-asian="Times New Roman" style:font-size-asian="10pt" style:font-name-complex="Times New Roman" style:font-size-complex="10pt" style:language-complex="ar" style:country-complex="SA"/>
-  </style:style>
-  <style:style style:name="P69" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
-   <style:text-properties style:use-window-font-color="true" style:font-name="Times New Roman" fo:font-size="10pt" fo:language="ru" fo:country="RU" officeooo:rsid="0013000c" officeooo:paragraph-rsid="001163f7" style:font-name-asian="Times New Roman" style:font-size-asian="10pt" style:font-name-complex="Times New Roman" style:font-size-complex="10pt" style:language-complex="ar" style:country-complex="SA"/>
-  </style:style>
-  <style:style style:name="P70" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" style:snap-to-layout-grid="false"/>
-   <style:text-properties style:use-window-font-color="true" style:font-name="Times New Roman" fo:font-size="12pt" fo:language="ru" fo:country="RU" officeooo:rsid="0013000c" officeooo:paragraph-rsid="002a72a9" style:font-name-asian="Times New Roman" style:font-size-asian="12pt" style:font-name-complex="Times New Roman" style:font-size-complex="12pt" style:language-complex="ar" style:country-complex="SA"/>
-  </style:style>
-  <style:style style:name="P71" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
-   <style:text-properties style:font-name="Arial" fo:font-size="9pt" officeooo:rsid="001163f7" officeooo:paragraph-rsid="001163f7" style:font-size-asian="9pt" style:font-name-complex="Arial"/>
-  </style:style>
-  <style:style style:name="P72" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
-   <style:text-properties style:font-name="Arial" fo:font-size="9pt" officeooo:paragraph-rsid="001163f7" style:font-size-asian="9pt" style:font-name-complex="Arial"/>
-  </style:style>
-  <style:style style:name="P73" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties officeooo:paragraph-rsid="001163f7"/>
-  </style:style>
-  <style:style style:name="P74" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.199cm" fo:margin-right="-0.199cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:writing-mode="lr-tb"/>
-   <style:text-properties fo:font-size="12pt" officeooo:paragraph-rsid="000b5ea9" style:font-size-asian="12pt"/>
-  </style:style>
-  <style:style style:name="P75" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.199cm" fo:margin-right="-0.199cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties fo:font-size="12pt" fo:language="en" fo:country="US" officeooo:rsid="001fb975" officeooo:paragraph-rsid="001fb975" style:font-size-asian="12pt"/>
-  </style:style>
-  <style:style style:name="P76" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.101cm" fo:margin-right="-0.199cm" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties officeooo:rsid="0013000c" officeooo:paragraph-rsid="001369b7"/>
-  </style:style>
-  <style:style style:name="P77" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.101cm" fo:margin-right="-0.199cm" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties officeooo:rsid="0013000c" officeooo:paragraph-rsid="0013000c"/>
-  </style:style>
-  <style:style style:name="P78" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.101cm" fo:margin-right="-0.199cm" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties officeooo:rsid="001163f7" officeooo:paragraph-rsid="001163f7"/>
-  </style:style>
-  <style:style style:name="P79" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.101cm" fo:margin-right="-0.199cm" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties style:use-window-font-color="true" style:font-name="Times New Roman" fo:font-size="10pt" fo:language="ru" fo:country="RU" officeooo:rsid="001163f7" officeooo:paragraph-rsid="001163f7" style:font-name-asian="Times New Roman" style:font-size-asian="10pt" style:font-name-complex="Times New Roman" style:font-size-complex="10pt" style:language-complex="ar" style:country-complex="SA"/>
-  </style:style>
-  <style:style style:name="P80" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties officeooo:rsid="0013000c" officeooo:paragraph-rsid="001369b7"/>
-  </style:style>
-  <style:style style:name="P81" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties officeooo:rsid="0013000c" officeooo:paragraph-rsid="0013000c"/>
-  </style:style>
-  <style:style style:name="P82" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.199cm" fo:margin-right="0cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties officeooo:rsid="0013000c" officeooo:paragraph-rsid="001369b7"/>
-  </style:style>
-  <style:style style:name="P83" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.199cm" fo:margin-right="0cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties officeooo:rsid="0013000c" officeooo:paragraph-rsid="0013000c"/>
-  </style:style>
-  <style:style style:name="P84" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" style:vertical-align="middle" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties fo:font-size="14pt" officeooo:paragraph-rsid="001163f7" style:font-size-asian="14pt"/>
-  </style:style>
-  <style:style style:name="P85" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.191cm" fo:margin-right="-0.231cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false"/>
-   <style:text-properties style:use-window-font-color="true" style:font-name="Times New Roman" fo:font-size="10pt" fo:language="ru" fo:country="RU" officeooo:rsid="0013000c" officeooo:paragraph-rsid="001163f7" style:font-name-asian="Times New Roman" style:font-size-asian="10pt" style:font-name-complex="Times New Roman" style:font-size-complex="10pt" style:language-complex="ar" style:country-complex="SA"/>
-  </style:style>
-  <style:style style:name="P86" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.191cm" fo:margin-right="-0.231cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false"/>
-   <style:text-properties style:font-name="Times New Roman" fo:font-size="10pt" officeooo:paragraph-rsid="001163f7" style:font-size-asian="10pt" style:font-name-complex="Arial" style:font-size-complex="10pt"/>
-  </style:style>
-  <style:style style:name="P87" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.3cm" fo:margin-right="-0.3cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:writing-mode="lr-tb"/>
-   <style:text-properties style:font-name="Times New Roman" fo:font-size="10pt" officeooo:paragraph-rsid="001163f7" style:font-size-asian="10pt" style:font-name-complex="Arial" style:font-size-complex="10pt"/>
-  </style:style>
-  <style:style style:name="P88" style:family="paragraph" style:parent-style-name="Heading_20_3">
-   <style:paragraph-properties fo:margin-left="-0.199cm" fo:margin-right="-0.199cm" fo:text-indent="0cm" style:auto-text-indent="false" style:writing-mode="lr-tb"/>
-   <style:text-properties officeooo:paragraph-rsid="000b5ea9"/>
-  </style:style>
-  <style:style style:name="P89" style:family="paragraph" style:parent-style-name="Heading_20_4">
-   <style:paragraph-properties fo:margin-left="-0.199cm" fo:margin-right="-0.199cm" fo:text-indent="0cm" style:auto-text-indent="false" style:writing-mode="lr-tb"/>
-   <style:text-properties officeooo:paragraph-rsid="000b5ea9"/>
-  </style:style>
-  <style:style style:name="P90" style:family="paragraph" style:parent-style-name="Heading_20_6">
-   <style:paragraph-properties style:snap-to-layout-grid="false"/>
-   <style:text-properties fo:font-size="12pt" fo:language="en" fo:country="US" officeooo:rsid="001be318" officeooo:paragraph-rsid="001be318" style:font-size-asian="12pt"/>
-  </style:style>
-  <style:style style:name="P91" style:family="paragraph" style:parent-style-name="Heading_20_6">
-   <style:paragraph-properties fo:margin-left="-0.199cm" fo:margin-right="-0.199cm" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties fo:font-size="12pt" fo:language="en" fo:country="US" officeooo:rsid="001be318" officeooo:paragraph-rsid="001be318" style:font-size-asian="12pt"/>
+   <style:text-properties fo:font-size="12pt" fo:language="zxx" fo:country="none" officeooo:rsid="001be318" officeooo:paragraph-rsid="001be318" style:font-size-asian="12pt" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
   </style:style>
   <style:style style:name="T1" style:family="text">
    <style:text-properties fo:font-size="12pt" style:font-size-asian="12pt"/>
   </style:style>
   <style:style style:name="T2" style:family="text">
    <style:text-properties style:use-window-font-color="true" style:font-name="Times New Roman" fo:font-size="10pt" fo:language="ru" fo:country="RU" officeooo:rsid="0013000c" style:font-name-asian="Times New Roman" style:font-size-asian="10pt" style:font-name-complex="Times New Roman" style:font-size-complex="10pt" style:language-complex="ar" style:country-complex="SA"/>
+  </style:style>
+  <style:style style:name="T3" style:family="text">
+   <style:text-properties style:use-window-font-color="true" style:font-name="Times New Roman" fo:font-size="10pt" style:font-name-asian="Times New Roman" style:font-size-asian="10pt" style:font-name-complex="Times New Roman" style:font-size-complex="10pt"/>
+  </style:style>
+  <style:style style:name="T4" style:family="text">
+   <style:text-properties style:use-window-font-color="true" style:font-name="Times New Roman" fo:font-size="10pt" officeooo:rsid="0013000c" style:font-name-asian="Times New Roman" style:font-size-asian="10pt" style:font-name-complex="Times New Roman" style:font-size-complex="10pt"/>
+  </style:style>
+  <style:style style:name="T5" style:family="text">
+   <style:text-properties fo:language="ru" fo:country="RU"/>
   </style:style>
   <style:page-layout style:name="pm1">
    <style:page-layout-properties fo:page-width="21.001cm" fo:page-height="29.7cm" style:num-format="1" style:print-orientation="portrait" fo:margin-top="0.6cm" fo:margin-bottom="0.45cm" fo:margin-left="2cm" fo:margin-right="0.6cm" fo:border="0.99pt solid #000000" fo:padding="0cm" style:shadow="none" style:writing-mode="lr-tb" style:layout-grid-color="#c0c0c0" style:layout-grid-lines="45" style:layout-grid-base-height="0.635cm" style:layout-grid-ruby-height="0cm" style:layout-grid-mode="none" style:layout-grid-ruby-below="false" style:layout-grid-print="false" style:layout-grid-display="false" style:layout-grid-base-width="0.353cm" style:layout-grid-snap-to="true" style:footnote-max-height="0cm">
@@ -1020,73 +782,73 @@ fun StringBuilder.pDocumentHeader() = append("""<?xml version="1.0" encoding="UT
  <office:master-styles>
   <style:master-page style:name="Standard" style:page-layout-name="pm1">
    <style:footer>
-    <table:table table:name="Таблица2" table:style-name="Таблица2">
-     <table:table-column table:style-name="Таблица2.A"/>
-     <table:table-column table:style-name="Таблица2.B"/>
-     <table:table-column table:style-name="Таблица2.C"/>
-     <table:table-column table:style-name="Таблица2.D"/>
-     <table:table-column table:style-name="Таблица2.E"/>
-     <table:table-column table:style-name="Таблица2.F"/>
-     <table:table-column table:style-name="Таблица2.G"/>
-     <table:table-row table:style-name="Таблица2.1">
-      <table:table-cell table:style-name="Таблица2.A1" office:value-type="string">
-       <text:p text:style-name="P12"/>
+    <table:table table:name="Штамп2" table:style-name="Штамп2">
+     <table:table-column table:style-name="Штамп2.A"/>
+     <table:table-column table:style-name="Штамп2.B"/>
+     <table:table-column table:style-name="Штамп2.C"/>
+     <table:table-column table:style-name="Штамп2.D"/>
+     <table:table-column table:style-name="Штамп2.E"/>
+     <table:table-column table:style-name="Штамп2.F"/>
+     <table:table-column table:style-name="Штамп2.G"/>
+     <table:table-row table:style-name="Штамп2.1">
+      <table:table-cell table:style-name="Штамп2.A1" office:value-type="string">
+       <text:p text:style-name="P13"/>
       </table:table-cell>
-      <table:table-cell table:style-name="Таблица2.B1" office:value-type="string">
-       <text:p text:style-name="P12"/>
+      <table:table-cell table:style-name="Штамп2.B1" office:value-type="string">
+       <text:p text:style-name="P13"/>
       </table:table-cell>
-      <table:table-cell table:style-name="Таблица2.B1" office:value-type="string">
-       <text:p text:style-name="P12"/>
+      <table:table-cell table:style-name="Штамп2.B1" office:value-type="string">
+       <text:p text:style-name="P13"/>
       </table:table-cell>
-      <table:table-cell table:style-name="Таблица2.B1" office:value-type="string">
-       <text:p text:style-name="P12"/>
+      <table:table-cell table:style-name="Штамп2.B1" office:value-type="string">
+       <text:p text:style-name="P13"/>
       </table:table-cell>
-      <table:table-cell table:style-name="Таблица2.B1" office:value-type="string">
-       <text:p text:style-name="P12"/>
+      <table:table-cell table:style-name="Штамп2.B1" office:value-type="string">
+       <text:p text:style-name="P13"/>
       </table:table-cell>
-      <table:table-cell table:style-name="Таблица2.F1" table:number-rows-spanned="3" office:value-type="string">
-       <text:p text:style-name="P18"/>
+      <table:table-cell table:style-name="Штамп2.F1" table:number-rows-spanned="3" office:value-type="string">
+       <text:p text:style-name="P29">ИСЕБ.469475.423-1 ПЭ3</text:p>
       </table:table-cell>
-      <table:table-cell table:style-name="Таблица2.G1" office:value-type="string">
-       <text:p text:style-name="P22">Лист</text:p>
+      <table:table-cell table:style-name="Штамп2.G1" office:value-type="string">
+       <text:p text:style-name="P10">Лист</text:p>
       </table:table-cell>
      </table:table-row>
-     <table:table-row table:style-name="Таблица2.1">
-      <table:table-cell table:style-name="Таблица2.A2" office:value-type="string">
-       <text:p text:style-name="P12"/>
+     <table:table-row table:style-name="Штамп2.1">
+      <table:table-cell table:style-name="Штамп2.A2" office:value-type="string">
+       <text:p text:style-name="P13"/>
       </table:table-cell>
-      <table:table-cell table:style-name="Таблица2.B2" office:value-type="string">
-       <text:p text:style-name="P12"/>
+      <table:table-cell table:style-name="Штамп2.B2" office:value-type="string">
+       <text:p text:style-name="P13"/>
       </table:table-cell>
-      <table:table-cell table:style-name="Таблица2.B2" office:value-type="string">
-       <text:p text:style-name="P12"/>
+      <table:table-cell table:style-name="Штамп2.B2" office:value-type="string">
+       <text:p text:style-name="P13"/>
       </table:table-cell>
-      <table:table-cell table:style-name="Таблица2.B2" office:value-type="string">
-       <text:p text:style-name="P12"/>
+      <table:table-cell table:style-name="Штамп2.B2" office:value-type="string">
+       <text:p text:style-name="P13"/>
       </table:table-cell>
-      <table:table-cell table:style-name="Таблица2.B2" office:value-type="string">
-       <text:p text:style-name="P12"/>
+      <table:table-cell table:style-name="Штамп2.B2" office:value-type="string">
+       <text:p text:style-name="P13"/>
       </table:table-cell>
       <table:covered-table-cell/>
-      <table:table-cell table:style-name="Таблица2.G2" table:number-rows-spanned="2" office:value-type="string">
-       <text:p text:style-name="P24"><text:page-number text:select-page="current">4</text:page-number></text:p>
+      <table:table-cell table:style-name="Штамп2.G2" table:number-rows-spanned="2" office:value-type="string">
+       <text:p text:style-name="P11"><text:page-number text:select-page="current">4</text:page-number></text:p>
       </table:table-cell>
      </table:table-row>
-     <table:table-row table:style-name="Таблица2.3">
-      <table:table-cell table:style-name="Таблица2.A3" office:value-type="string">
-       <text:p text:style-name="P41">Изм.</text:p>
+     <table:table-row table:style-name="Штамп2.3">
+      <table:table-cell table:style-name="Штамп2.A3" office:value-type="string">
+       <text:p text:style-name="P19">Изм.</text:p>
       </table:table-cell>
-      <table:table-cell table:style-name="Таблица2.B3" office:value-type="string">
-       <text:p text:style-name="P41">Лист</text:p>
+      <table:table-cell table:style-name="Штамп2.B3" office:value-type="string">
+       <text:p text:style-name="P19">Лист</text:p>
       </table:table-cell>
-      <table:table-cell table:style-name="Таблица2.B3" office:value-type="string">
-       <text:p text:style-name="P43">№ докум</text:p>
+      <table:table-cell table:style-name="Штамп2.B3" office:value-type="string">
+       <text:p text:style-name="P26">№ докум</text:p>
       </table:table-cell>
-      <table:table-cell table:style-name="Таблица2.B3" office:value-type="string">
-       <text:p text:style-name="P41">Подпись</text:p>
+      <table:table-cell table:style-name="Штамп2.B3" office:value-type="string">
+       <text:p text:style-name="P19">Подпись</text:p>
       </table:table-cell>
-      <table:table-cell table:style-name="Таблица2.B3" office:value-type="string">
-       <text:p text:style-name="P59">Дата</text:p>
+      <table:table-cell table:style-name="Штамп2.B3" office:value-type="string">
+       <text:p text:style-name="P26">Дата</text:p>
       </table:table-cell>
       <table:covered-table-cell/>
       <table:covered-table-cell/>
@@ -1096,36 +858,36 @@ fun StringBuilder.pDocumentHeader() = append("""<?xml version="1.0" encoding="UT
   </style:master-page>
   <style:master-page style:name="First_20_Page" style:display-name="First Page" style:page-layout-name="pm2" style:next-style-name="Standard">
    <style:footer>
-    <table:table table:name="Таблица1" table:style-name="Таблица1">
-     <table:table-column table:style-name="Таблица1.A"/>
-     <table:table-column table:style-name="Таблица1.B"/>
-     <table:table-column table:style-name="Таблица1.C"/>
-     <table:table-column table:style-name="Таблица1.D"/>
-     <table:table-column table:style-name="Таблица1.E"/>
-     <table:table-column table:style-name="Таблица1.F"/>
-     <table:table-column table:style-name="Таблица1.G"/>
-     <table:table-column table:style-name="Таблица1.H"/>
-     <table:table-column table:style-name="Таблица1.I"/>
-     <table:table-column table:style-name="Таблица1.J"/>
-     <table:table-column table:style-name="Таблица1.K"/>
-     <table:table-row table:style-name="Таблица1.1">
-      <table:table-cell table:style-name="Таблица1.A1" office:value-type="string">
-       <text:p text:style-name="P11"/>
+    <table:table table:name="Штамп" table:style-name="Штамп">
+     <table:table-column table:style-name="Штамп.A"/>
+     <table:table-column table:style-name="Штамп.B"/>
+     <table:table-column table:style-name="Штамп.C"/>
+     <table:table-column table:style-name="Штамп.D"/>
+     <table:table-column table:style-name="Штамп.E"/>
+     <table:table-column table:style-name="Штамп.F"/>
+     <table:table-column table:style-name="Штамп.G"/>
+     <table:table-column table:style-name="Штамп.H"/>
+     <table:table-column table:style-name="Штамп.I"/>
+     <table:table-column table:style-name="Штамп.J"/>
+     <table:table-column table:style-name="Штамп.K"/>
+     <table:table-row table:style-name="Штамп.1">
+      <table:table-cell table:style-name="Штамп.A1" office:value-type="string">
+       <text:p text:style-name="P12"/>
       </table:table-cell>
-      <table:table-cell table:style-name="Таблица1.B1" office:value-type="string">
-       <text:p text:style-name="P11"/>
+      <table:table-cell table:style-name="Штамп.B1" office:value-type="string">
+       <text:p text:style-name="P12"/>
       </table:table-cell>
-      <table:table-cell table:style-name="Таблица1.B1" office:value-type="string">
-       <text:p text:style-name="P11"/>
+      <table:table-cell table:style-name="Штамп.B1" office:value-type="string">
+       <text:p text:style-name="P12"/>
       </table:table-cell>
-      <table:table-cell table:style-name="Таблица1.B1" office:value-type="string">
-       <text:p text:style-name="P11"/>
+      <table:table-cell table:style-name="Штамп.B1" office:value-type="string">
+       <text:p text:style-name="P12"/>
       </table:table-cell>
-      <table:table-cell table:style-name="Таблица1.B1" office:value-type="string">
-       <text:p text:style-name="P11"/>
+      <table:table-cell table:style-name="Штамп.B1" office:value-type="string">
+       <text:p text:style-name="P12"/>
       </table:table-cell>
-      <table:table-cell table:style-name="Таблица1.F1" table:number-rows-spanned="3" table:number-columns-spanned="6" office:value-type="string">
-       <text:p text:style-name="P63"/>
+      <table:table-cell table:style-name="Штамп.F1" table:number-rows-spanned="3" table:number-columns-spanned="6" office:value-type="string">
+       <text:p text:style-name="P29">ИСЕБ.469475.423-1 ПЭ3</text:p>
       </table:table-cell>
       <table:covered-table-cell/>
       <table:covered-table-cell/>
@@ -1133,44 +895,21 @@ fun StringBuilder.pDocumentHeader() = append("""<?xml version="1.0" encoding="UT
       <table:covered-table-cell/>
       <table:covered-table-cell/>
      </table:table-row>
-     <table:table-row table:style-name="Таблица1.1">
-      <table:table-cell table:style-name="Таблица1.A2" office:value-type="string">
-       <text:p text:style-name="P11"/>
+     <table:table-row table:style-name="Штамп.1">
+      <table:table-cell table:style-name="Штамп.A2" office:value-type="string">
+       <text:p text:style-name="P12"/>
       </table:table-cell>
-      <table:table-cell table:style-name="Таблица1.B2" office:value-type="string">
-       <text:p text:style-name="P11"/>
+      <table:table-cell table:style-name="Штамп.B2" office:value-type="string">
+       <text:p text:style-name="P12"/>
       </table:table-cell>
-      <table:table-cell table:style-name="Таблица1.B2" office:value-type="string">
-       <text:p text:style-name="P11"/>
+      <table:table-cell table:style-name="Штамп.B2" office:value-type="string">
+       <text:p text:style-name="P12"/>
       </table:table-cell>
-      <table:table-cell table:style-name="Таблица1.B2" office:value-type="string">
-       <text:p text:style-name="P11"/>
+      <table:table-cell table:style-name="Штамп.B2" office:value-type="string">
+       <text:p text:style-name="P12"/>
       </table:table-cell>
-      <table:table-cell table:style-name="Таблица1.B2" office:value-type="string">
-       <text:p text:style-name="P11"/>
-      </table:table-cell>
-      <table:covered-table-cell/>
-      <table:covered-table-cell/>
-      <table:covered-table-cell/>
-      <table:covered-table-cell/>
-      <table:covered-table-cell/>
-      <table:covered-table-cell/>
-     </table:table-row>
-     <table:table-row table:style-name="Таблица1.1">
-      <table:table-cell table:style-name="Таблица1.A3" office:value-type="string">
-       <text:p text:style-name="P40">Изм.</text:p>
-      </table:table-cell>
-      <table:table-cell table:style-name="Таблица1.B3" office:value-type="string">
-       <text:p text:style-name="P40">Лист</text:p>
-      </table:table-cell>
-      <table:table-cell table:style-name="Таблица1.B3" office:value-type="string">
-       <text:p text:style-name="P42">№ докум</text:p>
-      </table:table-cell>
-      <table:table-cell table:style-name="Таблица1.B3" office:value-type="string">
-       <text:p text:style-name="P40">Подпись</text:p>
-      </table:table-cell>
-      <table:table-cell table:style-name="Таблица1.B3" office:value-type="string">
-       <text:p text:style-name="P58">Дата</text:p>
+      <table:table-cell table:style-name="Штамп.B2" office:value-type="string">
+       <text:p text:style-name="P12"/>
       </table:table-cell>
       <table:covered-table-cell/>
       <table:covered-table-cell/>
@@ -1179,102 +918,21 @@ fun StringBuilder.pDocumentHeader() = append("""<?xml version="1.0" encoding="UT
       <table:covered-table-cell/>
       <table:covered-table-cell/>
      </table:table-row>
-     <table:table-row table:style-name="Таблица1.1">
-      <table:table-cell table:style-name="Таблица1.A2" table:number-columns-spanned="2" office:value-type="string">
-       <text:p text:style-name="P36">Разработал</text:p>
+     <table:table-row table:style-name="Штамп.1">
+      <table:table-cell table:style-name="Штамп.A3" office:value-type="string">
+       <text:p text:style-name="P19">Изм.</text:p>
       </table:table-cell>
-      <table:covered-table-cell/>
-      <table:table-cell table:style-name="Таблица1.B2" office:value-type="string">
-       <text:p text:style-name="P11"/>
+      <table:table-cell table:style-name="Штамп.B3" office:value-type="string">
+       <text:p text:style-name="P19">Лист</text:p>
       </table:table-cell>
-      <table:table-cell table:style-name="Таблица1.B2" office:value-type="string">
-       <text:p text:style-name="P11"/>
+      <table:table-cell table:style-name="Штамп.B3" office:value-type="string">
+       <text:p text:style-name="P26">№ докум</text:p>
       </table:table-cell>
-      <table:table-cell table:style-name="Таблица1.E4" office:value-type="string">
-       <text:p text:style-name="P11"/>
+      <table:table-cell table:style-name="Штамп.B3" office:value-type="string">
+       <text:p text:style-name="P19">Подпись</text:p>
       </table:table-cell>
-      <table:table-cell table:style-name="Таблица1.F4" table:number-rows-spanned="5" office:value-type="string">
-       <text:p text:style-name="P17"/>
-      </table:table-cell>
-      <table:table-cell table:style-name="Таблица1.G4" table:number-columns-spanned="3" office:value-type="string">
-       <text:p text:style-name="P15"><text:span text:style-name="T2">Лит</text:span>.</text:p>
-      </table:table-cell>
-      <table:covered-table-cell/>
-      <table:covered-table-cell/>
-      <table:table-cell table:style-name="Таблица1.J4" office:value-type="string">
-       <text:p text:style-name="P20">Лист</text:p>
-      </table:table-cell>
-      <table:table-cell table:style-name="Таблица1.J4" office:value-type="string">
-       <text:p text:style-name="P33">Листов</text:p>
-      </table:table-cell>
-     </table:table-row>
-     <table:table-row table:style-name="Таблица1.1">
-      <table:table-cell table:style-name="Таблица1.A2" table:number-columns-spanned="2" office:value-type="string">
-       <text:p text:style-name="P38">Проверил</text:p>
-      </table:table-cell>
-      <table:covered-table-cell/>
-      <table:table-cell table:style-name="Таблица1.B2" office:value-type="string">
-       <text:p text:style-name="P11"/>
-      </table:table-cell>
-      <table:table-cell table:style-name="Таблица1.B2" office:value-type="string">
-       <text:p text:style-name="P11"/>
-      </table:table-cell>
-      <table:table-cell table:style-name="Таблица1.E4" office:value-type="string">
-       <text:p text:style-name="P11"/>
-      </table:table-cell>
-      <table:covered-table-cell/>
-      <table:table-cell table:style-name="Таблица1.G4" office:value-type="string">
-       <text:p text:style-name="P13"/>
-      </table:table-cell>
-      <table:table-cell table:style-name="Таблица1.J4" office:value-type="string">
-       <text:p text:style-name="P13"/>
-      </table:table-cell>
-      <table:table-cell table:style-name="Таблица1.J4" office:value-type="string">
-       <text:p text:style-name="P13"/>
-      </table:table-cell>
-      <table:table-cell table:style-name="Таблица1.J4" office:value-type="string">
-       <text:p text:style-name="P62"><text:page-number text:select-page="current">1</text:page-number></text:p>
-      </table:table-cell>
-      <table:table-cell table:style-name="Таблица1.J4" office:value-type="string">
-       <text:p text:style-name="P35"><text:page-count>4</text:page-count></text:p>
-      </table:table-cell>
-     </table:table-row>
-     <table:table-row table:style-name="Таблица1.1">
-      <table:table-cell table:style-name="Таблица1.A2" table:number-columns-spanned="2" office:value-type="string">
-       <text:p text:style-name="P38">Нач. КБ</text:p>
-      </table:table-cell>
-      <table:covered-table-cell/>
-      <table:table-cell table:style-name="Таблица1.B2" office:value-type="string">
-       <text:p text:style-name="P11"/>
-      </table:table-cell>
-      <table:table-cell table:style-name="Таблица1.B2" office:value-type="string">
-       <text:p text:style-name="P11"/>
-      </table:table-cell>
-      <table:table-cell table:style-name="Таблица1.E4" office:value-type="string">
-       <text:p text:style-name="P11"/>
-      </table:table-cell>
-      <table:covered-table-cell/>
-      <table:table-cell table:style-name="Таблица1.G6" table:number-rows-spanned="3" table:number-columns-spanned="5" office:value-type="string">
-       <text:p text:style-name="P13"/>
-      </table:table-cell>
-      <table:covered-table-cell/>
-      <table:covered-table-cell/>
-      <table:covered-table-cell/>
-      <table:covered-table-cell/>
-     </table:table-row>
-     <table:table-row table:style-name="Таблица1.1">
-      <table:table-cell table:style-name="Таблица1.A2" table:number-columns-spanned="2" office:value-type="string">
-       <text:p text:style-name="P38">H. контр.</text:p>
-      </table:table-cell>
-      <table:covered-table-cell/>
-      <table:table-cell table:style-name="Таблица1.B2" office:value-type="string">
-       <text:p text:style-name="P11"/>
-      </table:table-cell>
-      <table:table-cell table:style-name="Таблица1.B2" office:value-type="string">
-       <text:p text:style-name="P11"/>
-      </table:table-cell>
-      <table:table-cell table:style-name="Таблица1.E4" office:value-type="string">
-       <text:p text:style-name="P11"/>
+      <table:table-cell table:style-name="Штамп.B3" office:value-type="string">
+       <text:p text:style-name="P26">Дата</text:p>
       </table:table-cell>
       <table:covered-table-cell/>
       <table:covered-table-cell/>
@@ -1283,19 +941,124 @@ fun StringBuilder.pDocumentHeader() = append("""<?xml version="1.0" encoding="UT
       <table:covered-table-cell/>
       <table:covered-table-cell/>
      </table:table-row>
-     <table:table-row table:style-name="Таблица1.1">
-      <table:table-cell table:style-name="Таблица1.A8" table:number-columns-spanned="2" office:value-type="string">
-       <text:p text:style-name="P38">Утвердил</text:p>
+     <table:table-row table:style-name="Штамп.1">
+      <table:table-cell table:style-name="Штамп.A2" table:number-columns-spanned="2" office:value-type="string">
+       <text:p text:style-name="P20">Разработал</text:p>
       </table:table-cell>
       <table:covered-table-cell/>
-      <table:table-cell table:style-name="Таблица1.C8" office:value-type="string">
-       <text:p text:style-name="P11"/>
+      <table:table-cell table:style-name="Штамп.B2" office:value-type="string">
+       <text:p text:style-name="P14">Половодов</text:p>
       </table:table-cell>
-      <table:table-cell table:style-name="Таблица1.C8" office:value-type="string">
-       <text:p text:style-name="P11"/>
+      <table:table-cell table:style-name="Штамп.B2" office:value-type="string">
+       <text:p text:style-name="P12"/>
       </table:table-cell>
-      <table:table-cell table:style-name="Таблица1.E8" office:value-type="string">
-       <text:p text:style-name="P11"/>
+      <table:table-cell table:style-name="Штамп.E4" office:value-type="string">
+       <text:p text:style-name="P12"/>
+      </table:table-cell>
+      <table:table-cell table:style-name="Штамп.F4" table:number-rows-spanned="5" office:value-type="string">
+       <text:p text:style-name="P31">M2-KLA1-1</text:p>
+       <text:p text:style-name="P30">Перечень элементов</text:p>
+      </table:table-cell>
+      <table:table-cell table:style-name="Штамп.G4" table:number-columns-spanned="3" office:value-type="string">
+       <text:p text:style-name="P5"><text:span text:style-name="T4">Лит</text:span>.</text:p>
+      </table:table-cell>
+      <table:covered-table-cell/>
+      <table:covered-table-cell/>
+      <table:table-cell table:style-name="Штамп.J4" office:value-type="string">
+       <text:p text:style-name="P9">Лист</text:p>
+      </table:table-cell>
+      <table:table-cell table:style-name="Штамп.J4" office:value-type="string">
+       <text:p text:style-name="P9">Листов</text:p>
+      </table:table-cell>
+     </table:table-row>
+     <table:table-row table:style-name="Штамп.1">
+      <table:table-cell table:style-name="Штамп.A2" table:number-columns-spanned="2" office:value-type="string">
+       <text:p text:style-name="P20">Проверил</text:p>
+      </table:table-cell>
+      <table:covered-table-cell/>
+      <table:table-cell table:style-name="Штамп.B2" office:value-type="string">
+       <text:p text:style-name="P14">Сапатов</text:p>
+      </table:table-cell>
+      <table:table-cell table:style-name="Штамп.B2" office:value-type="string">
+       <text:p text:style-name="P12"/>
+      </table:table-cell>
+      <table:table-cell table:style-name="Штамп.E4" office:value-type="string">
+       <text:p text:style-name="P12"/>
+      </table:table-cell>
+      <table:covered-table-cell/>
+      <table:table-cell table:style-name="Штамп.G4" office:value-type="string">
+       <text:p text:style-name="P6"/>
+      </table:table-cell>
+      <table:table-cell table:style-name="Штамп.J4" office:value-type="string">
+       <text:p text:style-name="P6"/>
+      </table:table-cell>
+      <table:table-cell table:style-name="Штамп.J4" office:value-type="string">
+       <text:p text:style-name="P6"/>
+      </table:table-cell>
+      <table:table-cell table:style-name="Штамп.J4" office:value-type="string">
+       <text:p text:style-name="P28"><text:page-number text:select-page="current">1</text:page-number></text:p>
+      </table:table-cell>
+      <table:table-cell table:style-name="Штамп.J4" office:value-type="string">
+       <text:p text:style-name="P17"><text:page-count>4</text:page-count></text:p>
+      </table:table-cell>
+     </table:table-row>
+     <table:table-row table:style-name="Штамп.1">
+      <table:table-cell table:style-name="Штамп.A2" table:number-columns-spanned="2" office:value-type="string">
+       <text:p text:style-name="P20">Нач. КБ</text:p>
+      </table:table-cell>
+      <table:covered-table-cell/>
+      <table:table-cell table:style-name="Штамп.B2" office:value-type="string">
+       <text:p text:style-name="P12"/>
+      </table:table-cell>
+      <table:table-cell table:style-name="Штамп.B2" office:value-type="string">
+       <text:p text:style-name="P12"/>
+      </table:table-cell>
+      <table:table-cell table:style-name="Штамп.E4" office:value-type="string">
+       <text:p text:style-name="P12"/>
+      </table:table-cell>
+      <table:covered-table-cell/>
+      <table:table-cell table:style-name="Штамп.G6" table:number-rows-spanned="3" table:number-columns-spanned="5" office:value-type="string">
+       <text:p text:style-name="P6"/>
+      </table:table-cell>
+      <table:covered-table-cell/>
+      <table:covered-table-cell/>
+      <table:covered-table-cell/>
+      <table:covered-table-cell/>
+     </table:table-row>
+     <table:table-row table:style-name="Штамп.1">
+      <table:table-cell table:style-name="Штамп.A2" table:number-columns-spanned="2" office:value-type="string">
+       <text:p text:style-name="P20">H. контр.</text:p>
+      </table:table-cell>
+      <table:covered-table-cell/>
+      <table:table-cell table:style-name="Штамп.B2" office:value-type="string">
+       <text:p text:style-name="P12"/>
+      </table:table-cell>
+      <table:table-cell table:style-name="Штамп.B2" office:value-type="string">
+       <text:p text:style-name="P4"/>
+      </table:table-cell>
+      <table:table-cell table:style-name="Штамп.E4" office:value-type="string">
+       <text:p text:style-name="P4"/>
+      </table:table-cell>
+      <table:covered-table-cell/>
+      <table:covered-table-cell/>
+      <table:covered-table-cell/>
+      <table:covered-table-cell/>
+      <table:covered-table-cell/>
+      <table:covered-table-cell/>
+     </table:table-row>
+     <table:table-row table:style-name="Штамп.1">
+      <table:table-cell table:style-name="Штамп.A8" table:number-columns-spanned="2" office:value-type="string">
+       <text:p text:style-name="P20">Утвердил</text:p>
+      </table:table-cell>
+      <table:covered-table-cell/>
+      <table:table-cell table:style-name="Штамп.C8" office:value-type="string">
+       <text:p text:style-name="P15">Кропотов</text:p>
+      </table:table-cell>
+      <table:table-cell table:style-name="Штамп.C8" office:value-type="string">
+       <text:p text:style-name="P4"/>
+      </table:table-cell>
+      <table:table-cell table:style-name="Штамп.E8" office:value-type="string">
+       <text:p text:style-name="P4"/>
       </table:table-cell>
       <table:covered-table-cell/>
       <table:covered-table-cell/>
@@ -1305,7 +1068,6 @@ fun StringBuilder.pDocumentHeader() = append("""<?xml version="1.0" encoding="UT
       <table:covered-table-cell/>
      </table:table-row>
     </table:table>
-    <text:p text:style-name="P1"/>
    </style:footer>
   </style:master-page>
  </office:master-styles>
@@ -1326,16 +1088,16 @@ fun StringBuilder.pDocumentHeader() = append("""<?xml version="1.0" encoding="UT
     <table:table-header-rows>
      <table:table-row table:style-name="Перечень.1">
       <table:table-cell table:style-name="Перечень.A1" office:value-type="string">
-       <text:h text:style-name="P88" text:outline-level="3">Обозн</text:h>
+       <text:h text:style-name="P22" text:outline-level="3">Обозн</text:h>
       </table:table-cell>
       <table:table-cell table:style-name="Перечень.B1" office:value-type="string">
-       <text:p text:style-name="P55">Наименование</text:p>
+       <text:p text:style-name="P24">Наименование</text:p>
       </table:table-cell>
       <table:table-cell table:style-name="Перечень.B1" office:value-type="string">
-       <text:h text:style-name="P89" text:outline-level="4">Кол</text:h>
+       <text:h text:style-name="P22" text:outline-level="4">Кол</text:h>
       </table:table-cell>
       <table:table-cell table:style-name="Перечень.B1" office:value-type="string">
-       <text:p text:style-name="P55">Примечание</text:p>
+       <text:p text:style-name="P24">Примечание</text:p>
       </table:table-cell>
      </table:table-row>
     </table:table-header-rows>
@@ -1345,16 +1107,16 @@ fun StringBuilder.pTableHeaderRow(
         name: String
 ) = append("""    <table:table-row table:style-name="Перечень.2">
      <table:table-cell table:style-name="Перечень.A2" office:value-type="string">
-      <text:h text:style-name="P91" text:outline-level="6"/>
+      <text:h text:style-name="P21" text:outline-level="6"/>
      </table:table-cell>
      <table:table-cell table:style-name="Перечень.B2" office:value-type="string">
-      <text:p text:style-name="P30">$name</text:p>
+      <text:p text:style-name="P16">$name</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Перечень.B2" office:value-type="string">
-      <text:p text:style-name="P9"/>
+      <text:p text:style-name="P3"/>
      </table:table-cell>
      <table:table-cell table:style-name="Перечень.B2" office:value-type="string">
-      <text:p text:style-name="P9"/>
+      <text:p text:style-name="P3"/>
      </table:table-cell>
     </table:table-row>
 """)
@@ -1365,32 +1127,32 @@ fun StringBuilder.pTableRow(
         count: Int
 ) = append("""    <table:table-row table:style-name="Перечень.2">
      <table:table-cell table:style-name="Перечень.A2" office:value-type="string">
-      <text:p text:style-name="P57">$refdes</text:p>
+      <text:p text:style-name="P23">$refdes</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Перечень.B2" office:value-type="string">
-      <text:p text:style-name="P61">$name</text:p>
+      <text:p text:style-name="P27">$name</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Перечень.B2" office:value-type="string">
-      <text:p text:style-name="P60">$count</text:p>
+      <text:p text:style-name="P25">$count</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Перечень.B2" office:value-type="string">
-      <text:p text:style-name="P10"/>
+      <text:p text:style-name="P2"/>
      </table:table-cell>
     </table:table-row>
 """)
 
 fun StringBuilder.pTableEmptyRow() = append("""    <table:table-row table:style-name="Перечень.2">
      <table:table-cell table:style-name="Перечень.A2" office:value-type="string">
-      <text:p text:style-name="P57"/>
+      <text:p text:style-name="P23"/>
      </table:table-cell>
      <table:table-cell table:style-name="Перечень.B2" office:value-type="string">
-      <text:p text:style-name="P61"/>
+      <text:p text:style-name="P27"/>
      </table:table-cell>
      <table:table-cell table:style-name="Перечень.B2" office:value-type="string">
-      <text:p text:style-name="P60"/>
+      <text:p text:style-name="P25"/>
      </table:table-cell>
      <table:table-cell table:style-name="Перечень.B2" office:value-type="string">
-      <text:p text:style-name="P10"/>
+      <text:p text:style-name="P2"/>
      </table:table-cell>
     </table:table-row>
 """)
