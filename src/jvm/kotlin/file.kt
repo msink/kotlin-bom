@@ -1,7 +1,7 @@
 ﻿import java.io.*
 import java.nio.charset.Charset
 
-fun readFile(fileName: String) : List<String> {
+fun readFile(fileName: String, maybeAbsent: Boolean = false) : List<String> {
     return File(fileName).readLines(Charset.forName("windows-1251"))
 }
 

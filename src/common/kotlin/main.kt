@@ -1,4 +1,16 @@
-﻿data class Component(
+/*
+ *
+ */
+
+object board {
+    var name        = ""
+    var code        = ""
+    var developed   = ""
+    var checked     = ""
+    var approved    = "Кропотов"
+}
+
+data class Component(
     val refdes: String,
     val category: String,
     val prefix: String,
@@ -8,6 +20,19 @@
         .replace("+-", "±")
         .replace("\"C", "°C")
         .replace("\"С", "°C")
+}
+
+fun readIni(fileName: String) {
+    board.name = fileName.substringAfterLast("\\").substringBefore(".")
+    val lines = readFile(fileName, maybeAbsent = true)
+    lines.forEach {
+        when {
+            it.startsWith("Код:")        -> board.code = it.substringAfter(":").trim()
+            it.startsWith("Разработал:") -> board.developed = it.substringAfter(":").trim()
+            it.startsWith("Проверил:")   -> board.checked = it.substringAfter(":").trim()
+            it.startsWith("Утвердил:")   -> board.approved = it.substringAfter(":").trim()
+        }
+    }
 }
 
 fun readBom(fileName: String) : List<Component> {
@@ -244,6 +269,7 @@ fun main(args: Array<String>) {
         fileName += ".bom"
     try {
         val bom = readBom(fileName)
+        readIni(fileName.replaceAfterLast('.', "txt"))
         makeList(bom, fileName.replaceAfterLast('.', "p.fodt"))
         makeZakaz(bom, fileName.replaceAfterLast('.', "z.fodt"))
     } catch (e: Throwable) {

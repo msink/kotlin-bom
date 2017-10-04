@@ -32,9 +32,12 @@ private fun CPointer<ByteVar>.fromCp1251(bufferLength: Int): String {
     }
 }
 
-fun readFile(fileName: String) : List<String> {
+fun readFile(fileName: String, maybeAbsent: Boolean = false) : List<String> {
     val file = fopen(fileName, "rt")
-    if (file == null) throw Error("Cannot read file '$fileName'")
+    if (file == null) {
+        if (maybeAbsent) return emptyList()
+        else throw Error("Cannot read file '$fileName'")
+    }
     val list = mutableListOf<String>()
     try {
         memScoped {

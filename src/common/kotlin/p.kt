@@ -1,3 +1,7 @@
+/*
+ *
+ */
+
 fun StringBuilder.pDocumentHeader() = append("""<?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
@@ -807,7 +811,7 @@ fun StringBuilder.pDocumentHeader() = append("""<?xml version="1.0" encoding="UT
        <text:p text:style-name="P13"/>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп2.F1" table:number-rows-spanned="3" office:value-type="string">
-       <text:p text:style-name="P29">ИСЕБ.469475.423-1 ПЭ3</text:p>
+       <text:p text:style-name="P29">${board.code} ПЭ3</text:p>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп2.G1" office:value-type="string">
        <text:p text:style-name="P10">Лист</text:p>
@@ -887,7 +891,7 @@ fun StringBuilder.pDocumentHeader() = append("""<?xml version="1.0" encoding="UT
        <text:p text:style-name="P12"/>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп.F1" table:number-rows-spanned="3" table:number-columns-spanned="6" office:value-type="string">
-       <text:p text:style-name="P29">ИСЕБ.469475.423-1 ПЭ3</text:p>
+       <text:p text:style-name="P29">${board.code} ПЭ3</text:p>
       </table:table-cell>
       <table:covered-table-cell/>
       <table:covered-table-cell/>
@@ -947,7 +951,7 @@ fun StringBuilder.pDocumentHeader() = append("""<?xml version="1.0" encoding="UT
       </table:table-cell>
       <table:covered-table-cell/>
       <table:table-cell table:style-name="Штамп.B2" office:value-type="string">
-       <text:p text:style-name="P14">Половодов</text:p>
+       <text:p text:style-name="P14">${board.developed}</text:p>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп.B2" office:value-type="string">
        <text:p text:style-name="P12"/>
@@ -956,7 +960,7 @@ fun StringBuilder.pDocumentHeader() = append("""<?xml version="1.0" encoding="UT
        <text:p text:style-name="P12"/>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп.F4" table:number-rows-spanned="5" office:value-type="string">
-       <text:p text:style-name="P31">M2-KLA1-1</text:p>
+       <text:p text:style-name="P31">${board.name}</text:p>
        <text:p text:style-name="P30">Перечень элементов</text:p>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп.G4" table:number-columns-spanned="3" office:value-type="string">
@@ -977,7 +981,7 @@ fun StringBuilder.pDocumentHeader() = append("""<?xml version="1.0" encoding="UT
       </table:table-cell>
       <table:covered-table-cell/>
       <table:table-cell table:style-name="Штамп.B2" office:value-type="string">
-       <text:p text:style-name="P14">Сапатов</text:p>
+       <text:p text:style-name="P14">${board.checked}</text:p>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп.B2" office:value-type="string">
        <text:p text:style-name="P12"/>
@@ -1052,7 +1056,7 @@ fun StringBuilder.pDocumentHeader() = append("""<?xml version="1.0" encoding="UT
       </table:table-cell>
       <table:covered-table-cell/>
       <table:table-cell table:style-name="Штамп.C8" office:value-type="string">
-       <text:p text:style-name="P15">Кропотов</text:p>
+       <text:p text:style-name="P15">${board.approved}</text:p>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп.C8" office:value-type="string">
        <text:p text:style-name="P4"/>
