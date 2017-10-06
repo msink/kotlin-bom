@@ -196,8 +196,8 @@ fun makeList(bom: List<Component>, fileName: String) {
         out.pTableHeaderRow(category); ++line
         var first = list[0]
         var count = 1
-        list.forEachIndexed { index, current ->
-            if (index < list.lastIndex && list[index + 1].name == first.name) {
+        list.forEachIndexed { i, current ->
+            if (i < list.lastIndex && list[i + 1].name == first.name) {
                 count++
             } else {
                 val refdes = when (count) {
@@ -205,11 +205,11 @@ fun makeList(bom: List<Component>, fileName: String) {
                     2 -> first.refdes + ", " + current.refdes
                     else -> first.refdes + ".." + current.refdes
                 }
-                if (index < list.lastIndex) {
-                    first = list[index + 1]
+                out.pTableRow(refdes, first.name, count); ++line
+                if (i < list.lastIndex) {
+                    first = list[i + 1]
                     count = 1
                 }
-                out.pTableRow(refdes, first.name, count); ++line
             }
         }
     }
@@ -250,8 +250,8 @@ fun makeZakaz(bom: List<Component>, fileName: String) {
             out.zTableHeaderRow(header); ++line
             lastHeader = header
         }
-        list.groupBy { it.name }.forEach { (name, it) ->
-            out.zTableRow(name, it.size); ++line
+        list.groupBy { it.name }.forEach { (name, group) ->
+            out.zTableRow(name, group.size); ++line
         }
     }
     while (!line.isLastOnPage()) {
