@@ -189,6 +189,7 @@ fun makeList(bom: List<Component>, fileName: String) {
                 "Прочие")) {
         val list = bom.filter { it.category == category }
         if (list.isEmpty()) continue;
+        out.pTableEmptyRow(); ++line
         if (line.isLastOnPage()) {
             out.pTableEmptyRow(); ++line
         }
@@ -242,6 +243,7 @@ fun makeZakaz(bom: List<Component>, fileName: String) {
                 .sortedWith(compareBy({ it.prefix }, { it.value }, { it.name }))
         if (list.isEmpty()) continue;
         if (header != lastHeader) {
+            out.zTableEmptyRow(); ++line
             if (line.isLastOnPage()) {
                 out.zTableEmptyRow(); ++line
             }

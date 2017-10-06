@@ -5,23 +5,23 @@
 fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><meta:creation-date>2001-02-18T22:55:00</meta:creation-date><dc:date>2017-10-04T16:58:24.264000000</dc:date><meta:print-date>2017-10-03T13:59:38.864000000</meta:print-date><meta:editing-cycles>34</meta:editing-cycles><meta:editing-duration>PT1H56M19S</meta:editing-duration><meta:generator>LibreOffice/5.3.6.1${'$'}Windows_X86_64 LibreOffice_project/686f202eff87ef707079aeb7f485847613344eb7</meta:generator><meta:document-statistic meta:character-count="1272" meta:image-count="0" meta:non-whitespace-character-count="1227" meta:object-count="0" meta:page-count="2" meta:paragraph-count="120" meta:table-count="3" meta:word-count="165"/><meta:template xlink:type="simple" xlink:actuate="onRequest" xlink:title="Normal.dot" xlink:href=""/></office:meta>
+ <office:meta><meta:creation-date>2001-02-18T22:55:00</meta:creation-date><dc:date>2017-10-06T15:39:43.611000000</dc:date><meta:print-date>2017-10-03T13:59:38.864000000</meta:print-date><meta:editing-cycles>39</meta:editing-cycles><meta:editing-duration>PT2H16M7S</meta:editing-duration><meta:generator>LibreOffice/5.3.6.1${'$'}Windows_X86_64 LibreOffice_project/686f202eff87ef707079aeb7f485847613344eb7</meta:generator><meta:document-statistic meta:table-count="3" meta:image-count="0" meta:object-count="0" meta:page-count="4" meta:paragraph-count="213" meta:word-count="273" meta:character-count="1955" meta:non-whitespace-character-count="1895"/><meta:template xlink:type="simple" xlink:actuate="onRequest" xlink:title="Normal.dot" xlink:href=""/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
    <config:config-item config:name="ViewAreaTop" config:type="long">0</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
-   <config:config-item config:name="ViewAreaWidth" config:type="long">72940</config:config-item>
+   <config:config-item config:name="ViewAreaWidth" config:type="long">72268</config:config-item>
    <config:config-item config:name="ViewAreaHeight" config:type="long">30805</config:config-item>
    <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
    <config:config-item config:name="InBrowseMode" config:type="boolean">false</config:config-item>
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">6893</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">9839</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">12236</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">1595</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
      <config:config-item config:name="VisibleTop" config:type="long">0</config:config-item>
-     <config:config-item config:name="VisibleRight" config:type="long">72939</config:config-item>
+     <config:config-item config:name="VisibleRight" config:type="long">72267</config:config-item>
      <config:config-item config:name="VisibleBottom" config:type="long">30803</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">2</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">0</config:config-item>
@@ -34,22 +34,13 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
   </config:config-item-set>
   <config:config-item-set config:name="ooo:configuration-settings">
    <config:config-item config:name="ProtectForm" config:type="boolean">false</config:config-item>
-   <config:config-item-map-indexed config:name="ForbiddenCharacters">
-    <config:config-item-map-entry>
-     <config:config-item config:name="Language" config:type="string">ja</config:config-item>
-     <config:config-item config:name="Country" config:type="string">JP</config:config-item>
-     <config:config-item config:name="Variant" config:type="string"/>
-     <config:config-item config:name="BeginLine" config:type="string">!%),.:;?]}¢°’”‰′″℃、。々〉》」』】〕゛゜ゝゞ・ヽヾ！％），．：；？］｝｡｣､･ﾞﾟ￠</config:config-item>
-     <config:config-item config:name="EndLine" config:type="string">${'$'}([\{£¥‘“〈《「『【〔＄（［｛｢￡￥</config:config-item>
-    </config:config-item-map-entry>
-   </config:config-item-map-indexed>
-   <config:config-item config:name="PrinterName" config:type="string">Kyocera Mita KM-1650 KX</config:config-item>
+   <config:config-item config:name="PrinterName" config:type="string"/>
    <config:config-item config:name="EmbeddedDatabaseName" config:type="string"/>
    <config:config-item config:name="CurrentDatabaseDataSource" config:type="string"/>
    <config:config-item config:name="LinkUpdateMode" config:type="short">1</config:config-item>
    <config:config-item config:name="AddParaTableSpacingAtStart" config:type="boolean">true</config:config-item>
    <config:config-item config:name="FloattableNomargins" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="UnbreakableNumberings" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="UnbreakableNumberings" config:type="boolean">false</config:config-item>
    <config:config-item config:name="FieldAutoUpdate" config:type="boolean">true</config:config-item>
    <config:config-item config:name="AddVerticalFrameOffsets" config:type="boolean">false</config:config-item>
    <config:config-item config:name="BackgroundParaOverDrawings" config:type="boolean">false</config:config-item>
@@ -57,12 +48,12 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
    <config:config-item config:name="ChartAutoUpdate" config:type="boolean">true</config:config-item>
    <config:config-item config:name="CurrentDatabaseCommand" config:type="string"/>
    <config:config-item config:name="AlignTabStopPosition" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="PrinterSetup" config:type="base64Binary">xSX+/0t5b2NlcmEgTWl0YSBLTS0xNjUwIEtYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAS3lvY2VyYSBNaXRhIEtNLTE2NTAgS1gAAAAAAAAAAAAWAAEA5iQAAAAAAAAEAAhSAAAEdAAAM1ROVwAAAAAKAEsAeQBvAGMAZQByAGEAIABNAGkAdABhACAASwBNAC0AMQA2ADUAMAAgAEsAWAAAAAAAAAAAAAAAAAAAAAAAAAABBAMB3AAAJAP/hAMBAAkAAAAAAGQAAQAHAFgCAgABAFgCAgABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAMAAAAcAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABkUGNLAQAAAEoBAAAwCAAAkAAJAAAANAiaCyoAKgCYEp4aKgAqAJ4amBI0CJoLKgAqAJgSnhoqACoAnhqYEgAABAACAAAAAAAAAAAAAgAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAMDAxAAAAAAAFAAAAAAAAADAwMDAAAAAAAAAAAEwgAACuLQAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEwgAACuLQAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAAAABgAAAAAKoIBkAGQAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAQAAAAEAAAAAAAAAAQAAAEAAAgACAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAIA/AAAAAAEAHgAAAAAADAAAAAAAgD8AAAAAAAAAAAEAAAABAAAAWAIAAFgCAAAAAAAA/////wEBAAABAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAIACAABKAQAALAEAAFgCAACWAAAAPAAAABYAAAAAAAAABQAAAOwAwgHsAMIB7ADCAewAwgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAECgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADnAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAIAAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAMDAwMAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGRQY0tQwwAASgEAADABAAAAAAAAAAAAAAAAAAABAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAABkUGNLECcAAEoBAAAYAAAAAAAAAAAAAABkUGNLIE4AAEoBAAAsAQAAAAAAAAAAAAAhBDUEOgRABDUEQgQ9BD4EIAAxAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABkUGNL6QMAAEoBAADUAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASAENPTVBBVF9EVVBMRVhfTU9ERQ8ARHVwbGV4TW9kZTo6T2Zm</config:config-item>
+   <config:config-item config:name="PrinterSetup" config:type="base64Binary"/>
    <config:config-item config:name="IsKernAsianPunctuation" config:type="boolean">false</config:config-item>
    <config:config-item config:name="CharacterCompressionType" config:type="short">0</config:config-item>
    <config:config-item config:name="ApplyUserData" config:type="boolean">true</config:config-item>
    <config:config-item config:name="SaveGlobalDocumentLinks" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="SurroundTextWrapSmall" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="SurroundTextWrapSmall" config:type="boolean">false</config:config-item>
    <config:config-item config:name="SmallCapsPercentage66" config:type="boolean">false</config:config-item>
    <config:config-item config:name="CurrentDatabaseCommandType" config:type="int">0</config:config-item>
    <config:config-item config:name="SaveVersionOnClose" config:type="boolean">false</config:config-item>
@@ -73,8 +64,8 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
    <config:config-item config:name="DoNotCaptureDrawObjsOnPage" config:type="boolean">false</config:config-item>
    <config:config-item config:name="UseFormerObjectPositioning" config:type="boolean">false</config:config-item>
    <config:config-item config:name="IsLabelDocument" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="AddFrameOffsets" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="AllowPaddingWithoutBorders" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AddFrameOffsets" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AllowPaddingWithoutBorders" config:type="boolean">false</config:config-item>
    <config:config-item config:name="AddExternalLeading" config:type="boolean">true</config:config-item>
    <config:config-item config:name="UseOldNumbering" config:type="boolean">false</config:config-item>
    <config:config-item config:name="OutlineLevelYieldsNumbering" config:type="boolean">false</config:config-item>
@@ -85,26 +76,26 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
    <config:config-item config:name="AddParaSpacingToTableCells" config:type="boolean">true</config:config-item>
    <config:config-item config:name="UseFormerTextWrapping" config:type="boolean">false</config:config-item>
    <config:config-item config:name="RedlineProtectionKey" config:type="base64Binary"/>
-   <config:config-item config:name="ConsiderTextWrapOnObjPos" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="ConsiderTextWrapOnObjPos" config:type="boolean">false</config:config-item>
    <config:config-item config:name="DoNotJustifyLinesWithManualBreak" config:type="boolean">false</config:config-item>
    <config:config-item config:name="EmbedFonts" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="TableRowKeep" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="TabsRelativeToIndent" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="IgnoreTabsAndBlanksForLineCalculation" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="RsidRoot" config:type="int">745129</config:config-item>
+   <config:config-item config:name="TableRowKeep" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabsRelativeToIndent" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="IgnoreTabsAndBlanksForLineCalculation" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="RsidRoot" config:type="int">228619</config:config-item>
    <config:config-item config:name="LoadReadonly" config:type="boolean">false</config:config-item>
    <config:config-item config:name="ClipAsCharacterAnchoredWriterFlyFrames" config:type="boolean">false</config:config-item>
    <config:config-item config:name="UnxForceZeroExtLeading" config:type="boolean">false</config:config-item>
    <config:config-item config:name="UseOldPrinterMetrics" config:type="boolean">false</config:config-item>
    <config:config-item config:name="TabAtLeftIndentForParagraphsInList" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="Rsid" config:type="int">4229049</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">443059</config:config-item>
    <config:config-item config:name="MathBaselineAlignment" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="InvertBorderSpacing" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="InvertBorderSpacing" config:type="boolean">false</config:config-item>
    <config:config-item config:name="CollapseEmptyCellPara" config:type="boolean">true</config:config-item>
    <config:config-item config:name="TabOverflow" config:type="boolean">true</config:config-item>
    <config:config-item config:name="StylesNoDefault" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="ClippedPictures" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="TabOverMargin" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="ClippedPictures" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="TabOverMargin" config:type="boolean">false</config:config-item>
    <config:config-item config:name="TreatSingleColumnBreakAsPageBreak" config:type="boolean">false</config:config-item>
    <config:config-item config:name="ApplyParagraphMarkFormatToNumbering" config:type="boolean">false</config:config-item>
    <config:config-item config:name="PropLineSpacingShrinksFirstLine" config:type="boolean">true</config:config-item>
@@ -140,6 +131,7 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
   <style:font-face style:name="Liberation Serif" svg:font-family="&apos;Liberation Serif&apos;" style:font-family-generic="roman" style:font-pitch="variable"/>
   <style:font-face style:name="Times New Roman" svg:font-family="&apos;Times New Roman&apos;" style:font-family-generic="roman" style:font-pitch="variable"/>
   <style:font-face style:name="Arial" svg:font-family="Arial" style:font-family-generic="swiss" style:font-pitch="variable"/>
+  <style:font-face style:name="GOST type B" svg:font-family="&apos;GOST type B&apos;" style:font-family-generic="swiss" style:font-pitch="variable"/>
   <style:font-face style:name="Liberation Sans" svg:font-family="&apos;Liberation Sans&apos;" style:font-family-generic="swiss" style:font-pitch="variable"/>
   <style:font-face style:name="Mangal" svg:font-family="Mangal" style:font-family-generic="system" style:font-pitch="variable"/>
   <style:font-face style:name="Microsoft YaHei" svg:font-family="&apos;Microsoft YaHei&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
@@ -326,22 +318,22 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
    <style:table-row-properties style:min-row-height="0.501cm" fo:keep-together="auto"/>
   </style:style>
   <style:style style:name="Штамп2.A1" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп2.B1" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп2.F1" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="1pt solid #000000" fo:border-top="1pt solid #000000" fo:border-bottom="none" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп2.G1" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="1pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп2.A2" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп2.B2" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп2.G2" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
@@ -350,10 +342,10 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
    <style:table-row-properties style:min-row-height="0.499cm" fo:keep-together="auto"/>
   </style:style>
   <style:style style:name="Штамп2.A3" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border="none" style:writing-mode="lr-tb"/>
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="none" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп2.B3" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="none" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп" style:family="table">
    <style:table-properties style:width="18.33cm" fo:margin-left="0cm" table:align="left" style:writing-mode="lr-tb"/>
@@ -398,7 +390,7 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
    <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп.B1" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп.F1" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="1pt solid #000000" style:writing-mode="lr-tb"/>
@@ -407,37 +399,37 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
    <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп.B2" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп.A3" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="none" fo:border-bottom="1pt solid #000000" style:writing-mode="lr-tb"/>
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="1pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="Штамп.B3" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="1pt solid #000000" style:writing-mode="lr-tb"/>
+  <style:style style:name="Штамп.A4" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Штамп.C4" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп.E4" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="1pt solid #000000" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="1pt solid #000000" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп.F4" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="1pt solid #000000" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп.G4" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="1pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="Штамп.J4" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+  <style:style style:name="Штамп.H5" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="1pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп.G6" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп.A8" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border="none" style:writing-mode="lr-tb"/>
-  </style:style>
-  <style:style style:name="Штамп.C8" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border="none" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп.E8" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="1pt solid #000000" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="1pt solid #000000" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп2" style:family="table">
    <style:table-properties style:width="18.33cm" fo:margin-left="0cm" table:align="left" style:writing-mode="lr-tb"/>
@@ -467,22 +459,22 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
    <style:table-row-properties style:min-row-height="0.501cm" fo:keep-together="auto"/>
   </style:style>
   <style:style style:name="Штамп2.A1" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп2.B1" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп2.F1" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="1pt solid #000000" fo:border-top="1pt solid #000000" fo:border-bottom="none" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп2.G1" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="1pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп2.A2" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп2.B2" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп2.G2" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
@@ -491,10 +483,10 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
    <style:table-row-properties style:min-row-height="0.499cm" fo:keep-together="auto"/>
   </style:style>
   <style:style style:name="Штамп2.A3" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border="none" style:writing-mode="lr-tb"/>
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="none" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп2.B3" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.05pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="none" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп" style:family="table">
    <style:table-properties style:width="18.33cm" fo:margin-left="0cm" table:align="left" style:writing-mode="lr-tb"/>
@@ -539,7 +531,7 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
    <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп.B1" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп.F1" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="1pt solid #000000" style:writing-mode="lr-tb"/>
@@ -548,213 +540,167 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
    <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп.B2" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп.A3" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="none" fo:border-bottom="1pt solid #000000" style:writing-mode="lr-tb"/>
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="1pt solid #000000" fo:border-bottom="1pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="Штамп.B3" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="1pt solid #000000" style:writing-mode="lr-tb"/>
+  <style:style style:name="Штамп.A4" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="none" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="Штамп.C4" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп.E4" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="1pt solid #000000" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="1pt solid #000000" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп.F4" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="1pt solid #000000" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп.G4" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="1pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
-  <style:style style:name="Штамп.J4" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+  <style:style style:name="Штамп.H5" style:family="table-cell">
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="1pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп.G6" style:family="table-cell">
    <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп.A8" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border="none" style:writing-mode="lr-tb"/>
-  </style:style>
-  <style:style style:name="Штамп.C8" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border="none" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Штамп.E8" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="top" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="1pt solid #000000" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="1pt solid #000000" fo:border-top="none" fo:border-bottom="none" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Перечень" style:family="table" style:master-page-name="First_20_Page">
-   <style:table-properties style:width="18.33cm" fo:margin-left="0cm" style:page-number="auto" table:align="left" style:writing-mode="lr-tb"/>
+   <style:table-properties style:width="18.33cm" fo:margin-left="0cm" style:page-number="auto" table:align="left" style:shadow="none" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Перечень.A" style:family="table-column">
-   <style:table-column-properties style:column-width="15.33cm"/>
+   <style:table-column-properties style:column-width="14.33cm"/>
   </style:style>
   <style:style style:name="Перечень.B" style:family="table-column">
-   <style:table-column-properties style:column-width="3cm"/>
+   <style:table-column-properties style:column-width="4.001cm"/>
   </style:style>
   <style:style style:name="Перечень.1" style:family="table-row">
    <style:table-row-properties style:row-height="1.33cm" fo:keep-together="auto"/>
   </style:style>
   <style:style style:name="Перечень.A1" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="1pt solid #000000" style:writing-mode="lr-tb"/>
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="1pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Перечень.B1" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="0.5pt solid #000000" fo:border-top="none" fo:border-bottom="1pt solid #000000" style:writing-mode="lr-tb"/>
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="1pt solid #000000" fo:border-top="none" fo:border-bottom="1pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Перечень.2" style:family="table-row">
    <style:table-row-properties style:row-height="0.801cm" fo:keep-together="auto"/>
   </style:style>
   <style:style style:name="Перечень.A2" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="none" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="Перечень.B2" style:family="table-cell">
-   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="0.5pt solid #000000" fo:border-right="0.5pt solid #000000" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
+   <style:table-cell-properties style:vertical-align="middle" fo:padding-left="0.191cm" fo:padding-right="0.191cm" fo:padding-top="0cm" fo:padding-bottom="0cm" fo:border-left="1pt solid #000000" fo:border-right="1pt solid #000000" fo:border-top="none" fo:border-bottom="0.5pt solid #000000" style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="P1" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties officeooo:paragraph-rsid="001163f7"/>
+   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" style:snap-to-layout-grid="false"/>
+   <style:text-properties style:use-window-font-color="true" style:font-name="GOST type B" fo:font-size="12pt" fo:language="zxx" fo:country="none" fo:font-style="italic" officeooo:rsid="0013000c" officeooo:paragraph-rsid="002a72a9" style:font-name-asian="Times New Roman" style:font-size-asian="12pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="italic" style:font-name-complex="Times New Roman" style:font-size-complex="12pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="italic"/>
   </style:style>
   <style:style style:name="P2" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" style:snap-to-layout-grid="false"/>
-   <style:text-properties fo:font-size="12pt" fo:language="zxx" fo:country="none" officeooo:rsid="001fb975" officeooo:paragraph-rsid="001fb975" style:font-size-asian="12pt" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
+   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0.101cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0.811cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
+   <style:text-properties style:font-name="GOST type B" fo:font-size="16pt" fo:language="zxx" fo:country="none" fo:font-style="italic" officeooo:rsid="001fb975" officeooo:paragraph-rsid="001fb975" style:font-size-asian="16pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="italic" style:font-size-complex="16pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="italic"/>
   </style:style>
   <style:style style:name="P3" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" style:snap-to-layout-grid="false"/>
-   <style:text-properties fo:font-size="12pt" fo:language="zxx" fo:country="none" officeooo:rsid="001be318" officeooo:paragraph-rsid="001be318" style:font-size-asian="12pt" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
+   <style:paragraph-properties fo:margin-left="-0.191cm" fo:margin-right="-0.231cm" fo:margin-top="0cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:writing-mode="lr-tb"/>
+   <style:text-properties style:font-name="GOST type B" fo:font-size="10pt" fo:language="zxx" fo:country="none" fo:font-style="italic" officeooo:paragraph-rsid="001163f7" style:font-size-asian="10pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="italic" style:font-name-complex="Arial" style:font-size-complex="10pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="italic"/>
   </style:style>
   <style:style style:name="P4" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties style:snap-to-layout-grid="false"/>
-   <style:text-properties officeooo:paragraph-rsid="001163f7"/>
+   <style:paragraph-properties fo:margin-left="-0.101cm" fo:margin-right="-0.199cm" fo:margin-top="0.101cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
+   <style:text-properties style:font-name="GOST type B" fo:language="zxx" fo:country="none" fo:font-style="italic" officeooo:rsid="0013000c" officeooo:paragraph-rsid="0013000c" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="italic" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="italic"/>
   </style:style>
   <style:style style:name="P5" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
-   <style:text-properties style:font-name="Arial" fo:font-size="9pt" fo:language="zxx" fo:country="none" officeooo:rsid="001163f7" officeooo:paragraph-rsid="001163f7" style:font-size-asian="9pt" style:language-asian="zxx" style:country-asian="none" style:font-name-complex="Arial" style:language-complex="zxx" style:country-complex="none"/>
+   <style:paragraph-properties fo:margin-left="-0.101cm" fo:margin-right="-0.199cm" fo:margin-top="0.101cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
+   <style:text-properties style:font-name="GOST type B" fo:language="zxx" fo:country="none" fo:font-style="italic" officeooo:rsid="0013000c" officeooo:paragraph-rsid="0013000c" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="italic" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="italic"/>
   </style:style>
   <style:style style:name="P6" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
-   <style:text-properties style:font-name="Arial" fo:font-size="9pt" fo:language="zxx" fo:country="none" officeooo:paragraph-rsid="001163f7" style:font-size-asian="9pt" style:language-asian="zxx" style:country-asian="none" style:font-name-complex="Arial" style:language-complex="zxx" style:country-complex="none"/>
+   <style:paragraph-properties fo:margin-left="-0.199cm" fo:margin-right="-0.199cm" fo:margin-top="0.101cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:writing-mode="lr-tb"/>
+   <style:text-properties style:font-name="GOST type B" fo:font-size="16pt" fo:language="zxx" fo:country="none" fo:font-style="italic" officeooo:paragraph-rsid="000b5ea9" style:font-size-asian="16pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="italic" style:font-size-complex="16pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" style:snap-to-layout-grid="false"/>
-   <style:text-properties fo:font-size="14pt" fo:language="zxx" fo:country="none" officeooo:paragraph-rsid="001163f7" style:font-size-asian="14pt" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
+  <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Heading_20_4">
+   <style:paragraph-properties fo:margin-left="-0.199cm" fo:margin-right="-0.199cm" fo:margin-top="0.101cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:text-indent="0cm" style:auto-text-indent="false" style:writing-mode="lr-tb"/>
+   <style:text-properties style:font-name="GOST type B" fo:font-size="16pt" fo:language="zxx" fo:country="none" fo:font-style="italic" officeooo:paragraph-rsid="000b5ea9" style:font-size-asian="16pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="italic" style:font-size-complex="16pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="italic"/>
   </style:style>
   <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" style:snap-to-layout-grid="false"/>
-   <style:text-properties fo:font-size="14pt" fo:language="zxx" fo:country="none" officeooo:paragraph-rsid="001369b7" style:font-size-asian="14pt" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
+   <style:paragraph-properties fo:margin-left="0.199cm" fo:margin-right="0cm" fo:margin-top="0.101cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
+   <style:text-properties style:font-name="GOST type B" fo:font-size="16pt" fo:language="zxx" fo:country="none" fo:font-style="italic" officeooo:rsid="001fb975" officeooo:paragraph-rsid="001fb975" style:font-size-asian="16pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="italic" style:font-size-complex="16pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="italic"/>
   </style:style>
   <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false"/>
-   <style:text-properties style:use-window-font-color="true" style:font-name="Times New Roman" fo:font-size="10pt" fo:language="zxx" fo:country="none" officeooo:rsid="0013000c" officeooo:paragraph-rsid="001163f7" style:font-name-asian="Times New Roman" style:font-size-asian="10pt" style:language-asian="zxx" style:country-asian="none" style:font-name-complex="Times New Roman" style:font-size-complex="10pt" style:language-complex="zxx" style:country-complex="none"/>
+   <style:paragraph-properties fo:margin-left="-0.3cm" fo:margin-right="-0.3cm" fo:margin-top="0.101cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
+   <style:text-properties style:font-name="GOST type B" fo:font-size="10pt" fo:language="zxx" fo:country="none" fo:font-style="italic" officeooo:rsid="001163f7" officeooo:paragraph-rsid="001163f7" style:font-size-asian="10pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="italic" style:font-size-complex="10pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="italic"/>
   </style:style>
   <style:style style:name="P10" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" style:snap-to-layout-grid="false"/>
-   <style:text-properties style:use-window-font-color="true" style:font-name="Times New Roman" fo:font-size="10pt" fo:language="zxx" fo:country="none" officeooo:rsid="0013000c" officeooo:paragraph-rsid="001369b7" style:font-name-asian="Times New Roman" style:font-size-asian="10pt" style:language-asian="zxx" style:country-asian="none" style:font-name-complex="Times New Roman" style:font-size-complex="10pt" style:language-complex="zxx" style:country-complex="none"/>
+   <style:paragraph-properties fo:margin-left="-0.3cm" fo:margin-right="-0.3cm" fo:margin-top="0cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:writing-mode="lr-tb"/>
+   <style:text-properties style:font-name="GOST type B" fo:font-size="10pt" fo:language="zxx" fo:country="none" fo:font-style="italic" officeooo:paragraph-rsid="001163f7" style:font-size-asian="10pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="italic" style:font-name-complex="Arial" style:font-size-complex="10pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="italic"/>
   </style:style>
   <style:style style:name="P11" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" style:snap-to-layout-grid="false"/>
-   <style:text-properties style:use-window-font-color="true" style:font-name="Times New Roman" fo:font-size="12pt" fo:language="zxx" fo:country="none" officeooo:rsid="0013000c" officeooo:paragraph-rsid="002a72a9" style:font-name-asian="Times New Roman" style:font-size-asian="12pt" style:language-asian="zxx" style:country-asian="none" style:font-name-complex="Times New Roman" style:font-size-complex="12pt" style:language-complex="zxx" style:country-complex="none"/>
+   <style:paragraph-properties fo:margin-left="-0.101cm" fo:margin-right="-0.3cm" fo:margin-top="0.101cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
+   <style:text-properties style:font-name="GOST type B" fo:language="zxx" fo:country="none" fo:font-style="italic" officeooo:rsid="001163f7" officeooo:paragraph-rsid="001163f7" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="italic" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="italic"/>
   </style:style>
   <style:style style:name="P12" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties style:snap-to-layout-grid="false"/>
-   <style:text-properties fo:language="zxx" fo:country="none" officeooo:paragraph-rsid="001163f7" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
+   <style:paragraph-properties fo:margin-left="-0.101cm" fo:margin-right="-0.499cm" fo:margin-top="0.101cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
+   <style:text-properties style:font-name="GOST type B" fo:font-size="10pt" fo:language="zxx" fo:country="none" fo:font-style="italic" fo:font-weight="normal" officeooo:rsid="003438d8" officeooo:paragraph-rsid="003438d8" style:font-size-asian="10pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="italic" style:font-weight-asian="normal" style:font-size-complex="10pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="italic" style:font-weight-complex="normal"/>
   </style:style>
   <style:style style:name="P13" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties style:snap-to-layout-grid="false"/>
-   <style:text-properties fo:language="zxx" fo:country="none" officeooo:paragraph-rsid="001369b7" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
+   <style:paragraph-properties fo:margin-left="-0.101cm" fo:margin-right="-0.499cm" fo:margin-top="0.101cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
+   <style:text-properties style:font-name="GOST type B" fo:language="zxx" fo:country="none" fo:font-style="italic" officeooo:paragraph-rsid="001163f7" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="italic" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="italic"/>
   </style:style>
   <style:style style:name="P14" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties style:snap-to-layout-grid="false"/>
-   <style:text-properties fo:language="zxx" fo:country="none" fo:font-style="italic" fo:font-weight="normal" officeooo:rsid="003438d8" officeooo:paragraph-rsid="003438d8" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="italic" style:font-weight-asian="normal" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="italic" style:font-weight-complex="normal"/>
+   <style:paragraph-properties fo:margin-left="-0.3cm" fo:margin-right="-0.199cm" fo:margin-top="0.101cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
+   <style:text-properties style:font-name="GOST type B" fo:font-size="16pt" fo:language="zxx" fo:country="none" fo:font-style="italic" officeooo:rsid="001fb975" officeooo:paragraph-rsid="001fb975" style:font-size-asian="16pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="italic" style:font-size-complex="16pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="italic"/>
   </style:style>
   <style:style style:name="P15" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties style:snap-to-layout-grid="false"/>
-   <style:text-properties fo:language="zxx" fo:country="none" fo:font-style="italic" officeooo:rsid="003438d8" officeooo:paragraph-rsid="003438d8" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="italic" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="italic"/>
+   <style:paragraph-properties fo:margin-top="0.101cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:text-align="center" style:justify-single-word="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
+   <style:text-properties style:font-name="GOST type B" fo:font-size="16pt" fo:language="zxx" fo:country="none" fo:font-style="italic" officeooo:rsid="001be318" officeooo:paragraph-rsid="001be318" style:font-size-asian="16pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="italic" style:font-size-complex="16pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="italic"/>
   </style:style>
   <style:style style:name="P16" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0.811cm" style:auto-text-indent="false" style:snap-to-layout-grid="false"/>
-   <style:text-properties fo:font-size="12pt" fo:language="zxx" fo:country="none" officeooo:rsid="001fb975" officeooo:paragraph-rsid="001fb975" style:font-size-asian="12pt" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
+   <style:paragraph-properties fo:margin-top="0.101cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
+   <style:text-properties style:font-name="GOST type B" fo:language="zxx" fo:country="none" fo:font-style="italic" officeooo:paragraph-rsid="001163f7" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="italic" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="italic"/>
   </style:style>
   <style:style style:name="P17" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.191cm" fo:margin-right="-0.231cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false"/>
-   <style:text-properties style:font-name="Times New Roman" fo:font-size="10pt" fo:language="zxx" fo:country="none" officeooo:paragraph-rsid="001163f7" style:font-size-asian="10pt" style:language-asian="zxx" style:country-asian="none" style:font-name-complex="Arial" style:font-size-complex="10pt" style:language-complex="zxx" style:country-complex="none"/>
+   <style:paragraph-properties fo:margin-top="0.101cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
+   <style:text-properties style:font-name="GOST type B" fo:language="zxx" fo:country="none" fo:font-style="italic" officeooo:paragraph-rsid="001369b7" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="italic" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="italic"/>
   </style:style>
   <style:style style:name="P18" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.101cm" fo:margin-right="-0.199cm" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties style:use-window-font-color="true" style:font-name="Times New Roman" fo:font-size="10pt" officeooo:rsid="001163f7" officeooo:paragraph-rsid="001163f7" style:font-name-asian="Times New Roman" style:font-size-asian="10pt" style:font-name-complex="Times New Roman" style:font-size-complex="10pt"/>
+   <style:paragraph-properties fo:margin-top="0.101cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:text-align="center" style:justify-single-word="false" style:vertical-align="middle" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
+   <style:text-properties style:font-name="GOST type B" fo:font-size="20pt" fo:language="zxx" fo:country="none" fo:font-style="italic" officeooo:rsid="003438d8" officeooo:paragraph-rsid="003438d8" style:font-size-asian="20pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="italic" style:font-size-complex="20pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="italic"/>
   </style:style>
   <style:style style:name="P19" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.101cm" fo:margin-right="-0.199cm" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties fo:language="zxx" fo:country="none" officeooo:rsid="0013000c" officeooo:paragraph-rsid="0013000c" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
+   <style:paragraph-properties fo:margin-top="0.101cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:text-align="center" style:justify-single-word="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
+   <style:text-properties style:font-name="GOST type B" fo:font-size="14pt" fo:language="zxx" fo:country="none" fo:font-style="italic" officeooo:rsid="003438d8" officeooo:paragraph-rsid="003438d8" style:font-size-asian="14pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="italic" style:font-size-complex="14pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="italic"/>
   </style:style>
   <style:style style:name="P20" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.101cm" fo:margin-right="-0.199cm" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties fo:language="zxx" fo:country="none" officeooo:rsid="001163f7" officeooo:paragraph-rsid="001163f7" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
+   <style:paragraph-properties fo:margin-top="0.101cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:text-align="center" style:justify-single-word="false" style:writing-mode="lr-tb"/>
+   <style:text-properties style:font-name="GOST type B" fo:font-size="9pt" fo:language="zxx" fo:country="none" fo:font-style="italic" officeooo:rsid="001163f7" officeooo:paragraph-rsid="001163f7" style:font-size-asian="9pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="italic" style:font-name-complex="Arial" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="P21" style:family="paragraph" style:parent-style-name="Heading_20_6">
-   <style:paragraph-properties style:snap-to-layout-grid="false"/>
-   <style:text-properties fo:font-size="12pt" fo:language="zxx" fo:country="none" officeooo:rsid="001be318" officeooo:paragraph-rsid="001be318" style:font-size-asian="12pt" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
+  <style:style style:name="P21" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:margin-top="0.101cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:text-align="center" style:justify-single-word="false" style:writing-mode="lr-tb"/>
+   <style:text-properties style:font-name="GOST type B" fo:font-size="9pt" fo:language="zxx" fo:country="none" fo:font-style="italic" officeooo:paragraph-rsid="001163f7" style:font-size-asian="9pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="italic" style:font-name-complex="Arial" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="P22" style:family="paragraph" style:parent-style-name="Heading_20_4">
-   <style:paragraph-properties fo:margin-left="-0.199cm" fo:margin-right="-0.199cm" fo:text-indent="0cm" style:auto-text-indent="false" style:writing-mode="lr-tb"/>
-   <style:text-properties fo:language="zxx" fo:country="none" officeooo:paragraph-rsid="000b5ea9" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
+  <style:style style:name="P22" style:family="paragraph" style:parent-style-name="Standard">
+   <style:paragraph-properties fo:margin-top="0.101cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:text-align="center" style:justify-single-word="false" style:writing-mode="lr-tb"/>
+   <style:text-properties style:use-window-font-color="true" style:font-name="GOST type B" fo:font-size="10pt" fo:language="zxx" fo:country="none" fo:font-style="italic" officeooo:rsid="0013000c" officeooo:paragraph-rsid="001163f7" style:font-name-asian="Times New Roman" style:font-size-asian="10pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="italic" style:font-name-complex="Times New Roman" style:font-size-complex="10pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="italic"/>
   </style:style>
   <style:style style:name="P23" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.199cm" fo:margin-right="-0.199cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties fo:font-size="12pt" fo:language="zxx" fo:country="none" officeooo:rsid="001fb975" officeooo:paragraph-rsid="001fb975" style:font-size-asian="12pt" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
+   <style:paragraph-properties fo:margin-top="0.499cm" fo:margin-bottom="0.3cm" loext:contextual-spacing="false" fo:text-align="center" style:justify-single-word="false" style:vertical-align="middle" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
+   <style:text-properties style:font-name="GOST type B" fo:font-size="20pt" fo:language="zxx" fo:country="none" fo:font-style="italic" officeooo:rsid="003438d8" officeooo:paragraph-rsid="003438d8" style:font-size-asian="20pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="italic" style:font-size-complex="20pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="P24" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.199cm" fo:margin-right="-0.199cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:writing-mode="lr-tb"/>
-   <style:text-properties fo:font-size="12pt" fo:language="zxx" fo:country="none" officeooo:paragraph-rsid="000b5ea9" style:font-size-asian="12pt" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
+  <style:style style:name="P24" style:family="paragraph" style:parent-style-name="Heading_20_4">
+   <style:paragraph-properties fo:margin-left="-0.199cm" fo:margin-right="-0.199cm" fo:margin-top="0.101cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:text-indent="0cm" style:auto-text-indent="false" style:writing-mode="lr-tb"/>
+   <style:text-properties style:font-name="GOST type B" fo:font-size="16pt" fo:language="zxx" fo:country="none" fo:font-style="italic" officeooo:paragraph-rsid="000b5ea9" style:font-size-asian="16pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="italic" style:font-size-complex="16pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="italic"/>
   </style:style>
-  <style:style style:name="P25" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.101cm" fo:margin-right="-0.101cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties fo:font-size="12pt" fo:language="zxx" fo:country="none" officeooo:rsid="001fb975" officeooo:paragraph-rsid="001fb975" style:font-size-asian="12pt" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
-  </style:style>
-  <style:style style:name="P26" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.101cm" fo:margin-right="-0.101cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties style:use-window-font-color="true" style:font-name="Times New Roman" fo:font-size="10pt" fo:language="zxx" fo:country="none" officeooo:rsid="0013000c" officeooo:paragraph-rsid="0013000c" style:font-name-asian="Times New Roman" style:font-size-asian="10pt" style:language-asian="zxx" style:country-asian="none" style:font-name-complex="Times New Roman" style:font-size-complex="10pt" style:language-complex="zxx" style:country-complex="none"/>
-  </style:style>
-  <style:style style:name="P27" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="0.199cm" fo:margin-right="0cm" fo:text-indent="0cm" style:auto-text-indent="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties fo:font-size="12pt" fo:language="zxx" fo:country="none" officeooo:rsid="001fb975" officeooo:paragraph-rsid="001fb975" style:font-size-asian="12pt" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
-  </style:style>
-  <style:style style:name="P28" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-left="-0.3cm" fo:margin-right="-0.3cm" fo:text-align="center" style:justify-single-word="false" fo:text-indent="0cm" style:auto-text-indent="false" style:writing-mode="lr-tb"/>
-   <style:text-properties style:font-name="Times New Roman" fo:font-size="10pt" fo:language="zxx" fo:country="none" officeooo:paragraph-rsid="001163f7" style:font-size-asian="10pt" style:language-asian="zxx" style:country-asian="none" style:font-name-complex="Arial" style:font-size-complex="10pt" style:language-complex="zxx" style:country-complex="none"/>
-  </style:style>
-  <style:style style:name="P29" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:text-align="center" style:justify-single-word="false" style:vertical-align="middle" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties fo:font-size="16pt" fo:language="zxx" fo:country="none" officeooo:rsid="003438d8" officeooo:paragraph-rsid="003438d8" style:font-size-asian="16pt" style:language-asian="zxx" style:country-asian="none" style:font-size-complex="16pt" style:language-complex="zxx" style:country-complex="none"/>
-  </style:style>
-  <style:style style:name="P30" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-top="0.4cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:text-align="center" style:justify-single-word="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties fo:font-size="14pt" fo:language="zxx" fo:country="none" officeooo:rsid="003438d8" officeooo:paragraph-rsid="003438d8" style:font-size-asian="14pt" style:language-asian="zxx" style:country-asian="none" style:font-size-complex="14pt" style:language-complex="zxx" style:country-complex="none"/>
-  </style:style>
-  <style:style style:name="P31" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-top="0.4cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:text-align="center" style:justify-single-word="false" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties fo:font-size="14pt" fo:language="zxx" fo:country="none" officeooo:rsid="003eb351" officeooo:paragraph-rsid="003eb351" style:font-size-asian="14pt" style:language-asian="zxx" style:country-asian="none" style:font-size-complex="14pt" style:language-complex="zxx" style:country-complex="none"/>
-  </style:style>
-  <style:style style:name="P32" style:family="paragraph" style:parent-style-name="Standard">
-   <style:paragraph-properties fo:margin-top="0.4cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:text-align="center" style:justify-single-word="false" style:vertical-align="middle" style:snap-to-layout-grid="false" style:writing-mode="lr-tb"/>
-   <style:text-properties fo:font-size="16pt" fo:language="zxx" fo:country="none" officeooo:rsid="003438d8" officeooo:paragraph-rsid="003438d8" style:font-size-asian="16pt" style:language-asian="zxx" style:country-asian="none" style:font-size-complex="16pt" style:language-complex="zxx" style:country-complex="none"/>
-  </style:style>
-  <style:style style:name="P33" style:family="paragraph" style:parent-style-name="Heading_20_4">
-   <style:paragraph-properties fo:margin-left="-0.199cm" fo:margin-right="-0.199cm" fo:text-indent="0cm" style:auto-text-indent="false" style:writing-mode="lr-tb"/>
-   <style:text-properties fo:language="zxx" fo:country="none" officeooo:paragraph-rsid="000b5ea9" style:language-asian="zxx" style:country-asian="none" style:language-complex="zxx" style:country-complex="none"/>
+  <style:style style:name="P25" style:family="paragraph" style:parent-style-name="Heading_20_4">
+   <style:paragraph-properties fo:margin-left="-0.199cm" fo:margin-right="-0.199cm" fo:margin-top="0.101cm" fo:margin-bottom="0cm" loext:contextual-spacing="false" fo:text-indent="0cm" style:auto-text-indent="false" style:writing-mode="lr-tb"/>
+   <style:text-properties style:font-name="GOST type B" fo:font-size="16pt" fo:language="zxx" fo:country="none" fo:font-style="italic" officeooo:paragraph-rsid="0006c2b3" style:font-size-asian="16pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="italic" style:font-size-complex="16pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="italic"/>
   </style:style>
   <style:style style:name="T1" style:family="text">
-   <style:text-properties fo:font-size="12pt" style:font-size-asian="12pt"/>
-  </style:style>
-  <style:style style:name="T2" style:family="text">
-   <style:text-properties style:use-window-font-color="true" style:font-name="Times New Roman" fo:font-size="10pt" fo:language="ru" fo:country="RU" officeooo:rsid="0013000c" style:font-name-asian="Times New Roman" style:font-size-asian="10pt" style:font-name-complex="Times New Roman" style:font-size-complex="10pt" style:language-complex="ar" style:country-complex="SA"/>
-  </style:style>
-  <style:style style:name="T3" style:family="text">
-   <style:text-properties style:use-window-font-color="true" style:font-name="Times New Roman" fo:font-size="10pt" style:font-name-asian="Times New Roman" style:font-size-asian="10pt" style:font-name-complex="Times New Roman" style:font-size-complex="10pt"/>
-  </style:style>
-  <style:style style:name="T4" style:family="text">
-   <style:text-properties style:use-window-font-color="true" style:font-name="Times New Roman" fo:font-size="10pt" officeooo:rsid="0013000c" style:font-name-asian="Times New Roman" style:font-size-asian="10pt" style:font-name-complex="Times New Roman" style:font-size-complex="10pt"/>
-  </style:style>
-  <style:style style:name="T5" style:family="text">
-   <style:text-properties fo:language="ru" fo:country="RU"/>
-  </style:style>
-  <style:style style:name="T6" style:family="text">
-   <style:text-properties fo:language="ru" fo:country="RU" officeooo:rsid="003eb351"/>
+   <style:text-properties officeooo:rsid="0006c2b3"/>
   </style:style>
   <style:page-layout style:name="pm1">
    <style:page-layout-properties fo:page-width="21.001cm" fo:page-height="29.7cm" style:num-format="1" style:print-orientation="portrait" fo:margin-top="0.6cm" fo:margin-bottom="0.45cm" fo:margin-left="2cm" fo:margin-right="0.6cm" fo:border="0.99pt solid #000000" fo:padding="0cm" style:shadow="none" style:writing-mode="lr-tb" style:layout-grid-color="#c0c0c0" style:layout-grid-lines="45" style:layout-grid-base-height="0.635cm" style:layout-grid-ruby-height="0cm" style:layout-grid-mode="none" style:layout-grid-ruby-below="false" style:layout-grid-print="false" style:layout-grid-display="false" style:layout-grid-base-width="0.353cm" style:layout-grid-snap-to="true" style:footnote-max-height="0cm">
@@ -789,63 +735,63 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
      <table:table-column table:style-name="Штамп2.G"/>
      <table:table-row table:style-name="Штамп2.1">
       <table:table-cell table:style-name="Штамп2.A1" office:value-type="string">
-       <text:p text:style-name="P13"/>
+       <text:p text:style-name="P17"/>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп2.B1" office:value-type="string">
-       <text:p text:style-name="P13"/>
+       <text:p text:style-name="P17"/>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп2.B1" office:value-type="string">
-       <text:p text:style-name="P13"/>
+       <text:p text:style-name="P17"/>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп2.B1" office:value-type="string">
-       <text:p text:style-name="P13"/>
+       <text:p text:style-name="P17"/>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп2.B1" office:value-type="string">
-       <text:p text:style-name="P13"/>
+       <text:p text:style-name="P17"/>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп2.F1" table:number-rows-spanned="3" office:value-type="string">
-       <text:p text:style-name="P29">${board.code}</text:p>
+       <text:p text:style-name="P18">${board.code}</text:p>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп2.G1" office:value-type="string">
-       <text:p text:style-name="P10">Лист</text:p>
+       <text:p text:style-name="P22">Лист</text:p>
       </table:table-cell>
      </table:table-row>
      <table:table-row table:style-name="Штамп2.1">
       <table:table-cell table:style-name="Штамп2.A2" office:value-type="string">
-       <text:p text:style-name="P13"/>
+       <text:p text:style-name="P17"/>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп2.B2" office:value-type="string">
-       <text:p text:style-name="P13"/>
+       <text:p text:style-name="P17"/>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп2.B2" office:value-type="string">
-       <text:p text:style-name="P13"/>
+       <text:p text:style-name="P17"/>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп2.B2" office:value-type="string">
-       <text:p text:style-name="P13"/>
+       <text:p text:style-name="P17"/>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп2.B2" office:value-type="string">
-       <text:p text:style-name="P13"/>
+       <text:p text:style-name="P17"/>
       </table:table-cell>
       <table:covered-table-cell/>
       <table:table-cell table:style-name="Штамп2.G2" table:number-rows-spanned="2" office:value-type="string">
-       <text:p text:style-name="P11"><text:page-number text:select-page="current">2</text:page-number></text:p>
+       <text:p text:style-name="P1"><text:page-number text:select-page="current">4</text:page-number></text:p>
       </table:table-cell>
      </table:table-row>
      <table:table-row table:style-name="Штамп2.3">
       <table:table-cell table:style-name="Штамп2.A3" office:value-type="string">
-       <text:p text:style-name="P19">Изм.</text:p>
+       <text:p text:style-name="P4">Изм.</text:p>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп2.B3" office:value-type="string">
-       <text:p text:style-name="P19">Лист</text:p>
+       <text:p text:style-name="P4">Лист</text:p>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп2.B3" office:value-type="string">
-       <text:p text:style-name="P26">№ докум</text:p>
+       <text:p text:style-name="P5">№ докум.</text:p>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп2.B3" office:value-type="string">
-       <text:p text:style-name="P19">Подпись</text:p>
+       <text:p text:style-name="P4">Подпись</text:p>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп2.B3" office:value-type="string">
-       <text:p text:style-name="P26">Дата</text:p>
+       <text:p text:style-name="P4">Дата</text:p>
       </table:table-cell>
       <table:covered-table-cell/>
       <table:covered-table-cell/>
@@ -869,22 +815,22 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
      <table:table-column table:style-name="Штамп.K"/>
      <table:table-row table:style-name="Штамп.1">
       <table:table-cell table:style-name="Штамп.A1" office:value-type="string">
-       <text:p text:style-name="P12"/>
+       <text:p text:style-name="P16"/>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп.B1" office:value-type="string">
-       <text:p text:style-name="P12"/>
+       <text:p text:style-name="P16"/>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп.B1" office:value-type="string">
-       <text:p text:style-name="P12"/>
+       <text:p text:style-name="P16"/>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп.B1" office:value-type="string">
-       <text:p text:style-name="P12"/>
+       <text:p text:style-name="P16"/>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп.B1" office:value-type="string">
-       <text:p text:style-name="P12"/>
+       <text:p text:style-name="P16"/>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп.F1" table:number-rows-spanned="3" table:number-columns-spanned="6" office:value-type="string">
-       <text:p text:style-name="P29">${board.code}</text:p>
+       <text:p text:style-name="P18">${board.code}</text:p>
       </table:table-cell>
       <table:covered-table-cell/>
       <table:covered-table-cell/>
@@ -894,19 +840,19 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
      </table:table-row>
      <table:table-row table:style-name="Штамп.1">
       <table:table-cell table:style-name="Штамп.A2" office:value-type="string">
-       <text:p text:style-name="P12"/>
+       <text:p text:style-name="P16"/>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп.B2" office:value-type="string">
-       <text:p text:style-name="P12"/>
+       <text:p text:style-name="P16"/>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп.B2" office:value-type="string">
-       <text:p text:style-name="P12"/>
+       <text:p text:style-name="P16"/>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп.B2" office:value-type="string">
-       <text:p text:style-name="P12"/>
+       <text:p text:style-name="P16"/>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп.B2" office:value-type="string">
-       <text:p text:style-name="P12"/>
+       <text:p text:style-name="P16"/>
       </table:table-cell>
       <table:covered-table-cell/>
       <table:covered-table-cell/>
@@ -917,19 +863,19 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
      </table:table-row>
      <table:table-row table:style-name="Штамп.1">
       <table:table-cell table:style-name="Штамп.A3" office:value-type="string">
-       <text:p text:style-name="P19">Изм.</text:p>
+       <text:p text:style-name="P4">Изм.</text:p>
       </table:table-cell>
-      <table:table-cell table:style-name="Штамп.B3" office:value-type="string">
-       <text:p text:style-name="P19">Лист</text:p>
+      <table:table-cell table:style-name="Штамп.F1" office:value-type="string">
+       <text:p text:style-name="P4">Лист</text:p>
       </table:table-cell>
-      <table:table-cell table:style-name="Штамп.B3" office:value-type="string">
-       <text:p text:style-name="P26">№ докум</text:p>
+      <table:table-cell table:style-name="Штамп.F1" office:value-type="string">
+       <text:p text:style-name="P5">№ докум.</text:p>
       </table:table-cell>
-      <table:table-cell table:style-name="Штамп.B3" office:value-type="string">
-       <text:p text:style-name="P19">Подпись</text:p>
+      <table:table-cell table:style-name="Штамп.F1" office:value-type="string">
+       <text:p text:style-name="P4">Подпись</text:p>
       </table:table-cell>
-      <table:table-cell table:style-name="Штамп.B3" office:value-type="string">
-       <text:p text:style-name="P26">Дата</text:p>
+      <table:table-cell table:style-name="Штамп.F1" office:value-type="string">
+       <text:p text:style-name="P4">Дата</text:p>
       </table:table-cell>
       <table:covered-table-cell/>
       <table:covered-table-cell/>
@@ -939,83 +885,83 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
       <table:covered-table-cell/>
      </table:table-row>
      <table:table-row table:style-name="Штамп.1">
-      <table:table-cell table:style-name="Штамп.A2" table:number-columns-spanned="2" office:value-type="string">
-       <text:p text:style-name="P20">Разработал</text:p>
+      <table:table-cell table:style-name="Штамп.A4" table:number-columns-spanned="2" office:value-type="string">
+       <text:p text:style-name="P9">Разработал</text:p>
       </table:table-cell>
       <table:covered-table-cell/>
-      <table:table-cell table:style-name="Штамп.B2" office:value-type="string">
-       <text:p text:style-name="P14">${board.developed}</text:p>
+      <table:table-cell table:style-name="Штамп.C4" office:value-type="string">
+       <text:p text:style-name="P12">${board.developed}</text:p>
       </table:table-cell>
-      <table:table-cell table:style-name="Штамп.B2" office:value-type="string">
-       <text:p text:style-name="P12"/>
+      <table:table-cell table:style-name="Штамп.C4" office:value-type="string">
+       <text:p text:style-name="P16"/>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп.E4" office:value-type="string">
-       <text:p text:style-name="P12"/>
+       <text:p text:style-name="P16"/>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп.F4" table:number-rows-spanned="5" office:value-type="string">
-       <text:p text:style-name="P32">${board.name}</text:p>
-       <text:p text:style-name="P31">Заявка на покупные <text:span text:style-name="T5">изделия</text:span></text:p>
+       <text:p text:style-name="P23">${board.name}</text:p>
+       <text:p text:style-name="P19">Перечень элементов</text:p>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп.G4" table:number-columns-spanned="3" office:value-type="string">
-       <text:p text:style-name="P5"><text:span text:style-name="T4">Лит</text:span>.</text:p>
+       <text:p text:style-name="P20">Лит.</text:p>
       </table:table-cell>
       <table:covered-table-cell/>
       <table:covered-table-cell/>
-      <table:table-cell table:style-name="Штамп.J4" office:value-type="string">
-       <text:p text:style-name="P9">Лист</text:p>
+      <table:table-cell table:style-name="Штамп.G4" office:value-type="string">
+       <text:p text:style-name="P22">Лист</text:p>
       </table:table-cell>
-      <table:table-cell table:style-name="Штамп.J4" office:value-type="string">
-       <text:p text:style-name="P9">Листов</text:p>
+      <table:table-cell table:style-name="Штамп.G4" office:value-type="string">
+       <text:p text:style-name="P22">Листов</text:p>
       </table:table-cell>
      </table:table-row>
      <table:table-row table:style-name="Штамп.1">
-      <table:table-cell table:style-name="Штамп.A2" table:number-columns-spanned="2" office:value-type="string">
-       <text:p text:style-name="P20">Проверил</text:p>
+      <table:table-cell table:style-name="Штамп.A4" table:number-columns-spanned="2" office:value-type="string">
+       <text:p text:style-name="P11">Проверил</text:p>
       </table:table-cell>
       <table:covered-table-cell/>
-      <table:table-cell table:style-name="Штамп.B2" office:value-type="string">
-       <text:p text:style-name="P14">${board.checked}</text:p>
+      <table:table-cell table:style-name="Штамп.C4" office:value-type="string">
+       <text:p text:style-name="P12">${board.checked}</text:p>
       </table:table-cell>
-      <table:table-cell table:style-name="Штамп.B2" office:value-type="string">
-       <text:p text:style-name="P12"/>
+      <table:table-cell table:style-name="Штамп.C4" office:value-type="string">
+       <text:p text:style-name="P16"/>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп.E4" office:value-type="string">
-       <text:p text:style-name="P12"/>
+       <text:p text:style-name="P16"/>
       </table:table-cell>
       <table:covered-table-cell/>
       <table:table-cell table:style-name="Штамп.G4" office:value-type="string">
-       <text:p text:style-name="P6"/>
+       <text:p text:style-name="P21"/>
       </table:table-cell>
-      <table:table-cell table:style-name="Штамп.J4" office:value-type="string">
-       <text:p text:style-name="P6"/>
+      <table:table-cell table:style-name="Штамп.H5" office:value-type="string">
+       <text:p text:style-name="P21"/>
       </table:table-cell>
-      <table:table-cell table:style-name="Штамп.J4" office:value-type="string">
-       <text:p text:style-name="P6"/>
+      <table:table-cell table:style-name="Штамп.H5" office:value-type="string">
+       <text:p text:style-name="P21"/>
       </table:table-cell>
-      <table:table-cell table:style-name="Штамп.J4" office:value-type="string">
-       <text:p text:style-name="P28"><text:page-number text:select-page="current">1</text:page-number></text:p>
+      <table:table-cell table:style-name="Штамп.G4" office:value-type="string">
+       <text:p text:style-name="P10"><text:page-number text:select-page="current">1</text:page-number></text:p>
       </table:table-cell>
-      <table:table-cell table:style-name="Штамп.J4" office:value-type="string">
-       <text:p text:style-name="P17"><text:page-count>2</text:page-count></text:p>
+      <table:table-cell table:style-name="Штамп.G4" office:value-type="string">
+       <text:p text:style-name="P3"><text:page-count>4</text:page-count></text:p>
       </table:table-cell>
      </table:table-row>
      <table:table-row table:style-name="Штамп.1">
-      <table:table-cell table:style-name="Штамп.A2" table:number-columns-spanned="2" office:value-type="string">
-       <text:p text:style-name="P20">Нач. КБ</text:p>
+      <table:table-cell table:style-name="Штамп.A4" table:number-columns-spanned="2" office:value-type="string">
+       <text:p text:style-name="P11">Нач. КБ</text:p>
       </table:table-cell>
       <table:covered-table-cell/>
-      <table:table-cell table:style-name="Штамп.B2" office:value-type="string">
-       <text:p text:style-name="P12"/>
+      <table:table-cell table:style-name="Штамп.C4" office:value-type="string">
+       <text:p text:style-name="P13"/>
       </table:table-cell>
-      <table:table-cell table:style-name="Штамп.B2" office:value-type="string">
-       <text:p text:style-name="P12"/>
+      <table:table-cell table:style-name="Штамп.C4" office:value-type="string">
+       <text:p text:style-name="P16"/>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп.E4" office:value-type="string">
-       <text:p text:style-name="P12"/>
+       <text:p text:style-name="P16"/>
       </table:table-cell>
       <table:covered-table-cell/>
       <table:table-cell table:style-name="Штамп.G6" table:number-rows-spanned="3" table:number-columns-spanned="5" office:value-type="string">
-       <text:p text:style-name="P6"/>
+       <text:p text:style-name="P21"/>
       </table:table-cell>
       <table:covered-table-cell/>
       <table:covered-table-cell/>
@@ -1023,18 +969,18 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
       <table:covered-table-cell/>
      </table:table-row>
      <table:table-row table:style-name="Штамп.1">
-      <table:table-cell table:style-name="Штамп.A2" table:number-columns-spanned="2" office:value-type="string">
-       <text:p text:style-name="P20">H. контр.</text:p>
+      <table:table-cell table:style-name="Штамп.A4" table:number-columns-spanned="2" office:value-type="string">
+       <text:p text:style-name="P11">H. контр.</text:p>
       </table:table-cell>
       <table:covered-table-cell/>
-      <table:table-cell table:style-name="Штамп.B2" office:value-type="string">
-       <text:p text:style-name="P12"/>
+      <table:table-cell table:style-name="Штамп.C4" office:value-type="string">
+       <text:p text:style-name="P13"/>
       </table:table-cell>
-      <table:table-cell table:style-name="Штамп.B2" office:value-type="string">
-       <text:p text:style-name="P4"/>
+      <table:table-cell table:style-name="Штамп.C4" office:value-type="string">
+       <text:p text:style-name="P16"/>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп.E4" office:value-type="string">
-       <text:p text:style-name="P4"/>
+       <text:p text:style-name="P16"/>
       </table:table-cell>
       <table:covered-table-cell/>
       <table:covered-table-cell/>
@@ -1045,17 +991,17 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
      </table:table-row>
      <table:table-row table:style-name="Штамп.1">
       <table:table-cell table:style-name="Штамп.A8" table:number-columns-spanned="2" office:value-type="string">
-       <text:p text:style-name="P20">Утвердил</text:p>
+       <text:p text:style-name="P11">Утвердил</text:p>
       </table:table-cell>
       <table:covered-table-cell/>
-      <table:table-cell table:style-name="Штамп.C8" office:value-type="string">
-       <text:p text:style-name="P15">${board.approved}</text:p>
+      <table:table-cell table:style-name="Штамп.G6" office:value-type="string">
+       <text:p text:style-name="P12">${board.approved}</text:p>
       </table:table-cell>
-      <table:table-cell table:style-name="Штамп.C8" office:value-type="string">
-       <text:p text:style-name="P4"/>
+      <table:table-cell table:style-name="Штамп.G6" office:value-type="string">
+       <text:p text:style-name="P16"/>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп.E8" office:value-type="string">
-       <text:p text:style-name="P4"/>
+       <text:p text:style-name="P16"/>
       </table:table-cell>
       <table:covered-table-cell/>
       <table:covered-table-cell/>
@@ -1083,10 +1029,10 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
     <table:table-header-rows>
      <table:table-row table:style-name="Перечень.1">
       <table:table-cell table:style-name="Перечень.A1" office:value-type="string">
-       <text:p text:style-name="P24">Наименование</text:p>
+       <text:p text:style-name="P6">Наименование</text:p>
       </table:table-cell>
       <table:table-cell table:style-name="Перечень.B1" office:value-type="string">
-       <text:h text:style-name="P22" text:outline-level="4">Количество</text:h>
+       <text:h text:style-name="P25" text:outline-level="4">Количество</text:h>
       </table:table-cell>
      </table:table-row>
     </table:table-header-rows>
@@ -1096,10 +1042,10 @@ fun StringBuilder.zTableHeaderRow(
         name: String
 ) = append("""    <table:table-row table:style-name="Перечень.2">
      <table:table-cell table:style-name="Перечень.A2" office:value-type="string">
-      <text:p text:style-name="P16">$name</text:p>
+      <text:p text:style-name="P2">$name</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Перечень.B2" office:value-type="string">
-      <text:p text:style-name="P3"/>
+      <text:p text:style-name="P15"/>
      </table:table-cell>
     </table:table-row>
 """)
@@ -1109,20 +1055,20 @@ fun StringBuilder.zTableRow(
         count: Int
 ) = append("""    <table:table-row table:style-name="Перечень.2">
      <table:table-cell table:style-name="Перечень.A2" office:value-type="string">
-      <text:p text:style-name="P27">$name</text:p>
+      <text:p text:style-name="P8">$name</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Перечень.B2" office:value-type="string">
-      <text:p text:style-name="P25">$count</text:p>
+      <text:p text:style-name="P14">$count</text:p>
      </table:table-cell>
     </table:table-row>
 """)
 
 fun StringBuilder.zTableEmptyRow() = append("""    <table:table-row table:style-name="Перечень.2">
      <table:table-cell table:style-name="Перечень.A2" office:value-type="string">
-      <text:p text:style-name="P27"/>
+      <text:p text:style-name="P8"/>
      </table:table-cell>
      <table:table-cell table:style-name="Перечень.B2" office:value-type="string">
-      <text:p text:style-name="P25"/>
+      <text:p text:style-name="P14"/>
      </table:table-cell>
     </table:table-row>
 """)
