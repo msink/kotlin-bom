@@ -20,6 +20,8 @@ data class Component(
         .replace("+-", "±")
         .replace("\"C", "°C")
         .replace("\"С", "°C")
+    var replacements = emptyList<String>()
+    fun fullname() = if (replacements.size == 0) name else name + replacements.joinToString(prefix = " (", postfix = ")")
 }
 
 fun readIni(fileName: String) {
@@ -50,7 +52,7 @@ fun readBom(fileName: String) : List<Component> {
     val valueIndex = header.field("Value")
     val descriptionIndex = header.field("Description")
 
-    return lines.drop(2).map {
+    val bom = lines.drop(2).map {
         val fields = it.parseCSV()
         val refdes = fields[refdesIndex]
         val component = fields[componentIndex]
@@ -161,6 +163,17 @@ fun readBom(fileName: String) : List<Component> {
             else -> Component(refdes, "Прочие", name)
         }
     }
+
+    return bom.filter {
+        !it.refdes.endsWith('*') || run {
+            val key = it.refdes.trimEnd('*')
+            val real = bom.find { it.refdes == key }
+            real == null || run {
+                real.replacements += it.name
+                false
+            }
+        }
+    }
 }
 
 fun Int.isLastOnPage() = when {
@@ -197,7 +210,7 @@ fun makeList(bom: List<Component>, fileName: String) {
         var first = list[0]
         var count = 1
         list.forEachIndexed { i, current ->
-            if (i < list.lastIndex && list[i + 1].name == first.name) {
+            if (i < list.lastIndex && list[i + 1].fullname() == first.fullname()) {
                 count++
             } else {
                 val refdes = when (count) {
@@ -205,7 +218,7 @@ fun makeList(bom: List<Component>, fileName: String) {
                     2 -> first.refdes + ", " + current.refdes
                     else -> first.refdes + ".." + current.refdes
                 }
-                out.pTableRow(refdes, first.name, count); ++line
+                out.pTableRow(refdes, first.fullname(), count); ++line
                 if (i < list.lastIndex) {
                     first = list[i + 1]
                     count = 1
@@ -250,7 +263,7 @@ fun makeZakaz(bom: List<Component>, fileName: String) {
             out.zTableHeaderRow(header); ++line
             lastHeader = header
         }
-        list.groupBy { it.name }.forEach { (name, group) ->
+        list.groupBy { it.fullname() }.forEach { (name, group) ->
             out.zTableRow(name, group.size); ++line
         }
     }
