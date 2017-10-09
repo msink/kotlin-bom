@@ -900,7 +900,7 @@ fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UT
       </table:table-cell>
       <table:table-cell table:style-name="Штамп.F4" table:number-rows-spanned="5" office:value-type="string">
        <text:p text:style-name="P23">${board.name}</text:p>
-       <text:p text:style-name="P19">Перечень элементов</text:p>
+       <text:p text:style-name="P19">Заявка на покупные изделия</text:p>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп.G4" table:number-columns-spanned="3" office:value-type="string">
        <text:p text:style-name="P20">Лит.</text:p>
