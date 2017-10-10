@@ -7,7 +7,7 @@ object board {
     var code        = ""
     var developed   = ""
     var checked     = ""
-    var approved    = "Кропотов"
+    var approved    = ""
 }
 
 data class Component(
@@ -35,6 +35,34 @@ fun readIni(fileName: String) {
             it.startsWith("Утвердил:")   -> board.approved = it.substringAfter(":").trim()
         }
     }
+}
+
+private fun RValueString(value: String) = when {
+    value.endsWith('M') -> value.dropLast(1) + " МОм"
+    value.endsWith('k') -> value.dropLast(1).replace('.', ',') + " кОм"
+    value.contains('k') -> value.replace('k', ',') + " кОм"
+    else -> value + " Ом"
+}
+
+private fun RValueInt(value: String) = when {
+    value.endsWith('M') -> value.dropLast(1).toInt() * 1000 * 1000
+    value.endsWith('k') -> (value.dropLast(1).replace(',', '.').toDouble() * 1000).toInt()
+    value.contains('k') -> (value.replace('k', '.').toDouble() * 1000).toInt()
+    else -> value.takeWhile{it.isDigit()}.toInt()
+}
+
+private fun CValueString(value: String) = when {
+    value.contains(',') -> value + " мкФ"
+    value.contains('.') -> value.replace('.', ',') +" мкФ"
+    value.endsWith('n') -> "0," + value.dropLast(1).padStart(3, '0') + " мкФ"
+    else -> value + " пФ"
+}
+
+private fun CValueInt(value: String) = when {
+    value.contains(',') -> (value.replace(',', '.').toDouble() * 1000 * 1000).toInt()
+    value.contains('.') -> (value.toDouble() * 1000 * 1000).toInt()
+    value.endsWith('n') -> value.dropLast(1).takeWhile{it.isDigit()}.toInt() * 1000
+    else -> value.takeWhile{it.isDigit()}.toInt()
 }
 
 fun readBom(fileName: String) : List<Component> {
@@ -73,30 +101,6 @@ fun readBom(fileName: String) : List<Component> {
             part.isNotEmpty() -> part
             value.isNotEmpty() -> value
             else -> component
-        }
-        fun RValueString(value: String) = when {
-            value.endsWith('M') -> value.dropLast(1) + " МОм"
-            value.endsWith('k') -> value.dropLast(1).replace('.', ',') + " кОм"
-            value.contains('k') -> value.replace('k', ',') + " кОм"
-            else -> value + " Ом"
-        }
-        fun RValueInt(value: String) = when {
-            value.endsWith('M') -> value.dropLast(1).toInt() * 1000 * 1000
-            value.endsWith('k') -> (value.dropLast(1).replace(',', '.').toDouble() * 1000).toInt()
-            value.contains('k') -> (value.replace('k', '.').toDouble() * 1000).toInt()
-            else -> value.toInt()
-        }
-        fun CValueString(value: String) = when {
-            value.contains(',') -> value + " мкФ"
-            value.contains('.') -> value.replace('.', ',') +" мкФ"
-            value.endsWith('n') -> "0," + value.dropLast(1).padStart(3, '0') + " мкФ"
-            else -> value + " пФ"
-        }
-        fun CValueInt(value: String) = when {
-            value.contains(',') -> (value.replace(',', '.').toDouble() * 1000 * 1000).toInt()
-            value.contains('.') -> (value.toDouble() * 1000 * 1000).toInt()
-            value.endsWith('n') -> value.dropLast(1).toInt() * 1000
-            else -> value.toInt()
         }
         when {
             refdes.startsWith("RT") -> Component(refdes, "Терморезисторы", name)
@@ -288,6 +292,6 @@ fun main(args: Array<String>) {
         makeList(bom, fileName.replaceAfterLast('.', "p.fodt"))
         makeZakaz(bom, fileName.replaceAfterLast('.', "z.fodt"))
     } catch (e: Throwable) {
-        print("Fatal error: ${e.message}")
+        print("Fatal error: ${e}")
     }
 }
