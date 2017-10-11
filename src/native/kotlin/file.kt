@@ -3,7 +3,7 @@
  */
 
 import kotlinx.cinterop.*
-import stdio.*
+import platform.posix.*
 
 private val cp1251 = arrayOf<Char> (
       '\u0402', '\u0403', '\u201A', '\u0453', '\u201E', '\u2026', '\u2020', '\u2021',
