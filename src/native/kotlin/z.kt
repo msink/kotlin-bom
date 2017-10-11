@@ -1,5 +1,5 @@
 /*
- *
+ * Licensed under the Apache License, Version 2.0
  */
 
 fun StringBuilder.zDocumentHeader() = append("""<?xml version="1.0" encoding="UTF-8"?>

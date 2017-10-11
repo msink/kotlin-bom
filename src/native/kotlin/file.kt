@@ -1,4 +1,8 @@
-﻿import kotlinx.cinterop.*
+/*
+ * Licensed under the Apache License, Version 2.0
+ */
+
+import kotlinx.cinterop.*
 import stdio.*
 
 private val cp1251 = arrayOf<Char> (

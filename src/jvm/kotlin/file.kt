@@ -1,4 +1,8 @@
-﻿import java.io.*
+/*
+ * Licensed under the Apache License, Version 2.0
+ */
+
+import java.io.*
 import java.nio.charset.Charset
 
 fun readFile(fileName: String, maybeAbsent: Boolean = false) : List<String> {
