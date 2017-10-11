@@ -37,32 +37,42 @@ fun readIni(fileName: String) {
     }
 }
 
+private fun String.takeInt() : Int {
+    val str = takeWhile { it.isDigit() }
+    return if (str.isEmpty()) 0 else str.toInt()
+}
+
+private fun String.takeDouble() : Double {
+    val str = takeWhile { it.isDigit() || it == '.' }
+    return if (str.isEmpty()) 0.0 else str.toDouble()
+}
+
 private fun RValueString(value: String) = when {
-    value.endsWith('M') -> value.dropLast(1) + " МОм"
+    value.endsWith('M') -> value.dropLast(1).replace('.', ',') + " МОм"
     value.endsWith('k') -> value.dropLast(1).replace('.', ',') + " кОм"
     value.contains('k') -> value.replace('k', ',') + " кОм"
     else -> value + " Ом"
 }
 
 private fun RValueInt(value: String) = when {
-    value.endsWith('M') -> value.dropLast(1).toInt() * 1000 * 1000
-    value.endsWith('k') -> (value.dropLast(1).replace(',', '.').toDouble() * 1000).toInt()
-    value.contains('k') -> (value.replace('k', '.').toDouble() * 1000).toInt()
-    else -> value.takeWhile{it.isDigit()}.toInt()
+    value.endsWith('M') -> (value.takeDouble() * 1000000.0).toInt()
+    value.endsWith('k') -> (value.takeDouble() * 1000.0).toInt()
+    value.contains('k') -> (value.replaceFirst('k', '.').takeDouble() * 1000.0).toInt()
+    else -> value.takeInt()
 }
 
 private fun CValueString(value: String) = when {
     value.contains(',') -> value + " мкФ"
-    value.contains('.') -> value.replace('.', ',') +" мкФ"
+    value.contains('.') -> value.replace('.', ',') + " мкФ"
     value.endsWith('n') -> "0," + value.dropLast(1).padStart(3, '0') + " мкФ"
     else -> value + " пФ"
 }
 
 private fun CValueInt(value: String) = when {
-    value.contains(',') -> (value.replace(',', '.').toDouble() * 1000 * 1000).toInt()
-    value.contains('.') -> (value.toDouble() * 1000 * 1000).toInt()
-    value.endsWith('n') -> value.dropLast(1).takeWhile{it.isDigit()}.toInt() * 1000
-    else -> value.takeWhile{it.isDigit()}.toInt()
+    value.contains(',') -> (value.replaceFirst(',', '.').takeDouble() * 1000000.0).toInt()
+    value.contains('.') -> (value.takeDouble() * 1000000.0).toInt()
+    value.endsWith('n') -> (value.takeDouble() * 1000.0).toInt()
+    else -> value.takeInt()
 }
 
 fun readBom(fileName: String) : List<Component> {
