@@ -164,6 +164,7 @@ fun readBom(fileName: String) : List<Component> {
                     })
             refdes.startsWith("L") -> Component(refdes, "Дроссели",
                     when {
+                        description.isNotEmpty() -> description
                         value.startsWith(component) -> value
                         else -> component + "-" + value
                     })
