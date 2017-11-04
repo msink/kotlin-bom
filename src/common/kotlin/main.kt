@@ -21,7 +21,7 @@ data class Component(
         .replace("\"C", "°C")
         .replace("\"С", "°C")
     var replacements = emptyList<String>()
-    fun fullname() = if (replacements.size == 0) name else name + replacements.joinToString(prefix = " (", postfix = ")")
+    fun fullname() = if (replacements.isEmpty()) name else name + replacements.joinToString(prefix = " (", postfix = ")")
 }
 
 fun readIni(fileName: String) {
@@ -218,7 +218,7 @@ fun makeList(bom: List<Component>, fileName: String) {
                 "Радиокомпоненты",
                 "Прочие")) {
         val list = bom.filter { it.category == category }
-        if (list.isEmpty()) continue;
+        if (list.isEmpty()) continue
         out.pTableEmptyRow(); ++line
         if (line.isLastOnPage()) {
             out.pTableEmptyRow(); ++line
@@ -271,7 +271,7 @@ fun makeZakaz(bom: List<Component>, fileName: String) {
                 "Прочие" to "Прочие")) {
         val list = bom.filter { it.category == category }
                 .sortedWith(compareBy({ it.prefix }, { it.value }, { it.name }))
-        if (list.isEmpty()) continue;
+        if (list.isEmpty()) continue
         if (header != lastHeader) {
             out.zTableEmptyRow(); ++line
             if (line.isLastOnPage()) {
