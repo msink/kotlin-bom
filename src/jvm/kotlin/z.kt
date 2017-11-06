@@ -3,10 +3,10 @@
  */
 
 fun StringBuilder.zDocumentHeader() = append("""-----
-${board.name} ${board.code}
-Разработал: ${board.developed}
-Проверил: ${board.checked}
-Утвердил: ${board.approved}
+${Board.name} ${Board.code}
+Разработал: ${Board.developed}
+Проверил: ${Board.checked}
+Утвердил: ${Board.approved}
 -----
 """)
 

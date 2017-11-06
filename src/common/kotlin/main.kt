@@ -2,7 +2,7 @@
  * Licensed under the Apache License, Version 2.0
  */
 
-object board {
+object Board {
     var name        = ""
     var code        = ""
     var developed   = ""
@@ -15,7 +15,7 @@ data class Component(
     val category: String,
     val prefix: String,
     val value: Int = 0,
-    val suffix: String = "") {
+    private val suffix: String = "") {
     val name = (prefix + suffix)
         .replace("+-", "±")
         .replace("\"C", "°C")
@@ -25,14 +25,14 @@ data class Component(
 }
 
 fun readIni(fileName: String) {
-    board.name = fileName.substringAfterLast("\\").substringBefore(".")
+    Board.name = fileName.substringAfterLast("\\").substringBefore(".")
     val lines = readFile(fileName, maybeAbsent = true)
     lines.forEach {
         when {
-            it.startsWith("Код:")        -> board.code = it.substringAfter(":").trim()
-            it.startsWith("Разработал:") -> board.developed = it.substringAfter(":").trim()
-            it.startsWith("Проверил:")   -> board.checked = it.substringAfter(":").trim()
-            it.startsWith("Утвердил:")   -> board.approved = it.substringAfter(":").trim()
+            it.startsWith("Код:")        -> Board.code = it.substringAfter(":").trim()
+            it.startsWith("Разработал:") -> Board.developed = it.substringAfter(":").trim()
+            it.startsWith("Проверил:")   -> Board.checked = it.substringAfter(":").trim()
+            it.startsWith("Утвердил:")   -> Board.approved = it.substringAfter(":").trim()
         }
     }
 }
@@ -47,32 +47,32 @@ private fun String.takeDouble() : Double {
     return if (str.isEmpty()) 0.0 else str.toDouble()
 }
 
-private fun RValueString(value: String) = when {
-    value.endsWith('M') -> value.dropLast(1).replace('.', ',') + " МОм"
-    value.endsWith('k') -> value.dropLast(1).replace('.', ',') + " кОм"
-    value.contains('k') -> value.replace('k', ',') + " кОм"
-    else -> value + " Ом"
+private fun String.toRString() = when {
+    endsWith('M') -> dropLast(1).replace('.', ',') + " МОм"
+    endsWith('k') -> dropLast(1).replace('.', ',') + " кОм"
+    contains('k') -> replace('k', ',') + " кОм"
+    else -> this + " Ом"
 }
 
-private fun RValueInt(value: String) = when {
-    value.endsWith('M') -> (value.takeDouble() * 1000000.0).toInt()
-    value.endsWith('k') -> (value.takeDouble() * 1000.0).toInt()
-    value.contains('k') -> (value.replaceFirst('k', '.').takeDouble() * 1000.0).toInt()
-    else -> value.takeInt()
+private fun String.toRInt() = when {
+    endsWith('M') -> (takeDouble() * 1000000.0).toInt()
+    endsWith('k') -> (takeDouble() * 1000.0).toInt()
+    contains('k') -> (replaceFirst('k', '.').takeDouble() * 1000.0).toInt()
+    else -> takeInt()
 }
 
-private fun CValueString(value: String) = when {
-    value.contains(',') -> value + " мкФ"
-    value.contains('.') -> value.replace('.', ',') + " мкФ"
-    value.endsWith('n') -> "0," + value.dropLast(1).padStart(3, '0') + " мкФ"
-    else -> value + " пФ"
+private fun String.toCString() = when {
+    contains(',') -> this + " мкФ"
+    contains('.') -> replace('.', ',') + " мкФ"
+    endsWith('n') -> "0," + dropLast(1).padStart(3, '0') + " мкФ"
+    else -> this + " пФ"
 }
 
-private fun CValueInt(value: String) = when {
-    value.contains(',') -> (value.replaceFirst(',', '.').takeDouble() * 1000000.0).toInt()
-    value.contains('.') -> (value.takeDouble() * 1000000.0).toInt()
-    value.endsWith('n') -> (value.takeDouble() * 1000.0).toInt()
-    else -> value.takeInt()
+private fun String.toCInt() = when {
+    contains(',') -> (replaceFirst(',', '.').takeDouble() * 1000000.0).toInt()
+    contains('.') -> (takeDouble() * 1000000.0).toInt()
+    endsWith('n') -> (takeDouble() * 1000.0).toInt()
+    else -> takeInt()
 }
 
 fun readBom(fileName: String) : List<Component> {
@@ -117,8 +117,8 @@ fun readBom(fileName: String) : List<Component> {
             refdes.startsWith("RU") -> Component(refdes, "Варисторы", name)
             refdes.startsWith("RN") -> Component(refdes, "Наборы резисторов",
                     description,
-                    RValueInt(value),
-                    "-" + RValueString(value) + when {
+                    value.toRInt(),
+                    "-" + value.toRString() + when {
                         percent.isNotEmpty() -> percent
                         else -> "+-5%"
                     })
@@ -140,8 +140,8 @@ fun readBom(fileName: String) : List<Component> {
                         pattern.startsWith("SMD") && part.isNotEmpty() -> "-" + part
                         else -> ""
                     },
-                    RValueInt(value),
-                    "-" + RValueString(value) + when {
+                    value.toRInt(),
+                    "-" + value.toRString() + when {
                         percent.isNotEmpty() -> percent
                         else -> "+-5%"
                     })
@@ -151,14 +151,14 @@ fun readBom(fileName: String) : List<Component> {
                         part.isNotEmpty() -> part
                         else -> "???"
                     },
-                    CValueInt(value),
+                    value.toCInt(),
                     when {
                         pattern.startsWith("SMD") -> "-" + when {
                             part.isNotEmpty() -> part
                             else -> "Z5U"
                         }
                         else -> ""
-                    } + "-" + CValueString(value) + when {
+                    } + "-" + value.toCString() + when {
                         percent.isNotEmpty() -> percent
                         else -> "+-20%"
                     })
@@ -305,6 +305,6 @@ fun main(args: Array<String>) {
         makeList(bom, fileName.replaceAfterLast('.', "p.fodt"))
         makeZakaz(bom, fileName.replaceAfterLast('.', "z.fodt"))
     } catch (e: Throwable) {
-        print("Fatal error: ${e}")
+        print("Fatal error: $e")
     }
 }

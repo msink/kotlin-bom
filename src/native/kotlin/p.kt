@@ -753,7 +753,7 @@ fun StringBuilder.pDocumentHeader() = append("""<?xml version="1.0" encoding="UT
        <text:p text:style-name="P17"/>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп2.F1" table:number-rows-spanned="3" office:value-type="string">
-       <text:p text:style-name="P18">${board.code} ПЭ3</text:p>
+       <text:p text:style-name="P18">${Board.code} ПЭ3</text:p>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп2.G1" office:value-type="string">
        <text:p text:style-name="P22">Лист</text:p>
@@ -833,7 +833,7 @@ fun StringBuilder.pDocumentHeader() = append("""<?xml version="1.0" encoding="UT
        <text:p text:style-name="P16"/>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп.F1" table:number-rows-spanned="3" table:number-columns-spanned="6" office:value-type="string">
-       <text:p text:style-name="P18">${board.code} ПЭ3</text:p>
+       <text:p text:style-name="P18">${Board.code} ПЭ3</text:p>
       </table:table-cell>
       <table:covered-table-cell/>
       <table:covered-table-cell/>
@@ -893,7 +893,7 @@ fun StringBuilder.pDocumentHeader() = append("""<?xml version="1.0" encoding="UT
       </table:table-cell>
       <table:covered-table-cell/>
       <table:table-cell table:style-name="Штамп.C4" office:value-type="string">
-       <text:p text:style-name="P12">${board.developed}</text:p>
+       <text:p text:style-name="P12">${Board.developed}</text:p>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп.C4" office:value-type="string">
        <text:p text:style-name="P16"/>
@@ -902,7 +902,7 @@ fun StringBuilder.pDocumentHeader() = append("""<?xml version="1.0" encoding="UT
        <text:p text:style-name="P16"/>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп.F4" table:number-rows-spanned="5" office:value-type="string">
-       <text:p text:style-name="P23">${board.name}</text:p>
+       <text:p text:style-name="P23">${Board.name}</text:p>
        <text:p text:style-name="P19">Перечень элементов</text:p>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп.G4" table:number-columns-spanned="3" office:value-type="string">
@@ -923,7 +923,7 @@ fun StringBuilder.pDocumentHeader() = append("""<?xml version="1.0" encoding="UT
       </table:table-cell>
       <table:covered-table-cell/>
       <table:table-cell table:style-name="Штамп.C4" office:value-type="string">
-       <text:p text:style-name="P12">${board.checked}</text:p>
+       <text:p text:style-name="P12">${Board.checked}</text:p>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп.C4" office:value-type="string">
        <text:p text:style-name="P16"/>
@@ -998,7 +998,7 @@ fun StringBuilder.pDocumentHeader() = append("""<?xml version="1.0" encoding="UT
       </table:table-cell>
       <table:covered-table-cell/>
       <table:table-cell table:style-name="Штамп.G6" office:value-type="string">
-       <text:p text:style-name="P12">${board.approved}</text:p>
+       <text:p text:style-name="P12">${Board.approved}</text:p>
       </table:table-cell>
       <table:table-cell table:style-name="Штамп.G6" office:value-type="string">
        <text:p text:style-name="P16"/>
