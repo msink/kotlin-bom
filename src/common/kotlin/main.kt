@@ -51,7 +51,7 @@ private fun String.toRString() = when {
     endsWith('M') -> dropLast(1).replace('.', ',') + " МОм"
     endsWith('k') -> dropLast(1).replace('.', ',') + " кОм"
     contains('k') -> replace('k', ',') + " кОм"
-    else -> this + " Ом"
+    else -> replace('.', ',') + " Ом"
 }
 
 private fun String.toRInt() = when {
@@ -76,13 +76,13 @@ private fun String.toCInt() = when {
 }
 
 fun readBom(fileName: String) : List<Component> {
-    fun String.parseCSV() : List<String> = this.split('@').map { it.trim('"') }
+    fun String.parseCSV() : List<String> = split('@').map { it.trim('"') }
     val lines = readFile(fileName)
     if (lines.size < 3 || !lines[1].isEmpty())
         throw Error("Bad input file '$fileName'")
 
     val header = lines[0].parseCSV()
-    fun List<String>.field(key: String) : Int = this.indexOf(key).also { if (it < 0)
+    fun List<String>.field(key: String) : Int = indexOf(key).also { if (it < 0)
         throw Error("Bad input file '$fileName': field '$key' not found") }
     val refdesIndex = header.field("RefDes")
     val componentIndex = header.field("ComponentName")
@@ -124,7 +124,7 @@ fun readBom(fileName: String) : List<Component> {
                     })
             refdes.startsWith("R") -> Component(refdes, "Резисторы",
                     when {
-                        pattern.startsWith("SMD") -> "SMD-" + pattern.drop(3)
+                        pattern.startsWith("SMD") -> "SMD-" + pattern.substring(3, 7)
                         part.isNotEmpty() -> part
                         else -> "С2-23"
                     } + "-" + when(component) {
@@ -147,7 +147,7 @@ fun readBom(fileName: String) : List<Component> {
                     })
             refdes.startsWith("C") -> Component(refdes, "Конденсаторы",
                     when {
-                        pattern.startsWith("SMD") -> "SMD-" + pattern.drop(3)
+                        pattern.startsWith("SMD") -> "SMD-" + pattern.substring(3, 7)
                         part.isNotEmpty() -> part
                         else -> "???"
                     },
