@@ -189,7 +189,7 @@ fun readBom(fileName: String) : List<Component> {
             }
         }
     } + List(bom.count { it.refdes.startsWith("FU") } * 2) {
-        Component("XF${it + 1}", "Прочие", "Держатель вставки плавкой")
+        Component("XF${it + 1}", "Прочие", "Держатель вставки плавкой FH-100")
     }
 }
 
