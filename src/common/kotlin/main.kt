@@ -169,6 +169,7 @@ fun readBom(fileName: String) : List<Component> {
                         else -> component + "-" + value
                     })
             refdes.startsWith("XP") -> Component(refdes, "Радиокомпоненты", "Вилка " + name)
+            refdes.startsWith("JP") -> Component(refdes, "Радиокомпоненты", "Вилка " + name)
             refdes.startsWith("XS") -> Component(refdes, "Радиокомпоненты", "Розетка " + name)
             refdes.startsWith("VD") -> Component(refdes, "Диоды и стабилитроны", name)
             refdes.startsWith("VT") -> Component(refdes, "Транзисторы", name)
