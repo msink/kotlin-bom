@@ -181,14 +181,14 @@ fun readBom(fileName: String) : List<Component> {
     }
 
     return bom.filter {
-        !it.refdes.endsWith('*') || run {
+        !it.refdes.endsWith('-') && (!it.refdes.endsWith('*') || run {
             val key = it.refdes.trimEnd('*')
             val real = bom.find { it.refdes == key }
             real == null || run {
                 real.replacements += it.name
                 false
             }
-        }
+        })
     } + List(bom.count { it.refdes.startsWith("FU") } * 2) {
         Component("XF${it + 1}", "Прочие", "Держатель вставки плавкой FH-100")
     }
