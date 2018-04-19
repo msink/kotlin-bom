@@ -158,8 +158,12 @@ fun readBom(fileName: String) : List<Component> {
                             else -> "Z5U"
                         }
                         else -> ""
-                    } + "-" + value.toCString() + when {
+                    } + when {
+                        value.isEmpty() -> ""
+                        else -> "-" + value.toCString()
+                    } + when {
                         percent.isNotEmpty() -> percent
+                        description.endsWith('\\') -> ""
                         else -> "+-20%"
                     })
             refdes.startsWith("L") -> Component(refdes, "Дроссели",
@@ -181,7 +185,8 @@ fun readBom(fileName: String) : List<Component> {
     }
 
     return bom.filter {
-        !it.refdes.endsWith('-') && (!it.refdes.endsWith('*') || run {
+        !(it.refdes.endsWith('-') ||
+          it.refdes.endsWith('~')) && (!it.refdes.endsWith('*') || run {
             val key = it.refdes.trimEnd('*')
             val real = bom.find { it.refdes == key }
             real == null || run {
