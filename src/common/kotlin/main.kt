@@ -76,14 +76,20 @@ private fun String.toCInt() = when {
 }
 
 fun readBom(fileName: String) : List<Component> {
-    fun String.parseCSV() : List<String> = split('@').map { it.trim('"') }
+    fun String.parseCSV() : List<String> = listOf("") + split('@').map { it.trim('"') }
     val lines = readFile(fileName)
     if (lines.size < 3 || !lines[1].isEmpty())
         throw Error("Bad input file '$fileName'")
 
     val header = lines[0].parseCSV()
-    fun List<String>.field(key: String) : Int = indexOf(key).also { if (it < 0)
-        throw Error("Bad input file '$fileName': field '$key' not found") }
+    fun List<String>.field(key: String) : Int {
+        val index = indexOf(key)
+        if (index < 0) {
+            if (key != "RefDes") return 0
+            else throw Error("Bad input file '$fileName': 'RefDes' not found")
+        }
+        return index
+    }
     val refdesIndex = header.field("RefDes")
     val componentIndex = header.field("ComponentName")
     val patternIndex = header.field("PatternName")
