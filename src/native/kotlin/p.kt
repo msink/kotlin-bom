@@ -1069,8 +1069,8 @@ fun StringBuilder.pTableHeaderRow(
 
 fun StringBuilder.pTableRow(
         refdes: String,
-        name: String,
-        count: Int
+        name: String = "",
+        count: Int = -1
 ) = append("""    <table:table-row table:style-name="Перечень.2">
      <table:table-cell table:style-name="Перечень.A2" office:value-type="string">
       <text:p text:style-name="P14">$refdes</text:p>
@@ -1079,7 +1079,7 @@ fun StringBuilder.pTableRow(
       <text:p text:style-name="P8">$name</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Перечень.B2" office:value-type="string">
-      <text:p text:style-name="P14">$count</text:p>
+      <text:p text:style-name="P14">${if (count >= 0) count.toString() else ""}</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Перечень.B2" office:value-type="string">
       <text:p text:style-name="P8"/>

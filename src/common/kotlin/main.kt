@@ -15,16 +15,20 @@ data class Component(
     val category: String,
     val prefix: String,
     val value: Int = 0,
-    private val suffix: String = "") {
+    private val suffix: String = "",
+) {
     val name = (prefix + suffix)
         .replace("+-", "±")
         .replace("\"C", "°C")
         .replace("\"С", "°C")
     var replacements = emptyList<String>()
-    fun fullname() = if (replacements.isEmpty()) name else name + replacements.joinToString(prefix = " (", postfix = ")")
+    fun fullname() =
+        if (replacements.isEmpty()) name else name + replacements.joinToString(prefix = " (", postfix = ")")
+
+    fun index() = refdes.takeLastInt()
 }
 
-fun readIni(fileName: String) : Board {
+fun readIni(fileName: String): Board {
     val name = fileName.substringAfterLast("\\").substringBefore(".")
     var code = ""
     var developed = ""
@@ -34,10 +38,10 @@ fun readIni(fileName: String) : Board {
     val lines = readFile(fileName, maybeAbsent = true)
     lines.forEach {
         when {
-            it.startsWith("Код:")        -> code = it.substringAfter(":").trim()
+            it.startsWith("Код:") -> code = it.substringAfter(":").trim()
             it.startsWith("Разработал:") -> developed = it.substringAfter(":").trim()
-            it.startsWith("Проверил:")   -> checked = it.substringAfter(":").trim()
-            it.startsWith("Утвердил:")   -> approved = it.substringAfter(":").trim()
+            it.startsWith("Проверил:") -> checked = it.substringAfter(":").trim()
+            it.startsWith("Утвердил:") -> approved = it.substringAfter(":").trim()
         }
     }
 
@@ -50,12 +54,17 @@ fun readIni(fileName: String) : Board {
     )
 }
 
-private fun String.takeInt() : Int {
+private fun String.takeInt(): Int {
     val str = takeWhile { it.isDigit() }
     return if (str.isEmpty()) 0 else str.toInt()
 }
 
-private fun String.takeDouble() : Double {
+private fun String.takeLastInt(): Int {
+    val str = takeLastWhile { it.isDigit() }
+    return if (str.isEmpty()) 0 else str.toInt()
+}
+
+private fun String.takeDouble(): Double {
     val str = takeWhile { it.isDigit() || it == '.' }
     return if (str.isEmpty()) 0.0 else str.toDouble()
 }
@@ -88,14 +97,14 @@ private fun String.toCInt() = when {
     else -> takeInt()
 }
 
-fun readBom(fileName: String) : List<Component> {
-    fun String.parseCSV() : List<String> = listOf("") + split('@').map { it.trim('"') }
+fun readBom(fileName: String): List<Component> {
+    fun String.parseCSV(): List<String> = listOf("") + split('@').map { it.trim('"') }
     val lines = readFile(fileName)
     if (lines.size < 3 || !lines[1].isEmpty())
         throw Error("Bad input file '$fileName'")
 
     val header = lines[0].parseCSV()
-    fun List<String>.field(key: String) : Int {
+    fun List<String>.field(key: String): Int {
         val index = indexOf(key)
         if (index < 0) {
             if (key != "RefDes") return 0
@@ -103,6 +112,7 @@ fun readBom(fileName: String) : List<Component> {
         }
         return index
     }
+
     val refdesIndex = header.field("RefDes")
     val componentIndex = header.field("ComponentName")
     val patternIndex = header.field("PatternName")
@@ -132,80 +142,149 @@ fun readBom(fileName: String) : List<Component> {
             else -> component
         }
         when {
-            refdes.startsWith("RT") -> Component(refdes, "Терморезисторы", name)
-            refdes.startsWith("RU") -> Component(refdes, "Варисторы", name)
-            refdes.startsWith("RN") -> Component(refdes, "Наборы резисторов",
-                    description,
-                    value.toRInt(),
-                    "-" + value.toRString() + when {
-                        percent.isNotEmpty() -> percent
-                        else -> "+-5%"
-                    })
-            refdes.startsWith("R") -> Component(refdes, "Резисторы",
-                    when {
-                        pattern.startsWith("SMD") -> "SMD-" + pattern.substring(3, 7)
+            refdes.startsWith("RT") -> Component(
+                refdes = refdes,
+                category = "Терморезисторы",
+                prefix = name
+            )
+
+            refdes.startsWith("RU") -> Component(
+                refdes = refdes,
+                category = "Варисторы",
+                prefix = name
+            )
+
+            refdes.startsWith("RN") -> Component(
+                refdes = refdes,
+                category = "Наборы резисторов",
+                prefix = description,
+                value = value.toRInt(),
+                suffix = "-" + value.toRString() + when {
+                    percent.isNotEmpty() -> percent
+                    else -> "+-5%"
+                }
+            )
+
+            refdes.startsWith("R") -> Component(
+                refdes = refdes,
+                category = "Резисторы",
+                prefix = when {
+                    pattern.startsWith("SMD") -> "SMD-" + pattern.substring(3, 7)
+                    part.isNotEmpty() -> part
+                    else -> "С2-23"
+                } + "-" + when (component) {
+                    "RES-0062", "RES_SMD0062" -> "0,0625"
+                    "RES_01", "RES_SMD0125", "SMD-0805-0,125" -> "0,125"
+                    "RES_02", "RES_SMD025", "RES_SMD025-1" -> "0,25"
+                    "RES_05", "RES_SMD05" -> "0,5"
+                    "RES_1", "RES_SMD1" -> "1"
+                    "RES_2" -> "2"
+                    "RES_3" -> "3"
+                    else -> "???"
+                } + when {
+                    pattern.startsWith("SMD") && part.isNotEmpty() -> "-" + part
+                    else -> ""
+                },
+                value = value.toRInt(),
+                suffix = "-" + value.toRString() + when {
+                    percent.isNotEmpty() -> percent
+                    else -> "+-5%"
+                }
+            )
+
+            refdes.startsWith("C") -> Component(
+                refdes = refdes,
+                category = "Конденсаторы",
+                prefix = when {
+                    pattern.startsWith("SMD") -> "SMD-" + pattern.substring(3, 7)
+                    part.isNotEmpty() -> part
+                    else -> "???"
+                },
+                value = value.toCInt(),
+                suffix = when {
+                    pattern.startsWith("SMD") -> "-" + when {
                         part.isNotEmpty() -> part
-                        else -> "С2-23"
-                    } + "-" + when(component) {
-                        "RES-0062", "RES_SMD0062" -> "0,0625"
-                        "RES_01", "RES_SMD0125", "SMD-0805-0,125" -> "0,125"
-                        "RES_02", "RES_SMD025", "RES_SMD025-1" -> "0,25"
-                        "RES_05", "RES_SMD05" -> "0,5"
-                        "RES_1", "RES_SMD1" -> "1"
-                        "RES_2" -> "2"
-                        "RES_3" -> "3"
-                        else -> "???"
-                    } + when {
-                        pattern.startsWith("SMD") && part.isNotEmpty() -> "-" + part
-                        else -> ""
-                    },
-                    value.toRInt(),
-                    "-" + value.toRString() + when {
-                        percent.isNotEmpty() -> percent
-                        else -> "+-5%"
-                    })
-            refdes.startsWith("C") -> Component(refdes, "Конденсаторы",
-                    when {
-                        pattern.startsWith("SMD") -> "SMD-" + pattern.substring(3, 7)
-                        part.isNotEmpty() -> part
-                        else -> "???"
-                    },
-                    value.toCInt(),
-                    when {
-                        pattern.startsWith("SMD") -> "-" + when {
-                            part.isNotEmpty() -> part
-                            else -> "Z5U"
-                        }
-                        else -> ""
-                    } + when {
-                        value.isEmpty() -> ""
-                        else -> "-" + value.toCString()
-                    } + when {
-                        percent.isNotEmpty() -> percent
-                        description.endsWith('\\') -> ""
-                        else -> "+-20%"
-                    })
-            refdes.startsWith("L") -> Component(refdes, "Дроссели",
-                    when {
-                        description.isNotEmpty() -> description
-                        value.startsWith(component) -> value
-                        else -> component + "-" + value
-                    })
-            refdes.startsWith("XP") -> Component(refdes, "Радиокомпоненты", "Вилка " + name)
-            refdes.startsWith("JP") -> Component(refdes, "Радиокомпоненты", "Вилка " + name)
-            refdes.startsWith("XS") -> Component(refdes, "Радиокомпоненты", "Розетка " + name)
-            refdes.startsWith("VD") -> Component(refdes, "Диоды и стабилитроны", name)
-            refdes.startsWith("VT") -> Component(refdes, "Транзисторы", name)
-            refdes.startsWith("DO") -> Component(refdes, "Оптопары", name)
-            refdes.startsWith("D") -> Component(refdes, "Микросхемы", name)
-            refdes.startsWith("TV") -> Component(refdes, "Трансформаторы", name)
-            else -> Component(refdes, "Прочие", name)
+                        else -> "Z5U"
+                    }
+                    else -> ""
+                } + when {
+                    value.isEmpty() -> ""
+                    else -> "-" + value.toCString()
+                } + when {
+                    percent.isNotEmpty() -> percent
+                    description.endsWith('\\') -> ""
+                    else -> "+-20%"
+                }
+            )
+
+            refdes.startsWith("L") -> Component(
+                refdes = refdes,
+                category = "Дроссели",
+                prefix = when {
+                    description.isNotEmpty() -> description
+                    value.startsWith(component) -> value
+                    else -> component + "-" + value
+                }
+            )
+
+            refdes.startsWith("XP") -> Component(
+                refdes = refdes,
+                category = "Радиокомпоненты",
+                prefix = "Вилка " + name
+            )
+
+            refdes.startsWith("JP") -> Component(
+                refdes = refdes,
+                category = "Радиокомпоненты",
+                prefix = "Вилка " + name
+            )
+
+            refdes.startsWith("XS") -> Component(
+                refdes = refdes,
+                category = "Радиокомпоненты",
+                prefix = "Розетка " + name
+            )
+
+            refdes.startsWith("VD") -> Component(
+                refdes = refdes,
+                category = "Диоды и стабилитроны",
+                prefix = name
+            )
+
+            refdes.startsWith("VT") -> Component(
+                refdes = refdes,
+                category = "Транзисторы",
+                prefix = name
+            )
+
+            refdes.startsWith("DO") -> Component(
+                refdes = refdes,
+                category = "Оптопары",
+                prefix = name
+            )
+
+            refdes.startsWith("D") -> Component(
+                refdes = refdes,
+                category = "Микросхемы",
+                prefix = name
+            )
+
+            refdes.startsWith("TV") -> Component(
+                refdes = refdes,
+                category = "Трансформаторы",
+                prefix = name
+            )
+
+            else -> Component(
+                refdes = refdes,
+                category = "Прочие",
+                prefix = name
+            )
         }
     }
 
     return bom.filter {
-        !(it.refdes.endsWith('-') ||
-          it.refdes.endsWith('~')) && (!it.refdes.endsWith('*') || run {
+        !(it.refdes.endsWith('-') || it.refdes.endsWith('~')) && (!it.refdes.endsWith('*') || run {
             val key = it.refdes.trimEnd('*')
             val real = bom.find { it.refdes == key }
             real == null || run {
@@ -229,41 +308,124 @@ fun makeList(board: Board, bom: List<Component>, fileName: String) {
     out.pDocumentHeader(board)
     var line = 0
     for (category in listOf(
-                "Конденсаторы",
-                "Микросхемы",
-                "Оптопары",
-                "Дроссели",
-                "Резисторы",
-                "Наборы резисторов",
-                "Терморезисторы",
-                "Варисторы",
-                "Трансформаторы",
-                "Диоды и стабилитроны",
-                "Транзисторы",
-                "Радиокомпоненты",
-                "Прочие")) {
-        val list = bom.filter { it.category == category }
+        "Конденсаторы",
+        "Микросхемы",
+        "Оптопары",
+        "Дроссели",
+        "Резисторы",
+        "Наборы резисторов",
+        "Терморезисторы",
+        "Варисторы",
+        "Трансформаторы",
+        "Диоды и стабилитроны",
+        "Транзисторы",
+        "Радиокомпоненты",
+        "Прочие"
+    )) {
+        var list = bom.filter { it.category == category }
         if (list.isEmpty()) continue
         out.pTableEmptyRow(); ++line
         if (line.isLastOnPage()) {
             out.pTableEmptyRow(); ++line
         }
         out.pTableHeaderRow(category); ++line
-        var first = list[0]
-        var count = 1
-        list.forEachIndexed { i, current ->
-            if (i < list.lastIndex && list[i + 1].fullname() == first.fullname()) {
-                count++
-            } else {
-                val refdes = when (count) {
-                    1 -> current.refdes
-                    2 -> first.refdes + ", " + current.refdes
-                    else -> first.refdes + ".." + current.refdes
+        while (list.isNotEmpty()) {
+            var pos = list.takeWhile { it.fullname() == list[0].fullname() }
+            list = list.drop(pos.size)
+            when (pos.size) {
+                1 -> {
+                    out.pTableRow(
+                        refdes = pos[0].refdes,
+                        name = pos[0].fullname(),
+                        count = pos.size
+                    ); ++line
                 }
-                out.pTableRow(refdes, first.fullname(), count); ++line
-                if (i < list.lastIndex) {
-                    first = list[i + 1]
-                    count = 1
+                2 -> {
+                    out.pTableRow(
+                        refdes = pos[0].refdes + ", " + pos[1].refdes,
+                        name = pos[0].fullname(),
+                        count = pos.size
+                    ); ++line
+                }
+                else -> if (pos.zipWithNext().all { (a, b) -> a.index() + 1 == b.index() }) {
+                    out.pTableRow(
+                        refdes = pos[0].refdes + ".." + pos.last().refdes,
+                        name = pos[0].fullname(),
+                        count = pos.size
+                    ); ++line
+                } else {
+                    var first = pos.zipWithNext().indexOfFirst { (a, b) -> a.index() + 1 != b.index() } + 1
+                    if (first == 1 && pos[1].index() != pos[2].index()) {
+                        first = 2
+                    }
+                    when (first) {
+                        1 -> {
+                            out.pTableRow(
+                                refdes = pos[0].refdes + ",",
+                                name = pos[0].fullname()
+                            ); ++line
+                        }
+                        2 -> {
+                            out.pTableRow(
+                                refdes = pos[0].refdes + ", " + pos[1].refdes + ",",
+                                name = pos[0].fullname()
+                            ); ++line
+                        }
+                        else -> {
+                            out.pTableRow(
+                                refdes = pos[0].refdes + ".." + pos[first - 1].refdes + ",",
+                                name = pos[0].fullname()
+                            ); ++line
+                        }
+                    }
+                    pos = pos.drop(first)
+                    while (pos.isNotEmpty()) {
+                        if (pos.size <= 2 || pos.zipWithNext().all { (a, b) -> a.index() + 1 == b.index() }) {
+                            when (pos.size) {
+                                1 -> {
+                                    out.pTableRow(
+                                        refdes = pos[0].refdes,
+                                        count = pos.size
+                                    ); ++line
+                                }
+                                2 -> {
+                                    out.pTableRow(
+                                        refdes = pos[0].refdes + ", " + pos[1].refdes,
+                                        count = pos.size
+                                    ); ++line
+                                }
+                                else -> {
+                                    out.pTableRow(
+                                        refdes = pos[0].refdes + ".." + pos.last().refdes,
+                                        count = pos.size
+                                    ); ++line
+                                }
+                            }
+                            break
+                        }
+                        var next = pos.zipWithNext().indexOfFirst { (a, b) -> a.index() + 1 != b.index() } + 1
+                        if (next == 1 && pos[1].index() != pos[2].index()) {
+                            next = 2
+                        }
+                        when (next) {
+                            1 -> {
+                                out.pTableRow(
+                                    refdes = pos[0].refdes + ","
+                                ); ++line
+                            }
+                            2 -> {
+                                out.pTableRow(
+                                    refdes = pos[0].refdes + ", " + pos[1].refdes + ","
+                                ); ++line
+                            }
+                            else -> {
+                                out.pTableRow(
+                                    refdes = pos[0].refdes + ".." + pos[next - 1].refdes + ","
+                                ); ++line
+                            }
+                        }
+                        pos = pos.drop(next)
+                    }
                 }
             }
         }
@@ -281,21 +443,22 @@ fun makeZakaz(board: Board, bom: List<Component>, fileName: String) {
     var line = 0
     var lastHeader = ""
     for ((category, header) in listOf(
-                "Резисторы" to "Резисторы",
-                "Наборы резисторов" to "Резисторы",
-                "Терморезисторы" to "Резисторы",
-                "Варисторы" to "Резисторы",
-                "Конденсаторы" to "Конденсаторы",
-                "Диоды и стабилитроны" to "Полупроводниковые приборы",
-                "Транзисторы" to "Полупроводниковые приборы",
-                "Оптопары" to "Полупроводниковые приборы",
-                "Микросхемы" to "Микросхемы",
-                "Радиокомпоненты" to "Радиокомпоненты",
-                "Трансформаторы" to "Прочие",
-                "Дроссели" to "Прочие",
-                "Прочие" to "Прочие")) {
+        "Резисторы" to "Резисторы",
+        "Наборы резисторов" to "Резисторы",
+        "Терморезисторы" to "Резисторы",
+        "Варисторы" to "Резисторы",
+        "Конденсаторы" to "Конденсаторы",
+        "Диоды и стабилитроны" to "Полупроводниковые приборы",
+        "Транзисторы" to "Полупроводниковые приборы",
+        "Оптопары" to "Полупроводниковые приборы",
+        "Микросхемы" to "Микросхемы",
+        "Радиокомпоненты" to "Радиокомпоненты",
+        "Трансформаторы" to "Прочие",
+        "Дроссели" to "Прочие",
+        "Прочие" to "Прочие"
+    )) {
         val list = bom.filter { it.category == category }
-                .sortedWith(compareBy({ it.prefix }, { it.value }, { it.name }))
+            .sortedWith(compareBy({ it.prefix }, { it.value }, { it.name }))
         if (list.isEmpty()) continue
         if (header != lastHeader) {
             out.zTableEmptyRow(); ++line

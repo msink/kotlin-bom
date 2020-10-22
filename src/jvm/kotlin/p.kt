@@ -17,8 +17,8 @@ fun StringBuilder.pTableHeaderRow(
 
 fun StringBuilder.pTableRow(
         refdes: String,
-        name: String,
-        count: Int
+        name: String = "",
+        count: Int = -1
 ) = append("""${refdes.padEnd(10)}${name.padEnd(40)}${count}
 """)
 
