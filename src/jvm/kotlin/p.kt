@@ -2,11 +2,11 @@
  * Licensed under the Apache License, Version 2.0
  */
 
-fun StringBuilder.pDocumentHeader() = append("""-----
-${Board.name} ${Board.code}
-Разработал: ${Board.developed}
-Проверил: ${Board.checked}
-Утвердил: ${Board.approved}
+fun StringBuilder.pDocumentHeader(board: Board) = append("""-----
+${board.name} ${board.code}
+Разработал: ${board.developed}
+Проверил: ${board.checked}
+Утвердил: ${board.approved}
 -----
 """)
 

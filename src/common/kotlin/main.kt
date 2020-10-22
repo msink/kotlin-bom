@@ -2,13 +2,13 @@
  * Licensed under the Apache License, Version 2.0
  */
 
-object Board {
-    var name        = ""
-    var code        = ""
-    var developed   = ""
-    var checked     = ""
-    var approved    = ""
-}
+data class Board(
+    val name: String,
+    val code: String,
+    var developed: String,
+    var checked: String,
+    var approved: String,
+)
 
 data class Component(
     val refdes: String,
@@ -24,17 +24,30 @@ data class Component(
     fun fullname() = if (replacements.isEmpty()) name else name + replacements.joinToString(prefix = " (", postfix = ")")
 }
 
-fun readIni(fileName: String) {
-    Board.name = fileName.substringAfterLast("\\").substringBefore(".")
+fun readIni(fileName: String) : Board {
+    val name = fileName.substringAfterLast("\\").substringBefore(".")
+    var code = ""
+    var developed = ""
+    var checked = ""
+    var approved = ""
+
     val lines = readFile(fileName, maybeAbsent = true)
     lines.forEach {
         when {
-            it.startsWith("Код:")        -> Board.code = it.substringAfter(":").trim()
-            it.startsWith("Разработал:") -> Board.developed = it.substringAfter(":").trim()
-            it.startsWith("Проверил:")   -> Board.checked = it.substringAfter(":").trim()
-            it.startsWith("Утвердил:")   -> Board.approved = it.substringAfter(":").trim()
+            it.startsWith("Код:")        -> code = it.substringAfter(":").trim()
+            it.startsWith("Разработал:") -> developed = it.substringAfter(":").trim()
+            it.startsWith("Проверил:")   -> checked = it.substringAfter(":").trim()
+            it.startsWith("Утвердил:")   -> approved = it.substringAfter(":").trim()
         }
     }
+
+    return Board(
+        name = name,
+        code = code,
+        developed = developed,
+        checked = checked,
+        approved = approved
+    )
 }
 
 private fun String.takeInt() : Int {
@@ -211,9 +224,9 @@ fun Int.isLastOnPage() = when {
     else -> false
 }
 
-fun makeList(bom: List<Component>, fileName: String) {
+fun makeList(board: Board, bom: List<Component>, fileName: String) {
     val out = StringBuilder()
-    out.pDocumentHeader()
+    out.pDocumentHeader(board)
     var line = 0
     for (category in listOf(
                 "Конденсаторы",
@@ -262,9 +275,9 @@ fun makeList(bom: List<Component>, fileName: String) {
     writeFile(fileName, out.toString())
 }
 
-fun makeZakaz(bom: List<Component>, fileName: String) {
+fun makeZakaz(board: Board, bom: List<Component>, fileName: String) {
     val out = StringBuilder()
-    out.zDocumentHeader()
+    out.zDocumentHeader(board)
     var line = 0
     var lastHeader = ""
     for ((category, header) in listOf(
@@ -313,9 +326,9 @@ fun main(args: Array<String>) {
         fileName += ".bom"
     try {
         val bom = readBom(fileName)
-        readIni(fileName.replaceAfterLast('.', "txt"))
-        makeList(bom, fileName.replaceAfterLast('.', "p.fodt"))
-        makeZakaz(bom, fileName.replaceAfterLast('.', "z.fodt"))
+        val board = readIni(fileName.replaceAfterLast('.', "txt"))
+        makeList(board, bom, fileName.replaceAfterLast('.', "p.fodt"))
+        makeZakaz(board, bom, fileName.replaceAfterLast('.', "z.fodt"))
     } catch (e: Throwable) {
         print("Fatal error: $e")
     }
