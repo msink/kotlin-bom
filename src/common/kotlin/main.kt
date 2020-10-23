@@ -498,6 +498,6 @@ fun main(args: Array<String>) {
         makeList(board, bom, fileName.replaceAfterLast('.', "p.fodt"))
         makeZakaz(board, bom, fileName.replaceAfterLast('.', "z.fodt"))
     } catch (e: Throwable) {
-        print(e)
+        MessageBox(e.toString().drop(14))
     }
 }
