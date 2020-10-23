@@ -86,14 +86,12 @@ private fun String.toRInt() = when {
 private fun String.toCString() = when {
     contains(',') -> this + " мкФ"
     contains('.') -> replace('.', ',') + " мкФ"
-    endsWith('n') -> "0," + dropLast(1).padStart(3, '0') + " мкФ"
     else -> this + " пФ"
 }
 
 private fun String.toCInt() = when {
     contains(',') -> (replaceFirst(',', '.').takeDouble() * 1000000.0).toInt()
     contains('.') -> (takeDouble() * 1000000.0).toInt()
-    endsWith('n') -> (takeDouble() * 1000.0).toInt()
     else -> takeInt()
 }
 
@@ -200,7 +198,11 @@ fun readBom(fileName: String): List<Component> {
                     part.isNotEmpty() -> part
                     else -> "???"
                 },
-                value = value.toCInt(),
+                value = if (value.contains('n') || value.contains('н')) {
+                    throw Error("Bad nominal $refdes: $value")
+                } else {
+                    value.toCInt()
+                },
                 suffix = when {
                     pattern.startsWith("SMD") -> "-" + when {
                         part.isNotEmpty() -> part
@@ -292,8 +294,10 @@ fun readBom(fileName: String): List<Component> {
                 false
             }
         })
-    } + List(bom.count { it.refdes.startsWith("FU") &&
-                        !it.name.contains(" самовос", ignoreCase = true) } * 2) {
+    } + List(bom.count {
+        it.refdes.startsWith("FU") &&
+            !it.name.contains(" самовос", ignoreCase = true)
+    } * 2) {
         Component("XF${it + 1}", "Прочие", "Держатель вставки плавкой FH-100")
     }
 }
@@ -494,6 +498,6 @@ fun main(args: Array<String>) {
         makeList(board, bom, fileName.replaceAfterLast('.', "p.fodt"))
         makeZakaz(board, bom, fileName.replaceAfterLast('.', "z.fodt"))
     } catch (e: Throwable) {
-        print("Fatal error: $e")
+        print(e)
     }
 }
