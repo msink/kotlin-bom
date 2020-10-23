@@ -204,7 +204,7 @@ fun readBom(fileName: String): List<Component> {
                 suffix = when {
                     pattern.startsWith("SMD") -> "-" + when {
                         part.isNotEmpty() -> part
-                        else -> "Z5U"
+                        else -> "Y5U"
                     }
                     else -> ""
                 } + when {
@@ -292,7 +292,8 @@ fun readBom(fileName: String): List<Component> {
                 false
             }
         })
-    } + List(bom.count { it.refdes.startsWith("FU") } * 2) {
+    } + List(bom.count { it.refdes.startsWith("FU") &&
+                        !it.name.contains(" самовос", ignoreCase = true) } * 2) {
         Component("XF${it + 1}", "Прочие", "Держатель вставки плавкой FH-100")
     }
 }
