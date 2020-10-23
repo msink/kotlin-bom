@@ -1346,18 +1346,18 @@
     </table:table-row>
     <table:table-row table:style-name="Перечень.2">
      <table:table-cell table:style-name="Перечень.A2" office:value-type="string">
-      <text:p text:style-name="P8">Hitano EXR 10В-4700,0 мкФ±20%</text:p>
-     </table:table-cell>
-     <table:table-cell table:style-name="Перечень.B2" office:value-type="string">
-      <text:p text:style-name="P14">2</text:p>
-     </table:table-cell>
-    </table:table-row>
-    <table:table-row table:style-name="Перечень.2">
-     <table:table-cell table:style-name="Перечень.A2" office:value-type="string">
       <text:p text:style-name="P8">Hitano EXR 10В-220,0 мкФ±20%</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Перечень.B2" office:value-type="string">
       <text:p text:style-name="P14">1</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="Перечень.2">
+     <table:table-cell table:style-name="Перечень.A2" office:value-type="string">
+      <text:p text:style-name="P8">Hitano EXR 10В-4700,0 мкФ±20%</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="Перечень.B2" office:value-type="string">
+      <text:p text:style-name="P14">2</text:p>
      </table:table-cell>
     </table:table-row>
     <table:table-row table:style-name="Перечень.2">
@@ -1810,7 +1810,7 @@
     </table:table-row>
     <table:table-row table:style-name="Перечень.2">
      <table:table-cell table:style-name="Перечень.A2" office:value-type="string">
-      <text:p text:style-name="P8">Держатель вставки плавкой</text:p>
+      <text:p text:style-name="P8">Держатель вставки плавкой FH-100</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Перечень.B2" office:value-type="string">
       <text:p text:style-name="P14">6</text:p>

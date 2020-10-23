@@ -1250,7 +1250,7 @@
     </table:table-row>
     <table:table-row table:style-name="Перечень.2">
      <table:table-cell table:style-name="Перечень.A2" office:value-type="string">
-      <text:p text:style-name="P8">SMD-0805-Z5U-0,1 мкФ±20%</text:p>
+      <text:p text:style-name="P8">SMD-0805-Y5U-0,1 мкФ±20%</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Перечень.B2" office:value-type="string">
       <text:p text:style-name="P14">120</text:p>
@@ -1266,7 +1266,7 @@
     </table:table-row>
     <table:table-row table:style-name="Перечень.2">
      <table:table-cell table:style-name="Перечень.A2" office:value-type="string">
-      <text:p text:style-name="P8">SMD-1206-Z5U-0,1 мкФ±20%</text:p>
+      <text:p text:style-name="P8">SMD-1206-Y5U-0,1 мкФ±20%</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Перечень.B2" office:value-type="string">
       <text:p text:style-name="P14">1</text:p>
@@ -1419,6 +1419,22 @@
     <table:table-row table:style-name="Перечень.2">
      <table:table-cell table:style-name="Перечень.A2" office:value-type="string">
       <text:p text:style-name="P8">Вилка PLD10</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="Перечень.B2" office:value-type="string">
+      <text:p text:style-name="P14">1</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="Перечень.2">
+     <table:table-cell table:style-name="Перечень.A2" office:value-type="string">
+      <text:p text:style-name="P8">Вилка PLS-2</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="Перечень.B2" office:value-type="string">
+      <text:p text:style-name="P14">1</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="Перечень.2">
+     <table:table-cell table:style-name="Перечень.A2" office:value-type="string">
+      <text:p text:style-name="P8">Вилка PLS-3</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Перечень.B2" office:value-type="string">
       <text:p text:style-name="P14">1</text:p>
@@ -1595,22 +1611,6 @@
     <table:table-row table:style-name="Перечень.2">
      <table:table-cell table:style-name="Перечень.A2" office:value-type="string">
       <text:p text:style-name="P8">L-934SB/4GD</text:p>
-     </table:table-cell>
-     <table:table-cell table:style-name="Перечень.B2" office:value-type="string">
-      <text:p text:style-name="P14">1</text:p>
-     </table:table-cell>
-    </table:table-row>
-    <table:table-row table:style-name="Перечень.2">
-     <table:table-cell table:style-name="Перечень.A2" office:value-type="string">
-      <text:p text:style-name="P8">PLS-2</text:p>
-     </table:table-cell>
-     <table:table-cell table:style-name="Перечень.B2" office:value-type="string">
-      <text:p text:style-name="P14">1</text:p>
-     </table:table-cell>
-    </table:table-row>
-    <table:table-row table:style-name="Перечень.2">
-     <table:table-cell table:style-name="Перечень.A2" office:value-type="string">
-      <text:p text:style-name="P8">PLS-3</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Перечень.B2" office:value-type="string">
       <text:p text:style-name="P14">1</text:p>
