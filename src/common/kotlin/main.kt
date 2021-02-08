@@ -337,26 +337,27 @@ fun makeList(board: Board, bom: List<Component>, fileName: String) {
         while (list.isNotEmpty()) {
             var pos = list.takeWhile { it.fullname() == list[0].fullname() }
             list = list.drop(pos.size)
+            val count = pos.size
             when (pos.size) {
                 1 -> {
                     out.pTableRow(
                         refdes = pos[0].refdes,
                         name = pos[0].fullname(),
-                        count = pos.size
+                        count = count
                     ); ++line
                 }
                 2 -> {
                     out.pTableRow(
                         refdes = pos[0].refdes + ", " + pos[1].refdes,
                         name = pos[0].fullname(),
-                        count = pos.size
+                        count = count
                     ); ++line
                 }
                 else -> if (pos.zipWithNext().all { (a, b) -> a.index() + 1 == b.index() }) {
                     out.pTableRow(
                         refdes = pos[0].refdes + ".." + pos.last().refdes,
                         name = pos[0].fullname(),
-                        count = pos.size
+                        count = count
                     ); ++line
                 } else {
                     var first = pos.zipWithNext().indexOfFirst { (a, b) -> a.index() + 1 != b.index() } + 1
@@ -390,19 +391,19 @@ fun makeList(board: Board, bom: List<Component>, fileName: String) {
                                 1 -> {
                                     out.pTableRow(
                                         refdes = pos[0].refdes,
-                                        count = pos.size
+                                        count = count
                                     ); ++line
                                 }
                                 2 -> {
                                     out.pTableRow(
                                         refdes = pos[0].refdes + ", " + pos[1].refdes,
-                                        count = pos.size
+                                        count = count
                                     ); ++line
                                 }
                                 else -> {
                                     out.pTableRow(
                                         refdes = pos[0].refdes + ".." + pos.last().refdes,
-                                        count = pos.size
+                                        count = count
                                     ); ++line
                                 }
                             }
